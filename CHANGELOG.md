@@ -37,3 +37,11 @@ Carried from the R0-R4 development series (2026-08-16):
 
 - Added wrangler.jsonc so the git-connected Cloudflare Workers build is fully repo-driven: worker name datacentercommunitysite, static assets served from dist-cf, optional commented routes block for future automation
 - docs/INTEGRATION.md deploy walkthrough rewritten for the as-deployed single-Worker flow (no proxy worker needed); proxy worker script retained as legacy alternative
+
+## v1.2.2 (2026-08-17)
+
+Deployment fixes (no feature changes):
+- Worker name aligned to the CI-connected Worker (datacenter-community-site), removing the deploy-time name mismatch warning and Cloudflare's auto-PR
+- SPA fallback and root redirect moved from _redirects (rejected by the Workers assets validator as a loop) to cloudflare/worker.js with an ASSETS binding; package-cf.mjs no longer writes _redirects
+- Build output (dist-cf) removed from version control and added to .gitignore
+- Legacy Azure Static Web Apps workflow deleted (Cloudflare Workers Builds is the deployment pipeline)

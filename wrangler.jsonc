@@ -2,21 +2,18 @@
   // Cloudflare Workers configuration (git-connected build).
   // Dashboard build settings: Build command "npm run build:cf",
   // Deploy command "npx wrangler deploy", Path/root directory: BLANK.
-  // The name matches the Worker created in the dashboard so deploys target it.
-  "name": "datacentercommunitysite",
+  // Name matches the CI-connected Worker (datacenter-community-site).
+  "name": "datacenter-community-site",
+  "main": "cloudflare/worker.js",
   "compatibility_date": "2026-08-01",
   "assets": {
-    // build:cf nests the app under /datacenters and writes _redirects
-    // (root redirect + SPA fallback), which Workers static assets honor.
-    "directory": "./dist-cf"
+    // npm run build:cf nests the app under dist-cf/datacenters so asset
+    // paths match the bitsbetrippin.io/datacenters route. Root redirect and
+    // SPA fallback are handled by cloudflare/worker.js (the assets layer
+    // serves matching files directly; the worker runs only on misses).
+    "directory": "./dist-cf",
+    "binding": "ASSETS"
   }
-  // Route automation (optional): uncomment once the build's API token has
-  // Workers Routes edit permission on the bitsbetrippin.io zone. Until then,
-  // add the route once in the dashboard instead:
-  //   Worker > Settings > Domains & Routes > Add > Route
-  //   bitsbetrippin.io/datacenters*   (zone: bitsbetrippin.io)
-  // ,"routes": [
-  //   { "pattern": "bitsbetrippin.io/datacenters*", "zone_name": "bitsbetrippin.io" },
-  //   { "pattern": "www.bitsbetrippin.io/datacenters*", "zone_name": "bitsbetrippin.io" }
-  // ]
+  // Route (one time, dashboard): Worker > Settings > Domains & Routes >
+  //   bitsbetrippin.io/datacenters*  (zone: bitsbetrippin.io)
 }
