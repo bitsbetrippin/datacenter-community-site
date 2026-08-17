@@ -32,3 +32,8 @@ Carried from the R0-R4 development series (2026-08-16):
 - Cloudflare deployment kit: `npm run build:cf` packaging (dist-cf with nested app + _redirects SPA fallback), Worker proxy script (cloudflare/datacenters-proxy-worker.js) with dashboard setup steps for the bitsbetrippin.io/datacenters* route
 - docs/INTEGRATION.md rewritten Cloudflare-first: deploy walkthrough, main-site nav snippet, theming constraints, future Supabase hooks (live commitment dashboards, question intake); Supabase not required today
 - README and CLAUDE.md updated for the subsite architecture; Azure workflow retained as legacy fallback
+
+## v1.2.1 (2026-08-17)
+
+- Added wrangler.jsonc so the git-connected Cloudflare Workers build is fully repo-driven: worker name datacentercommunitysite, static assets served from dist-cf, optional commented routes block for future automation
+- docs/INTEGRATION.md deploy walkthrough rewritten for the as-deployed single-Worker flow (no proxy worker needed); proxy worker script retained as legacy alternative

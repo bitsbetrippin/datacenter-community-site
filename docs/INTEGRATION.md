@@ -18,36 +18,48 @@ chosen architecture: **path-based subsite at bitsbetrippin.io/datacenters**.
 - **Supabase is not required.** The subsite is fully static; all content ships
   in the bundle. See "Future Supabase hooks" below for when that changes.
 
-## Deploy walkthrough (one time, ~20 minutes)
+## Deploy walkthrough (as deployed: Cloudflare Workers git flow)
 
-### 1. Create the Pages project
-In the Cloudflare dashboard (same account as the main site):
-Workers & Pages > Create > Pages > Connect to Git > select the
-`datacenter-community-site` repo.
+Production uses Cloudflare's newer git-connected WORKERS flow (not classic
+Pages). One Worker serves the static site AND owns the /datacenters route;
+no separate proxy worker is needed. Everything the build needs lives in the
+repo: `wrangler.jsonc` (worker name, assets directory) and the
+`npm run build:cf` packaging script.
+
+### 1. The Worker (one time)
+Workers & Pages > Create > Workers > import the `datacenter-community-site`
+Git repository.
 - Build command: `npm run build:cf`
-- Build output directory: `dist-cf`
-- No environment variables needed.
-Every push to `main` now deploys; PRs get preview URLs automatically.
-The build output nests the app under `/datacenters` with a `_redirects` file
-(SPA fallback + root redirect), so the Pages URL serves
-`<project>.pages.dev/datacenters/` with production-identical paths.
+- Deploy command: `npx wrangler deploy`
+- Path / root directory: leave BLANK (it is the repo root, not the output
+  directory; the output directory is declared in wrangler.jsonc)
+- API token: any account build token works; permission warnings about
+  unrelated products (email routing) are ignorable.
+Every push to `main` builds and deploys; non-production branches upload
+preview versions via `npx wrangler versions upload`.
 
-### 2. Create the Worker route
-`cloudflare/datacenters-proxy-worker.js` in this repo is the complete Worker
-(setup steps in its header comment): paste it into a new Worker, set the
-`PAGES_HOST` variable to the Pages host, and add the route
+### 2. The route (one time)
+Worker > Settings > Domains & Routes > Add > Route:
 `bitsbetrippin.io/datacenters*` on the bitsbetrippin.io zone (plus the
-`www.` variant if www is not already redirected at the edge).
+`www.` twin if www is not redirected at the edge). Cloudflare sends each
+request to the most specific match, so this wins over the main website
+worker for /datacenters paths and nothing else changes. (Optional: automate
+by uncommenting the `routes` block in wrangler.jsonc once the build token
+has Workers Routes edit permission on the zone.)
 
 ### 3. Link from the main site
-Add a nav entry in the main site pointing to `/datacenters/`. Suggested label:
-"Data Centers, Answered With Data". Because it is the same origin, a plain
-anchor works; no CORS, no iframe, no special handling.
+Add a nav entry in the main site pointing to `/datacenters/`. Same origin,
+plain anchor, no CORS or iframe handling.
 
 ### 4. Verify
 - `bitsbetrippin.io/datacenters/` loads the home page
-- A deep link (`/datacenters/faq`) loads directly (SPA fallback working)
-- Hashed assets return long-cache headers (Pages default, passed through)
+- A deep link (`/datacenters/faq`) loads directly (SPA fallback via
+  `_redirects` in the build output)
+- Hashed assets return long-cache headers
+
+Legacy alternatives kept in the repo: `cloudflare/datacenters-proxy-worker.js`
+(only needed if the site ever moves to a classic Pages project) and the Azure
+Static Web Apps workflow in `.github/workflows/`.
 
 ## Theming to BitsBeTrippin brand
 
