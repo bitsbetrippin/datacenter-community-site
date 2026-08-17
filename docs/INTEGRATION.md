@@ -10,8 +10,8 @@ chosen architecture: **path-based subsite at bitsbetrippin.io/datacenters**.
 - This repo deploys as its **own Cloudflare Pages project** in the same
   Cloudflare account/zone as the main site. Independent repo, independent CI,
   independent release cadence.
-- A **small Worker route** on `bitsbetrippin.io/datacenters*` proxies to the
-  Pages project. The main site's code and deployment are untouched.
+- The **main bitsbetrippin.io worker reverse-proxies** `/datacenters/*` from
+  this worker's workers.dev URL. The two projects deploy independently.
 - The app is built with Vite `base: '/datacenters/'` and
   `BrowserRouter basename="/datacenters"`, so all URLs are clean:
   `bitsbetrippin.io/datacenters/faq`, `/datacenters/tools`, etc.
@@ -38,14 +38,19 @@ Git repository.
 Every push to `main` builds and deploys; non-production branches upload
 preview versions via `npx wrangler versions upload`.
 
-### 2. The route (one time)
-Worker > Settings > Domains & Routes > Add > Route:
-`bitsbetrippin.io/datacenters*` on the bitsbetrippin.io zone (plus the
-`www.` twin if www is not redirected at the edge). Cloudflare sends each
-request to the most specific match, so this wins over the main website
-worker for /datacenters paths and nothing else changes. (Optional: automate
-by uncommenting the `routes` block in wrangler.jsonc once the build token
-has Workers Routes edit permission on the zone.)
+### 2. Routing (current architecture, do not add routes here)
+The main bitsbetrippin.io worker reverse-proxies `/datacenters/*` from this
+worker's public workers.dev URL. That means:
+- **Do not add a `bitsbetrippin.io/datacenters*` route on this worker.** A
+  route here would intercept traffic ahead of the main worker and detach the
+  subsite from the main site's branding overlay and view counting.
+- **Keep the workers.dev domain enabled** on this worker: it is the upstream
+  the main site pulls from.
+- Branding (return link, release badge) and page-view counting are injected
+  upstream at proxy time. Never embed them in this repo; duplicates are
+  removed by an upstream guard, but the source of truth is the proxy.
+Deploys stay independent: push here, this worker redeploys, and the main
+site picks up the new build on the next request.
 
 ### 3. Link from the main site
 Add a nav entry in the main site pointing to `/datacenters/`. Same origin,

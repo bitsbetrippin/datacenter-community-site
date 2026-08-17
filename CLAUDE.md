@@ -26,11 +26,13 @@ anything. Companion docs: `docs/REQUIREMENTS.md` (what this site must be) and
 
 ## Architecture in one minute
 
-- React 18 + Vite + TypeScript + Tailwind v4 (tokens in
+- React 19 + Vite + TypeScript + Tailwind v4 (tokens in
   `src/styles/index.css`, palette follows a validated accessible system).
 - BrowserRouter with basename '/datacenters' and Vite base '/datacenters/':
-  the app is a path-based subsite of bitsbetrippin.io on Cloudflare Pages
-  plus a Worker route (see docs/INTEGRATION.md). Local dev serves at
+  the app is a path-based subsite of bitsbetrippin.io, served by this
+  repo's Worker (static assets + SPA fallback) and reverse-proxied by the
+  main bitsbetrippin.io worker (see docs/INTEGRATION.md; do not add
+  bitsbetrippin.io routes on this worker). Local dev serves at
   localhost:5173/datacenters/. Do not remove the basename without also
   changing the Vite base and the deploy config.
 - All content is data: `src/content/*.json` (facts, concerns, faq, rumorfact,

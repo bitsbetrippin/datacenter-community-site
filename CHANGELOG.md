@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.2.3 (2026-08-17)
+
+Alignment release with the bitsbetrippin.io proxy architecture.
+- index.html: Google Analytics 4 tag added (property-wide standard)
+- docs/INTEGRATION.md: routing section rewritten for the current
+  architecture (main site reverse-proxies this worker's workers.dev;
+  no routes on this worker; branding and counting injected upstream)
+- CLAUDE.md: architecture summary updated to match; React version
+  corrected to 19
+- Removed obsolete cloudflare/datacenters-proxy-worker.js (documented
+  the pre-proxy route setup that now conflicts with production)
+
 ## v1.0.0 (2026-08-16)
 
 First tagged release. A BitsBeTrippin project built with Claude support.
