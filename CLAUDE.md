@@ -28,8 +28,11 @@ anything. Companion docs: `docs/REQUIREMENTS.md` (what this site must be) and
 
 - React 18 + Vite + TypeScript + Tailwind v4 (tokens in
   `src/styles/index.css`, palette follows a validated accessible system).
-- HashRouter (swap to BrowserRouter at deploy;
-  `staticwebapp.config.json` rewrite is already present).
+- BrowserRouter with basename '/datacenters' and Vite base '/datacenters/':
+  the app is a path-based subsite of bitsbetrippin.io on Cloudflare Pages
+  plus a Worker route (see docs/INTEGRATION.md). Local dev serves at
+  localhost:5173/datacenters/. Do not remove the basename without also
+  changing the Vite base and the deploy config.
 - All content is data: `src/content/*.json` (facts, concerns, faq, rumorfact,
   explainers, pareto, case-studies, twin, bigpicture, playbook, noiselevels).
   Pages are thin renderers over this layer. To change what the site says,

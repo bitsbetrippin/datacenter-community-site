@@ -41,24 +41,25 @@ strategies, engagement timeline).
    npm run dev
    ```
 
-3. Open the address it prints (usually `http://localhost:5173`).
+3. Open the address it prints plus the subsite path (usually
+   `http://localhost:5173/datacenters/`).
 
 Other commands: `npm run build` (production build into `dist/`),
 `node scripts/validate-content.mjs` (content integrity check).
 
-## Deploy to Azure Static Web Apps (one-time setup, ~15 minutes)
+## Deploy: subsite of bitsbetrippin.io (Cloudflare)
 
-1. Push this folder to a GitHub repository (GitHub Desktop is the easiest way:
-   File → Add local repository → Publish).
-2. In the [Azure Portal](https://portal.azure.com), create a resource → **Static Web
-   App** → Free plan. Sign in with GitHub when prompted and pick your repo + `main`
-   branch. Build presets: **Custom** — app location `/`, output location `dist`.
-3. Azure adds a deployment token to your repo automatically. If you use the included
-   workflow file instead, add the token as a repo secret named
-   `AZURE_STATIC_WEB_APPS_API_TOKEN` (Repo → Settings → Secrets → Actions).
-4. Every push to `main` now deploys automatically; pull requests get preview URLs.
+This app ships as a path-based subsite at **bitsbetrippin.io/datacenters**:
+its own Cloudflare Pages project (build command `npm run build:cf`, output
+`dist-cf`) plus a Worker route on `bitsbetrippin.io/datacenters*`. The full
+walkthrough, the Worker script, and the main-site nav snippet are in
+`docs/INTEGRATION.md` and `cloudflare/datacenters-proxy-worker.js`.
+Supabase is not required; the site is fully static.
 
-AWS fallback: the same `dist/` output deploys to AWS Amplify Hosting unchanged.
+Fallback: the same `dist/` output also deploys to Azure Static Web Apps or any
+static host (legacy workflow in `.github/workflows/`); adjust `base` in
+`vite.config.ts` and the router `basename` in `src/App.tsx` if serving from
+the domain root.
 
 ## Content rules (non-negotiable)
 

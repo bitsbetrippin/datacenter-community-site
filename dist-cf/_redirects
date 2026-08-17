@@ -1,0 +1,5 @@
+# Root of the Pages project points into the subsite
+/ /datacenters/ 302
+/datacenters /datacenters/ 301
+# SPA fallback: client-side routes resolve to the app shell
+/datacenters/* /datacenters/index.html 200

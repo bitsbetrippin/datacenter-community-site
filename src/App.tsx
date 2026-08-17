@@ -5,7 +5,7 @@
  * Requirements independently validated against the original project brief;
  * see docs/REQUIREMENTS.md for the ask-to-implementation mapping.
  */
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { Home } from './pages/Home'
 import { ConcernPage } from './pages/ConcernPage'
@@ -19,12 +19,14 @@ import { Faq } from './pages/Faq'
 import { Playbook } from './pages/Playbook'
 
 /**
- * HashRouter for R0 so the preview build works from any static host or local file
- * without server rewrites. Swap to BrowserRouter + SWA route config at deploy time.
+ * BrowserRouter with the /datacenters basename: the app lives at
+ * bitsbetrippin.io/datacenters as a subsite. Clean URLs require the SPA
+ * fallback in the deploy config (_redirects for Cloudflare Pages,
+ * staticwebapp.config.json for the Azure fallback).
  */
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/datacenters">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -39,6 +41,6 @@ export default function App() {
           <Route path="/about" element={<About />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }

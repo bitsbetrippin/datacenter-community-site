@@ -25,3 +25,10 @@ Carried from the R0-R4 development series (2026-08-16):
 - Reality Check section on the home page: 10 popular claims (6 heard in opposition, 4 heard from promoters) each tested against the evidence base with verdicts and citations.
 - Sitewide neutrality pass: 31 editorial adjustments so opposition claims and industry claims receive identical scrutiny; all documented findings and caveats retained.
 - Evidence base grown to 116 fact records (BLS wage data, ISC2, shift-relief factor, Uptime staffing guidance).
+
+## v1.2.0 (2026-08-17)
+
+- Converted to a path-based subsite of bitsbetrippin.io: Vite base and BrowserRouter basename set to /datacenters, clean URLs (bitsbetrippin.io/datacenters/faq)
+- Cloudflare deployment kit: `npm run build:cf` packaging (dist-cf with nested app + _redirects SPA fallback), Worker proxy script (cloudflare/datacenters-proxy-worker.js) with dashboard setup steps for the bitsbetrippin.io/datacenters* route
+- docs/INTEGRATION.md rewritten Cloudflare-first: deploy walkthrough, main-site nav snippet, theming constraints, future Supabase hooks (live commitment dashboards, question intake); Supabase not required today
+- README and CLAUDE.md updated for the subsite architecture; Azure workflow retained as legacy fallback
