@@ -11,10 +11,10 @@ export function About() {
       <h1 className="text-2xl font-bold text-ink sm:text-3xl">How this site works</h1>
 
       <p className="leading-relaxed text-ink">
-        This site exists because communities deserve better than corporate messaging when
-        a data center is proposed nearby. It is built as an evidence library, not an
-        advocacy campaign, which means it includes findings that are inconvenient for
-        developers alongside findings that are inconvenient for opponents.
+        This site exists to give residents, officials, and developers the same verified
+        data when a data center is proposed nearby. It is built as an evidence library,
+        not an advocacy campaign, which means it includes findings that are inconvenient
+        for developers alongside findings that are inconvenient for opponents.
       </p>
 
       <section className="rounded-xl border border-[color:var(--color-hairline)] bg-surface p-5">

@@ -88,7 +88,7 @@ export function TradeOffs() {
           <p className="mt-4 text-xs text-ink-muted">
             The percentages show how much each factor counts in your personal weighting.
             Bring this list to a hearing: the factors you weighted highest are the ones
-            to demand enforceable commitments on.
+            to focus on when asking for enforceable commitments.
           </p>
         </div>
       </section>
@@ -151,8 +151,8 @@ export function TradeOffs() {
           Technology that could shrink these impacts (and what's real today)
         </h2>
         <p className="mt-1 max-w-2xl text-sm text-ink-secondary">
-          Developers often promise future technology. Here is the current status of each,
-          separating what is deployed from what is announced.
+          Future technology often features in project proposals. Here is the current
+          status of each, separating what is deployed from what is announced.
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           {bigPicture.futureTech.map((t) => (

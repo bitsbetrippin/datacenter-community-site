@@ -33,7 +33,7 @@
       "power"
     ],
     "answer20w": "It varies enormously. A large campus can use as much electricity as tens of thousands of homes.",
-    "answer100w": "Size matters more than the label. A small facility may draw a few megawatts; a hyperscale AI campus can draw hundreds. Using federal data on average household consumption, a 100 MW campus running at high load uses electricity comparable to roughly 65,000-81,000 homes. That is why the single most important question to ask a developer is the contracted megawatt figure, in writing, including future phases. The interconnection request filed with the utility is a public-record way to check the real number against the marketing number.",
+    "answer100w": "Size matters more than the label. A small facility may draw a few megawatts; a hyperscale AI campus can draw hundreds. Using federal data on average household consumption, a 100 MW campus running at high load uses electricity comparable to roughly 65,000-81,000 homes. That is why the single most important question to ask a developer is the contracted megawatt figure, in writing, including future phases. The interconnection request filed with the utility is a public-record way to check the real number against the announced number.",
     "factIds": [
       "eia-household-kwh",
       "lbnl-2023-share"
@@ -221,7 +221,7 @@
       "water"
     ],
     "answer20w": "Only if the facility pumps your aquifer or strains your shared source. Most buy municipal water, but problems have occurred.",
-    "answer100w": "The first question is where the water comes from. Most large facilities buy municipal water, which affects wells only through overall system strain. Direct aquifer pumping is the higher-stakes case: near Meta's Newton County, Georgia facility, residents on private wells reported sediment and dry taps beginning during construction, though causation is disputed. In Missouri, AWS plans deep wells that state officials call routine while neighbors worry. The protection that works is a hard cap tied to aquifer science: St. Joseph County, Indiana capped combined industrial pumping at just over half the aquifer's estimated safe yield. Demand baseline well testing before construction.",
+    "answer100w": "The first question is where the water comes from. Most large facilities buy municipal water, which affects wells only through overall system strain. Direct aquifer pumping is the higher-stakes case: near Meta's Newton County, Georgia facility, residents on private wells reported sediment and dry taps beginning during construction, though causation is disputed. In Missouri, AWS plans deep wells that state officials call routine while neighbors worry. The protection that works is a hard cap tied to aquifer science: St. Joseph County, Indiana capped combined industrial pumping at just over half the aquifer's estimated safe yield. Baseline well testing before construction can be made a condition of approval.",
     "factIds": [
       "newton-county-meta-wells",
       "new-florence-aws-wells",
@@ -275,7 +275,7 @@
       "trust"
     ],
     "answer20w": "Historically many treated it as a trade secret, and some fought disclosure in court. That is changing under pressure.",
-    "answer100w": "Industry surveys have found fewer than one-third of operators even track their water use, and site-level disclosure remains rare. The most famous case is The Dalles, Oregon, where the city, with Google funding, sued a local newspaper to keep usage records secret; when the suit was dropped, records showed Google used 355.1 million gallons in 2021, about 29 percent of the city's municipal supply. The lesson communities have drawn: make disclosure a condition of approval, in gallons, by season, before the vote. A developer who will not commit to publishing metered water data is telling you something.",
+    "answer100w": "Industry surveys have found fewer than one-third of operators even track their water use, and site-level disclosure remains rare. The most famous case is The Dalles, Oregon, where the city, with Google funding, sued a local newspaper to keep usage records secret; when the suit was dropped, records showed Google used 355.1 million gallons in 2021, about 29 percent of the city's municipal supply. The lesson communities have drawn: make disclosure a condition of approval, in gallons, by season, before the vote. Whether a developer will commit to publishing metered water data is a fair question to settle before that vote.",
     "factIds": [
       "uptime-disclosure-gap",
       "the-dalles-google"
@@ -314,7 +314,7 @@
     "concernTags": [
       "water"
     ],
-    "answer20w": "It depends on withdrawal volume versus aquifer capacity. Demand the hydrology study, and a cap tied to it.",
+    "answer20w": "It depends on withdrawal volume versus aquifer capacity. Ask for the hydrology study, and a cap tied to it.",
     "answer100w": "This is a site-specific hydrology question, and both reassuring and cautionary answers exist. In Missouri, state groundwater officials describe AWS's planned pumping, about 50 million gallons per year from deep wells, as a routine addition of roughly 0.03 percent to current aquifer use; residents on shallow private wells remain worried anyway. In Indiana, St. Joseph County did the math publicly and capped combined industrial pumping at just over half the aquifer's estimated daily safe yield. The verifiable path: require an independent aquifer study before approval, a withdrawal cap based on it, monitoring wells, and baseline testing of neighboring wells.",
     "factIds": [
       "new-florence-aws-wells",
@@ -381,7 +381,7 @@
       "noise"
     ],
     "answer20w": "It depends on distance, equipment, and mitigation. Unmitigated cooling gear has been clearly audible at nearby homes.",
-    "answer100w": "There is no universal answer, only physics and design. Cooling equipment can emit up to 70 dBA within 400 feet, and unmitigated installations have produced continuous 45-65 dBA at property lines in documented cases. Sound from compact equipment drops about 6 dB with each doubling of distance, so setbacks matter enormously. Well-designed facilities with quiet equipment, orientation away from homes, and real setbacks can be effectively inaudible; badly designed ones have generated years of complaints. Before approval, demand a professional sound study modeling your specific property, and a property-line limit written into the permit with required compliance testing.",
+    "answer100w": "There is no universal answer, only physics and design. Cooling equipment can emit up to 70 dBA within 400 feet, and unmitigated installations have produced continuous 45-65 dBA at property lines in documented cases. Sound from compact equipment drops about 6 dB with each doubling of distance, so setbacks matter enormously. Well-designed facilities with quiet equipment, orientation away from homes, and real setbacks can be effectively inaudible; badly designed ones have generated years of complaints. Before approval, ask for a professional sound study modeling your specific property, and a property-line limit written into the permit with required compliance testing.",
     "factIds": [
       "cooling-tower-70dba-400ft",
       "fhwa-distance-attenuation",
@@ -421,7 +421,7 @@
       "noise"
     ],
     "answer20w": "Very loud up close during tests, roughly 90-105 dBA at 25 feet, but brief, schedulable, and infrequent.",
-    "answer100w": "Diesel generators are the loudest equipment on site, producing roughly 90-105 dBA at about 25 feet during load testing. The saving grace is duration: testing typically runs 30-60 minutes per unit, monthly, and EPA rules cap non-emergency operation at 100 hours per year per engine. That makes generator noise a manageable, schedulable event, unlike the continuous cooling hum. Reasonable permit conditions include daytime-only testing on published schedules, staggering units rather than testing many at once, sound attenuation on the units, and advance notice to neighbors. If a developer resists putting test schedules in writing, that is worth noting publicly.",
+    "answer100w": "Diesel generators are the loudest equipment on site, producing roughly 90-105 dBA at about 25 feet during load testing. The saving grace is duration: testing typically runs 30-60 minutes per unit, monthly, and EPA rules cap non-emergency operation at 100 hours per year per engine. That makes generator noise a manageable, schedulable event, unlike the continuous cooling hum. Reasonable permit conditions include daytime-only testing on published schedules, staggering units rather than testing many at once, sound attenuation on the units, and advance notice to neighbors. Putting test schedules in writing as a permit condition makes the commitment verifiable.",
     "factIds": [
       "generator-test-90-105dba-25ft",
       "epa-emergency-engine-rules"
@@ -582,7 +582,7 @@
     "concernTags": [
       "taxes"
     ],
-    "answer20w": "States that studied their own returns found losses per subsidy dollar. The local math can still work; demand the analysis.",
+    "answer20w": "States that studied their own returns found losses per subsidy dollar. The local math can still work; ask for the analysis.",
     "answer100w": "The independent evidence is uncomfortable for incentive advocates. States that analyzed the return on their data center exemptions found losses of 52-70 cents per subsidy dollar, and annual exemption costs run around a billion dollars each in Texas and Virginia. Subsidy cost per permanent job has ranged from $1 million to over $2 million in analyzed deals. The counterargument is real too: localities that tax equipment can collect far more than they give up, and the state and local ledgers differ. The takeaway is procedural: require an independent fiscal analysis of your specific deal before the vote, not the developer's projection.",
     "factIds": [
       "gjf-disclosure-2025",
@@ -718,7 +718,7 @@
     "answer20w": "Technicians average around $54,000 nationally; engineers and IT roles pay more. Solid wages, but headcounts are small.",
     "answer100w": "Data center technicians average about $54,000 nationally, with the middle range roughly $42,500-$60,000; facility engineers and IT roles pay more. Some incentive programs enforce a wage floor: Virginia's sales-tax exemption requires qualifying jobs at 150 percent of the prevailing local wage. These are genuinely good jobs, frequently accessible with certifications rather than four-year degrees. The honest caveat is arithmetic: good pay times a small headcount is a modest payroll for the county as a whole, which is why independent studies find little county-wide wage effect. Evaluate the jobs claim as quality times quantity, not either alone.",
     "factIds": [
-      "datacenter-tech-salary",
+      "ziprecruiter-dc-tech-54k",
       "va-sales-tax-exemption"
     ]
   },
@@ -732,7 +732,7 @@
     "answer100w": "There is no automatic mechanism steering jobs to locals. Operations roles require certifications your workforce may not yet hold, and construction staffing follows contractor networks. Even in a strong community benefits agreement like Lancaster, Pennsylvania's, local hiring appears only as non-binding 'good faith' language while water caps and noise plans are enforceable, a telling contrast. What works better: funded training partnerships with community colleges established before hiring begins, and public reporting of local-hire percentages so the claim is checkable. Since technician roles average around $54,000 and are certification-based, a modest training investment can genuinely connect residents to them.",
     "factIds": [
       "lancaster-cba",
-      "datacenter-tech-salary"
+      "ziprecruiter-dc-tech-54k"
     ]
   },
   {
@@ -770,7 +770,7 @@
     "answer20w": "Electrical, mechanical, HVAC, and IT skills, usually via certifications and trades training rather than four-year degrees.",
     "answer100w": "Operations roles cluster around keeping power and cooling running: electricians, HVAC and controls technicians, mechanical specialists, plus IT hardware and network technicians and security staff. Many are certification-based career paths rather than degree-gated, with technicians averaging about $54,000 nationally and engineers above that. Virginia's data shows about half of typical facility staff are contractors, meaning local electrical and mechanical firms can capture ongoing service work beyond the direct payroll. For a community, the practical play is a community college partnership aligned to these certifications, ideally funded by the developer and launched during construction so residents are qualified when operations hiring starts.",
     "factIds": [
-      "datacenter-tech-salary",
+      "ziprecruiter-dc-tech-54k",
       "jlarc-jobs"
     ]
   },
@@ -922,7 +922,7 @@
       "construction"
     ],
     "answer20w": "Heaviest during construction: documented cases include pre-dawn convoys and road damage. Operations traffic afterward is comparatively light.",
-    "answer100w": "Construction is the traffic event. At the extreme end, Meta's Louisiana mega-campus generates documented pre-dawn truck traffic, vehicle damage from gravel, and worker convoys thousands strong. A Virginia homeowner's nuisance suit against Amazon likewise describes months of dust clouds and late-night construction activity. Once operating, a data center produces modest traffic: small permanent staffs mean commuting volumes closer to an office park than a distribution center. The enforceable protections are standard but must be demanded: designated haul routes avoiding neighborhoods, restricted hours, wheel washing and dust control, road condition surveys before construction, and developer-funded repair of documented damage.",
+    "answer100w": "Construction is the traffic event. At the extreme end, Meta's Louisiana mega-campus generates documented pre-dawn truck traffic, vehicle damage from gravel, and worker convoys thousands strong. A Virginia homeowner's nuisance suit against Amazon likewise describes months of dust clouds and late-night construction activity. Once operating, a data center produces modest traffic: small permanent staffs mean commuting volumes closer to an office park than a distribution center. The enforceable protections are standard but must be written into the approval: designated haul routes avoiding neighborhoods, restricted hours, wheel washing and dust control, road condition surveys before construction, and developer-funded repair of documented damage.",
     "factIds": [
       "meta-hyperion-construction-strain",
       "louisa-amazon-nuisance-suit"
@@ -950,7 +950,7 @@
       "environment"
     ],
     "answer20w": "It can. Repeated sediment violations at one major site flooded neighbors' garages and muddied a river tributary.",
-    "answer100w": "Mass grading hundreds of acres creates serious stormwater risk, and enforcement records show it is not hypothetical: West Virginia regulators issued repeated erosion and sediment violation notices at the Monarch data center site, where sediment discharged into an Ohio River tributary and a silt fence failure flooded neighbors' garages. Erosion permits and stormwater pollution prevention plans are public documents, and violations are inspectable records. Residents can request the site's permit, attend pre-construction meetings, photograph discharges after storms, and report to the state environmental agency, whose inspection reports are themselves public. Repeat violations are grounds to demand stop-work conditions.",
+    "answer100w": "Mass grading hundreds of acres creates serious stormwater risk, and enforcement records show it is not hypothetical: West Virginia regulators issued repeated erosion and sediment violation notices at the Monarch data center site, where sediment discharged into an Ohio River tributary and a silt fence failure flooded neighbors' garages. Erosion permits and stormwater pollution prevention plans are public documents, and violations are inspectable records. Residents can request the site's permit, attend pre-construction meetings, photograph discharges after storms, and report to the state environmental agency, whose inspection reports are themselves public. Repeat violations are grounds to request stop-work conditions.",
     "factIds": [
       "wv-stormwater-habitat"
     ]
@@ -962,7 +962,7 @@
       "construction"
     ],
     "answer20w": "On aggressive schedules, yes: late-night noise and lighting are documented complaints. Hours limits must be permit conditions.",
-    "answer100w": "Data center schedules are compressed because computing demand is urgent, and the documented result is round-the-clock activity: the Louisa County, Virginia nuisance suit describes late-night noise and light pollution reaching bedrooms, and Meta's Louisiana campus generates pre-dawn truck movements. No rule prevents this unless your jurisdiction writes one. Standard, achievable conditions include construction hours limits (for example, daytime and early evening only near homes), quiet hours for the loudest activities like pile driving, lighting curfews and shielding, and a posted complaint line with required response times. Developers agree to these regularly; they just rarely volunteer them.",
+    "answer100w": "Data center schedules are compressed because computing demand is urgent, and the documented result is round-the-clock activity: the Louisa County, Virginia nuisance suit describes late-night noise and light pollution reaching bedrooms, and Meta's Louisiana campus generates pre-dawn truck movements. No rule prevents this unless your jurisdiction writes one. Standard, achievable conditions include construction hours limits (for example, daytime and early evening only near homes), quiet hours for the loudest activities like pile driving, lighting curfews and shielding, and a posted complaint line with required response times. Developers regularly agree to these conditions when communities ask for them.",
     "factIds": [
       "louisa-amazon-nuisance-suit",
       "meta-hyperion-construction-strain"
@@ -1164,7 +1164,7 @@
       "landuse"
     ],
     "answer20w": "Large sites can destroy real habitat: one proposal would eliminate over 34 acres of wetlands and impact dozens of streams.",
-    "answer100w": "Mass-graded campuses of hundreds or thousands of acres can carry major ecological costs, and the permitting record shows the stakes: Google's proposed Project Avalon in West Virginia would eliminate more than 34 acres of wetlands and impact over 45,000 feet of 34 streams on a 1,699-acre parcel, with nine federally protected species at risk, while a nearby data center site drew repeated sediment violation notices for discharges into an Ohio River tributary. Wetland and stream impacts require federal and state permits with public comment periods, and those filings are where residents have standing to demand avoidance, minimization, and real mitigation rather than paper offsets.",
+    "answer100w": "Mass-graded campuses of hundreds or thousands of acres can carry major ecological costs, and the permitting record shows the stakes: Google's proposed Project Avalon in West Virginia would eliminate more than 34 acres of wetlands and impact over 45,000 feet of 34 streams on a 1,699-acre parcel, with nine federally protected species at risk, while a nearby data center site drew repeated sediment violation notices for discharges into an Ohio River tributary. Wetland and stream impacts require federal and state permits with public comment periods, and those filings are where residents have standing to argue for avoidance, minimization, and verifiable mitigation.",
     "factIds": [
       "wv-stormwater-habitat"
     ]
@@ -1349,7 +1349,7 @@
     "concernTags": [
       "trust"
     ],
-    "answer20w": "Competitive habit plus NDAs local officials sign. The secrecy is real, documented, and a legitimate grievance to push back on.",
+    "answer20w": "Competitive habit plus NDAs local officials sign. The secrecy is real and documented, and disclosure terms can be negotiated.",
     "answer100w": "The secrecy is not your imagination. Nondisclosure agreements covered data center deals in roughly 80 percent of Virginia localities with proposed or existing facilities, and in documented cases residents learned of multi-billion-dollar projects weeks before operation. In The Dalles, Oregon, the city, with Google funding, sued a newspaper to keep water usage records from the public. Companies cite competition among rivals and land speculation as reasons. Whatever the motive, communities are not powerless: officials can decline NDAs or negotiate expiration before public hearings, and permits, utility filings, and zoning applications are public records that no NDA can erase.",
     "factIds": [
       "public-citizen-ndas",
@@ -1363,7 +1363,7 @@
       "trust"
     ],
     "answer20w": "To assemble land and power quietly before speculation and competitors react. Understandable commercially, corrosive to public trust.",
-    "answer100w": "Projects routinely arrive as LLCs with placeless names because early disclosure raises land prices, tips competitors to power-rich sites, and invites speculation before the company has committed. Commercially rational, but the community cost is real: residents asked to evaluate a project without knowing the operator cannot assess its track record, and Virginia's experience shows NDA-wrapped deals leaving residents in the dark until nearly operational. A reasonable middle exists and communities can require it: identity disclosure to officials under seal early, and full public disclosure before any public hearing or incentive vote. A company unwilling to be named before your board votes is asking for trust it has not earned.",
+    "answer100w": "Projects routinely arrive as LLCs with placeless names because early disclosure raises land prices, tips competitors to power-rich sites, and invites speculation before the company has committed. Commercially rational, but the community cost is real: residents asked to evaluate a project without knowing the operator cannot assess its track record, and Virginia's experience shows NDA-wrapped deals leaving residents in the dark until nearly operational. A reasonable middle exists and communities can require it: identity disclosure to officials under seal early, and full public disclosure before any public hearing or incentive vote. Whether a company agrees to be named before the vote is a fair test communities can apply.",
     "factIds": [
       "public-citizen-ndas",
       "lightbox-site-selection"
@@ -1403,7 +1403,7 @@
       "trust"
     ],
     "answer20w": "Opposition surged as AI-scale projects spread: 71 percent of adults now oppose one nearby, up sharply within months.",
-    "answer100w": "The shift is measured, recent, and bipartisan. Gallup found 71 percent of U.S. adults oppose an AI data center in their area, nearly half strongly; among opponents, half cite water and energy overuse, with quality of life, utility costs, and pollution following. Annenberg tracking showed opposition rising from 49 to 61 percent in about four months during 2026, across both parties. The drivers are the industry's own growing pains: bigger projects, visible utility-bill fights, water disclosure battles, and noise controversies that made national news. For any new project, this baseline of distrust is the starting condition, not a communications problem to spin away.",
+    "answer100w": "The shift is measured, recent, and bipartisan. Gallup found 71 percent of U.S. adults oppose an AI data center in their area, nearly half strongly; among opponents, half cite water and energy overuse, with quality of life, utility costs, and pollution following. Annenberg tracking showed opposition rising from 49 to 61 percent in about four months during 2026, across both parties. The drivers are the industry's own growing pains: bigger projects, visible utility-bill fights, water disclosure battles, and noise controversies that made national news. For any new project, this baseline of distrust is the starting condition, not something messaging alone can change.",
     "factIds": [
       "gallup-2026-oppose-71",
       "annenberg-trend"
@@ -1442,7 +1442,7 @@
     "concernTags": [
       "trust"
     ],
-    "answer20w": "Through public records: permits, utility filings, and required reports. Claims that never appear in a filed document are just marketing.",
+    "answer20w": "Through public records: permits, utility filings, and required reports. Claims that never appear in a filed document cannot be independently verified.",
     "answer100w": "Paper beats presentations. Power claims appear in utility interconnection filings and rate cases; air and generator claims in air permits, and engines running certain hours must report operating dates and times under EPA rules; noise commitments are verifiable only if the permit requires compliance testing, as Spotsylvania County's conditions do; water claims are checkable only where metering disclosure is required, and industry surveys show most operators historically have not even tracked water use. The universal test: ask where each claim appears in a document a government agency holds. If the answer is nowhere, ask that it be made a permit condition, then it becomes verifiable.",
     "factIds": [
       "uptime-disclosure-gap",

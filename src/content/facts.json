@@ -1189,24 +1189,6 @@
     "companyReported": true
   },
   {
-    "id": "datacenter-tech-salary",
-    "claim": "Data center technicians average ~$54,000/yr nationally (25th-75th percentile roughly $42,500-$60,000); facility engineers and IT roles pay more, and Virginia's exemption requires qualifying jobs at 150% of prevailing wage.",
-    "value": "~$54k/yr median technician wage",
-    "sourceOrg": "ZipRecruiter (job-posting aggregator)",
-    "sourceTitle": "Data Center Technician Salary",
-    "pubDate": "2026-08-01",
-    "tier": "industry",
-    "url": "https://www.ziprecruiter.com/Salaries/Data-Center-Technician-Salary",
-    "geography": "United States",
-    "methodologyNote": "Aggregated job-posting and reported-salary data; BLS has no clean occupation code for data center technicians.",
-    "confidence": "medium",
-    "caveats": "Posting-aggregator data, not BLS statistics; varies by region and role.",
-    "concernTags": [
-      "jobs"
-    ],
-    "companyReported": true
-  },
-  {
     "id": "gmu-nova-home-sales-2023",
     "claim": "Analysis of 2023 Northern Virginia home sales found no statistical evidence that proximity to a data center negatively impacts housing values; homes closer to data centers sold for more on average",
     "value": "No negative effect detected; model explained ~87% of price variance",
@@ -1940,5 +1922,196 @@
       "environment"
     ],
     "modeled": false
+  },
+  {
+    "id": "bls-electrical-engineer-median",
+    "claim": "US median annual wage for electrical engineers (SOC 17-2071), a core data center campus engineering role, is $111,910.",
+    "value": "$111,910 median; 90th pct >$175,460 (May 2024)",
+    "sourceOrg": "U.S. Bureau of Labor Statistics",
+    "sourceTitle": "Occupational Outlook Handbook: Electrical and Electronics Engineers (May 2024 OEWS wages)",
+    "pubDate": "2024-05-01",
+    "tier": "government",
+    "url": "https://www.bls.gov/ooh/architecture-and-engineering/electrical-and-electronics-engineers.htm",
+    "geography": "United States",
+    "methodologyNote": "BLS Occupational Employment and Wage Statistics survey, all industries.",
+    "confidence": "high",
+    "caveats": "All-industry figure, not data-center-specific; employers in high-cost data center markets often pay above median.",
+    "concernTags": [
+      "jobs"
+    ]
+  },
+  {
+    "id": "bls-network-architect-median",
+    "claim": "US median annual wage for computer network architects (SOC 15-1241) is $130,390, with the 90th percentile above $198,030.",
+    "value": "$130,390 median (May 2024)",
+    "sourceOrg": "U.S. Bureau of Labor Statistics",
+    "sourceTitle": "Occupational Outlook Handbook: Computer Network Architects (May 2024 OEWS wages)",
+    "pubDate": "2024-05-01",
+    "tier": "government",
+    "url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm",
+    "geography": "United States",
+    "methodologyNote": "BLS OEWS survey, all industries.",
+    "confidence": "high",
+    "caveats": "Architects are often based at corporate or regional engineering hubs rather than assigned to each campus.",
+    "concernTags": [
+      "jobs"
+    ]
+  },
+  {
+    "id": "bls-infosec-analyst-median",
+    "claim": "US median annual wage for information security analysts (SOC 15-1212), the SOC and cybersecurity analyst occupation, is $124,910.",
+    "value": "$124,910 median; 90th pct >$186,420 (May 2024)",
+    "sourceOrg": "U.S. Bureau of Labor Statistics",
+    "sourceTitle": "Occupational Outlook Handbook: Information Security Analysts (May 2024 OEWS wages)",
+    "pubDate": "2024-05-01",
+    "tier": "government",
+    "url": "https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm",
+    "geography": "United States",
+    "methodologyNote": "BLS OEWS survey; occupation projected to add ~52,100 jobs 2024-2034.",
+    "confidence": "high",
+    "caveats": "All-industry figure; physical security officers at data centers are a different, lower-paid occupation.",
+    "concernTags": [
+      "jobs"
+    ]
+  },
+  {
+    "id": "bls-database-architect-median",
+    "claim": "US median annual wages: database administrators $104,620 and database architects $135,980, with the architect 90th percentile above $209,990.",
+    "value": "$104,620 / $135,980 medians (May 2024)",
+    "sourceOrg": "U.S. Bureau of Labor Statistics",
+    "sourceTitle": "Occupational Outlook Handbook: Database Administrators and Architects (May 2024 OEWS wages)",
+    "pubDate": "2024-05-01",
+    "tier": "government",
+    "url": "https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm",
+    "geography": "United States",
+    "methodologyNote": "BLS OEWS survey, all industries.",
+    "confidence": "high",
+    "caveats": "These roles are usually employed by tenant companies or at hub offices, not on every colocation campus.",
+    "concernTags": [
+      "jobs"
+    ]
+  },
+  {
+    "id": "isc2-us-cyber-avg-comp",
+    "claim": "Average US cybersecurity professional compensation is $147,138 per ISC2's annual workforce study, ranging from about $86,000 entry-level to $215,000 at the executive level.",
+    "value": "$147,138 average US compensation",
+    "sourceOrg": "ISC2 (reported by CSO Online)",
+    "sourceTitle": "ISC2 study pegs average US cybersecurity salary at $147K",
+    "pubDate": "2024-04-01",
+    "tier": "independent",
+    "url": "https://www.csoonline.com/article/2088950/isc2-study-pegs-average-us-cybersecurity-salaries-at-147k-up-from-119k-in-2021.html",
+    "geography": "United States",
+    "methodologyNote": "ISC2 survey of nearly 15,000 practitioners; self-reported by members.",
+    "confidence": "medium",
+    "caveats": "Self-reported survey of certification holders, which skews senior; average rather than median.",
+    "concernTags": [
+      "jobs"
+    ]
+  },
+  {
+    "id": "ziprecruiter-dc-tech-54k",
+    "claim": "The commonly cited ~$54k data center technician salary is the national average for the entry-level technician title on job-posting aggregators, not the ceiling of data center careers; senior and critical-facilities titles run $80k-$130k+.",
+    "value": "$54,031 avg (entry title); senior bands $80k-$130k+",
+    "sourceOrg": "ZipRecruiter",
+    "sourceTitle": "Data Center Technician Salary",
+    "pubDate": "2026-08-16",
+    "tier": "industry",
+    "url": "https://www.ziprecruiter.com/Salaries/Data-Center-Technician-Salary",
+    "geography": "United States",
+    "methodologyNote": "Aggregated job postings and self-reported data; title-based, capturing the junior title only.",
+    "confidence": "medium",
+    "caveats": "Aggregator estimate, not a statistical survey; the gap versus senior titles is a job-title artifact worth explaining, not a contradiction.",
+    "concernTags": [
+      "jobs"
+    ],
+    "companyReported": true
+  },
+  {
+    "id": "glassdoor-critical-facilities-manager",
+    "claim": "US critical facilities managers, the senior on-site operations role at data center campuses, average $144,844 in total pay per self-reported Glassdoor data.",
+    "value": "$144,844 avg total pay; range $112k-$190k",
+    "sourceOrg": "Glassdoor",
+    "sourceTitle": "Salary: Critical Facilities Manager in United States",
+    "pubDate": "2025-04-10",
+    "tier": "industry",
+    "url": "https://www.glassdoor.com/Salaries/critical-facilities-manager-salary-SRCH_KO0,27.htm",
+    "geography": "United States",
+    "methodologyNote": "Self-reported salaries; small sample (20 reports).",
+    "confidence": "medium",
+    "caveats": "Self-reported aggregator data with a small sample; directionally consistent with employer-specific pages.",
+    "concernTags": [
+      "jobs"
+    ],
+    "companyReported": true
+  },
+  {
+    "id": "levelsfyi-principal-total-comp",
+    "claim": "Median total compensation (salary, bonus, and equity) at major tech employers reaches $312k for senior engineers, $457k for staff, and $551k for principal engineers per self-reported levels.fyi data, which is why individual data center-adjacent careers can exceed $500k-$700k.",
+    "value": "$312k / $457k / $551k median total comp (2025)",
+    "sourceOrg": "Levels.fyi",
+    "sourceTitle": "Levels.fyi 2025 End of Year Pay Report",
+    "pubDate": "2025-12-31",
+    "tier": "industry",
+    "url": "https://www.levels.fyi/2025/",
+    "geography": "United States",
+    "methodologyNote": "Self-reported compensation submissions, weighted toward large tech companies.",
+    "confidence": "medium",
+    "caveats": "Total compensation at hyperscaler and big-tech employers, concentrated at engineering hubs; not representative of typical on-site staff at a standard campus; equity values move with stock prices.",
+    "concernTags": [
+      "jobs"
+    ],
+    "companyReported": true
+  },
+  {
+    "id": "shift-relief-factor-24-7",
+    "claim": "Continuously staffing one 24/7 post requires roughly 4.2 FTEs at the theoretical minimum (168 hours/week divided by 40) and about 4.8-5.4 FTEs once leave, training, and holidays are included.",
+    "value": "~4.2 floor; 4.8-5.4 practical FTEs per 24/7 post",
+    "sourceOrg": "Oklahoma Department of Corrections (shift relief factor policy; corroborated by staffing guides)",
+    "sourceTitle": "OP-040102 Attachment C: Calculating Shift Relief Factor",
+    "pubDate": "2014-07-11",
+    "tier": "government",
+    "url": "https://oklahoma.gov/content/dam/ok/en/doc/documents/policy/section-04/040102ac.pdf",
+    "geography": "United States",
+    "methodologyNote": "Relief factor arithmetic (agency workdays per year divided by actual workdays per employee); occupation-neutral.",
+    "confidence": "high",
+    "caveats": "Exact multiplier varies with shift length and leave policy; source is a corrections staffing document, not data-center-specific.",
+    "concernTags": [
+      "jobs"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "uptime-24x7-staffing",
+    "claim": "Uptime Institute recommends a minimum of 1-2 qualified operators on site 24x7x365 for Tier III/IV data centers and cautions against unstaffed operation; critical-environment technicians, network operations, and security are round-the-clock roles at staffed sites.",
+    "value": "1-2 operators on site 24x7x365 (Tier III/IV minimum)",
+    "sourceOrg": "Uptime Institute",
+    "sourceTitle": "Data Center Staffing (Uptime Institute Journal)",
+    "pubDate": "2015-06-01",
+    "tier": "independent",
+    "url": "https://journal.uptimeinstitute.com/data-center-staffing/",
+    "geography": "Global",
+    "methodologyNote": "Uptime operational guidance; corroborated by industry staffing guides listing 24/7 roles.",
+    "confidence": "medium",
+    "caveats": "Guidance dates to 2015; remote and centralized monitoring has expanded since, and not every campus staffs an on-site NOC or SOC.",
+    "concernTags": [
+      "jobs"
+    ]
+  },
+  {
+    "id": "jlarc-50-jobs-total-headcount",
+    "claim": "Virginia JLARC's widely cited ~50 jobs per typical data center is total full-time headcount at the facility, including all shifts, not a single-shift count; about half are contract workers.",
+    "value": "~50 full-time workers per facility (total roster)",
+    "sourceOrg": "Virginia Joint Legislative Audit & Review Commission",
+    "sourceTitle": "Data Centers in Virginia (Report 598)",
+    "pubDate": "2024-12-09",
+    "tier": "government",
+    "url": "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp",
+    "geography": "Virginia",
+    "methodologyNote": "Legislative audit using employer data; JLARC does not publish a per-shift breakdown.",
+    "confidence": "high",
+    "caveats": "Published per-facility employment figures should not be multiplied by a shift ratio; they already include all shifts.",
+    "concernTags": [
+      "jobs"
+    ]
   }
 ]

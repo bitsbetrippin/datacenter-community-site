@@ -15,6 +15,7 @@ import { NoiseLadder } from '../components/NoiseLadder'
 import { WaterSimulator } from '../components/tools/WaterSimulator'
 import { NoiseCalculator } from '../components/tools/NoiseCalculator'
 import { EconomicCalculator } from '../components/tools/EconomicCalculator'
+import { JobsRoleMatrix } from '../components/JobsRoleMatrix'
 
 export function ConcernPage() {
   const { id } = useParams<{ id: string }>()
@@ -68,6 +69,7 @@ export function ConcernPage() {
               {concern.id === 'water' && <WaterSimulator />}
               {concern.id === 'noise' && <NoiseCalculator />}
               {concern.id === 'taxes' && <EconomicCalculator />}
+              {concern.id === 'jobs' && <JobsRoleMatrix />}
 
               {explainer && (
                 <section>

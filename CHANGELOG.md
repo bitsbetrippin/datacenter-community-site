@@ -18,3 +18,10 @@ Carried from the R0-R4 development series (2026-08-16):
 - R2: waves 4-5 research (85 facts), all 10 concern explainers, water simulator, noise distance calculator, economic impact calculator, /tools page
 - R3: wave 6 research (96 facts), What-If design explorer, clickable facility tour, case study library (11 cases), trade-offs page with adjustable scorecard and industrial comparison, sitewide em-dash style pass, AI transparency notice
 - R4: wave 7 research (106 facts), 109-question FAQ, playbook (commitment dashboard model, 20 acceptance strategies, 10-stage engagement timeline), persona pathways, link health check
+
+## v1.1.0 (2026-08-17)
+
+- Jobs section overhaul: full role and salary matrix (entry technician through principal engineer) with BLS OEWS government wage data separated from labeled self-reported aggregator figures; "Why 24/7/365 operation changes the headcount math" explainer with the sourced shift-relief arithmetic (4.2-5.4 FTEs per continuous post). The "published jobs figures are one shift, multiply by 5" claim was researched and corrected: published figures (JLARC ~50/facility) are total headcount across all shifts, while the per-seat relief ratio explains why 24/7 campuses with NOC/SOC operations carry headcounts in the hundreds.
+- Reality Check section on the home page: 10 popular claims (6 heard in opposition, 4 heard from promoters) each tested against the evidence base with verdicts and citations.
+- Sitewide neutrality pass: 31 editorial adjustments so opposition claims and industry claims receive identical scrutiny; all documented findings and caveats retained.
+- Evidence base grown to 116 fact records (BLS wage data, ISC2, shift-relief factor, Uptime staffing guidance).

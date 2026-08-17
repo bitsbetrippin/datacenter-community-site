@@ -3,7 +3,7 @@
     "id": "rfp-bill-increase",
     "concernId": "power",
     "question": "Will my electric bill go up because of this data center?",
-    "shortAnswer": "It depends on how your state bills large customers, and honest answers admit both outcomes have happened. Through 2024, national evidence suggests data center growth slightly lowered average residential rates by spreading grid fixed costs. But in the PJM region, capacity costs attributed to data centers are now showing up on bills, and forward-looking models project increases of 6-29% by 2030 if supply can't keep up.",
+    "shortAnswer": "It depends on how your state bills large customers, and both outcomes have happened. Through 2024, national evidence suggests data center growth slightly lowered average residential rates by spreading grid fixed costs. But in the PJM region, capacity costs attributed to data centers are now showing up on bills, and forward-looking models project increases of 6-29% by 2030 if supply can't keep up.",
     "whyConcerned": "Residential rates rose sharply in several data-center-heavy regions in 2024-2026, and PJM's own market monitor attributed tens of billions in capacity costs to data center demand; this concern is grounded in real market outcomes, not rumor.",
     "whatDetermines": "Whether your state has a data-center rate class with minimum-take contracts (Ohio, Virginia, and Georgia now do); whether the facility contracts to cover its share of new infrastructure; whether new generation can be built fast enough; and whether special contracts are transparent or confidential.",
     "verify": "Read your utility's large-load tariff filing at your state Public Utility Commission (searchable online); check whether the data center's service agreement includes minimum demand charges; in PJM states, read Monitoring Analytics' State of the Market reports.",
@@ -312,7 +312,7 @@
     "factIds": [
       "lancaster-cba",
       "jlarc-jobs",
-      "datacenter-tech-salary"
+      "ziprecruiter-dc-tech-54k"
     ]
   },
   {
@@ -334,7 +334,7 @@
     "id": "rfp-property-sell",
     "concernId": "property",
     "question": "Will anyone want to buy a house near a data center?",
-    "shortAnswer": "Homes near data centers keep selling (Realtor.com found values in 43 ZIP codes that gained facilities tracked matched neighborhoods with no meaningful difference), but industry-funded studies claiming 'no impact' often average away losses in specific counties.",
+    "shortAnswer": "Homes near data centers keep selling (Realtor.com found values in 43 ZIP codes that gained facilities tracked matched neighborhoods with no meaningful difference), but industry-funded studies claiming 'no impact' can average away losses in specific counties.",
     "whyConcerned": "Residents hear developer-commissioned appraisals say 'no adverse effect' while three of four Indiana counties in the same study actually appreciated 1-9% less than county averages.",
     "whatDetermines": "Who funded the study you're reading, the time window measured, whether construction was still underway, and hyper-local factors like truck routes and generator testing schedules.",
     "verify": "Ask for the full appraisal (not the summary) in any zoning filing, check who commissioned it, and compare county-level breakdowns rather than blended averages.",
@@ -445,10 +445,10 @@
     "id": "rfp-env-renewable",
     "concernId": "environment",
     "question": "Is '100% renewable' real?",
-    "shortAnswer": "Usually not in the way it sounds: most claims mean the company bought renewable certificates or contracts equal to its annual usage somewhere on the grid (market-based accounting); the electrons actually powering the building at night still come from the local mix, which is why hourly '24/7 carbon-free' matching is the honest gold standard.",
+    "shortAnswer": "Usually not in the way it sounds: most claims mean the company bought renewable certificates or contracts equal to its annual usage somewhere on the grid (market-based accounting); the electrons actually powering the building at night still come from the local mix, which is why hourly '24/7 carbon-free' matching is the more rigorous standard.",
     "whyConcerned": "Communities are told a facility is 'green' while their local grid adds gas generation to serve it; independent researchers and the GHG Protocol itself are tightening rules because annual REC matching can dramatically understate real emissions.",
     "whatDetermines": "Whether claims are location-based or market-based, whether renewable purchases are new-build PPAs on your grid or unbundled RECs from elsewhere, and whether matching is annual or hourly.",
-    "verify": "Ask the operator to disclose both location-based and market-based emissions for the specific facility, and whether renewable supply is hourly-matched on your regional grid, and refuse single-number '100%' answers.",
+    "verify": "Ask the operator to disclose both location-based and market-based emissions for the specific facility, and whether renewable supply is hourly-matched on your regional grid, and treat single-number '100%' answers as incomplete.",
     "factIds": [
       "recs-renewable-claims",
       "virginia-generator-fleet"

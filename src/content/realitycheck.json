@@ -1,0 +1,85 @@
+{
+  "intro": "Public debate about data centers includes claims from both directions that the evidence does not support. Here are common ones, each tested against the sources in this site's evidence library. The same standard applies to opposition claims and industry claims.",
+  "items": [
+    {
+      "id": "rc-bills-skyrocketed",
+      "claim": "Data centers are the reason electricity bills have already skyrocketed everywhere.",
+      "direction": "heard in opposition",
+      "verdict": "not supported",
+      "whatDataShows": "The best national causal study found data center growth through 2024 slightly lowered average residential rates by spreading fixed grid costs. Regional exceptions are real: PJM capacity costs attributed to data center demand are now flowing into bills in 13 states, and forward-looking models project increases of 6-29% by 2030 if supply stays constrained. The honest statement is regional and forward-looking, not national and retrospective.",
+      "factIds": ["arxiv-rates-fell-2019-2024", "pjm-imm-capacity-attribution", "ncsu-2030-price-projection"]
+    },
+    {
+      "id": "rc-drain-water",
+      "claim": "Any data center will drain the town's drinking water.",
+      "direction": "heard in opposition",
+      "verdict": "depends on design",
+      "whatDataShows": "Virginia's legislative audit found most facilities there use about the same water as a large office building or less, because most use closed-loop or air cooling. Large evaporatively cooled campuses are the genuine high end: Google's campuses reached 29% of one Oregon city's supply. The cooling design, which is knowable before approval, determines which case a project is.",
+      "factIds": ["jlarc-water-office-comparison", "the-dalles-google", "eli-water-variance"]
+    },
+    {
+      "id": "rc-property-crash",
+      "claim": "Home values crash next to data centers.",
+      "direction": "heard in opposition",
+      "verdict": "not supported",
+      "whatDataShows": "Three independent-scale analyses (Brookings, George Mason, Realtor.com) found county and ZIP-level home values rose modestly or tracked comparable areas. Street-level evidence is more mixed, and homes with direct views or noise exposure face real risk, but the widespread-crash claim does not match measured sales data.",
+      "factIds": ["brookings-jobs", "gmu-nova-home-sales-2023", "realtor-matched-zip-2026"]
+    },
+    {
+      "id": "rc-no-jobs-minwage",
+      "claim": "Data centers bring almost no jobs, and the jobs are minimum-wage.",
+      "direction": "heard in opposition",
+      "verdict": "half true, half false",
+      "whatDataShows": "The headcount critique has support: about 50 direct jobs per typical building and 100-200 net county jobs is far fewer per acre than a factory. The wage claim is false: entry technicians average $54k, and the role spectrum runs through BLS medians of $97k-$136k for network, security, and architect occupations, with certified cybersecurity professionals averaging $147k. Construction adds up to ~1,500 workers per building at peak.",
+      "factIds": ["jlarc-jobs", "brookings-jobs", "bls-network-architect-median", "isc2-us-cyber-avg-comp"]
+    },
+    {
+      "id": "rc-no-taxes",
+      "claim": "Data centers get so many breaks they pay basically no taxes.",
+      "direction": "heard in opposition",
+      "verdict": "not supported",
+      "whatDataShows": "In equipment-taxing states the local revenue is large and measured: data centers supply roughly 38% of Loudoun County's general fund from about 4% of its commercial land. What the critique gets right: most state sales-tax exemptions are costly ($929M/year in Virginia), most states disclose little, and local abatements can shrink the local share. The deal's terms, not the label 'data center,' determine the outcome.",
+      "factIds": ["loudoun-share-and-rates", "va-sales-tax-exemption", "gjf-disclosure-2025"]
+    },
+    {
+      "id": "rc-generators-constant",
+      "claim": "The diesel generators run constantly and poison the air.",
+      "direction": "heard in opposition",
+      "verdict": "not supported for permitted sites",
+      "whatDataShows": "Federal rules cap non-emergency generator operation at roughly 100 hours a year for testing and maintenance, and measured generator emissions today are a small share of regional totals. The legitimate concerns sit at the edges: modeled worst-case fleet emissions in Northern Virginia are significant, and the Memphis xAI case involved turbines allegedly operating without permits. Permit compliance is checkable in public records.",
+      "factIds": ["epa-emergency-engine-rules", "virginia-generator-fleet", "xai-memphis-turbines"]
+    },
+    {
+      "id": "rc-thousands-jobs",
+      "claim": "This project will create thousands of permanent local jobs.",
+      "direction": "heard from project promoters",
+      "verdict": "not supported",
+      "whatDataShows": "Independent measurements put direct permanent employment near 50 per typical building and 100-200 net jobs at county level. Figures in the thousands blend temporary construction employment with modeled indirect and induced effects. Construction is genuinely large (hundreds to thousands for years on big campuses), and wages are strong, but the permanent direct headcount is modest and should be stated plainly.",
+      "factIds": ["jlarc-jobs", "brookings-jobs", "usc-construction-workforce-2025"]
+    },
+    {
+      "id": "rc-hundred-renewable",
+      "claim": "The facility will run on 100% renewable energy.",
+      "direction": "heard from project promoters",
+      "verdict": "usually overstated",
+      "whatDataShows": "Most such claims rest on annual renewable-certificate accounting, while the building physically runs on the local grid mix hour by hour. Location-based accounting usually shows higher emissions, and hourly matching is the more rigorous standard some operators are moving toward. Both accounting methods can be requested for the specific facility.",
+      "factIds": ["recs-renewable-claims", "google-demand-response-1gw"]
+    },
+    {
+      "id": "rc-lower-taxes-guaranteed",
+      "claim": "The data center will cut your property taxes.",
+      "direction": "heard from project promoters",
+      "verdict": "depends on the deal",
+      "whatDataShows": "It has happened: Loudoun County cut residential rates repeatedly while data center revenue grew. But Loudoun is the national outlier, the effect requires a state that taxes equipment, and the modeled 'homeowner savings' figures circulated by industry groups assume all revenue would otherwise come from homeowners. Whether a specific county's board actually cuts rates is a local budget choice no developer controls.",
+      "factIds": ["loudoun-share-and-rates", "chamber-progress-homeowner-offset", "jlarc-local-revenue"]
+    },
+    {
+      "id": "rc-no-impact",
+      "claim": "Neighbors won't see or hear anything at all.",
+      "direction": "heard from project promoters",
+      "verdict": "not supported",
+      "whatDataShows": "Documented cases in Arizona, Virginia, Michigan, and Wisconsin involve real, persistent noise complaints, and construction impacts (trucks, dust, light) are substantial for one to three years per building. Well-designed facilities with enforceable property-line limits can be quiet neighbors, but the promise should come with a number in the permit, not as a blanket assurance.",
+      "factIds": ["chandler-retrofit-partial-fix", "dowagiac-mi-lawsuit-2026", "spotsylvania-permit-conditions"]
+    }
+  ]
+}

@@ -30,7 +30,7 @@ export function Tools() {
       <EconomicCalculator />
       <p className="text-sm text-ink-muted">
         These are educational models with sourced default parameters, not predictions for
-        any specific project. For a real proposal, demand the site-specific water balance,
+        any specific project. For a real proposal, request the site-specific water balance,
         acoustic study, and fiscal impact analysis, then compare them against these
         benchmarks.
       </p>

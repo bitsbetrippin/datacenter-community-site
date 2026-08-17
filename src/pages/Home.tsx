@@ -10,6 +10,7 @@ import { concerns, facts } from '../content'
 import { ConcernCard } from '../components/ConcernCard'
 import { FactCard } from '../components/FactCard'
 import { ParetoChart } from '../components/ParetoChart'
+import { RealityCheck } from '../components/RealityCheck'
 
 export function Home() {
   const featured = ['lbnl-2023-share', 'gallup-2026-oppose-71', 'jlarc-two-sided']
@@ -25,9 +26,9 @@ export function Home() {
           <span className="text-brand">Let's answer them with data.</span>
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-base text-ink-secondary sm:text-lg">
-          Not a sales pitch. An evidence library. Every claim on this site links to its
-          original source: government studies, independent research, and yes, industry
-          numbers clearly labeled as industry numbers.
+          An evidence library, not advocacy in either direction. Every claim on this site
+          links to its original source: government studies, independent research, and
+          industry numbers clearly labeled as industry numbers.
         </p>
       </section>
 
@@ -71,6 +72,14 @@ export function Home() {
         </div>
       </section>
 
+      {/* Reality check */}
+      <section aria-labelledby="reality-heading">
+        <h2 id="reality-heading" className="sr-only">
+          Reality check
+        </h2>
+        <RealityCheck />
+      </section>
+
       {/* Persona pathways */}
       <section aria-labelledby="personas-heading">
         <h2 id="personas-heading" className="text-xl font-bold text-ink">
@@ -81,7 +90,7 @@ export function Home() {
         </p>
         <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { icon: '🏠', who: 'I live near the proposed site', want: 'Noise, property value, and what I can demand in the permit', to: '/concerns/noise' },
+            { icon: '🏠', who: 'I live near the proposed site', want: 'Noise, property value, and what the permit can require', to: '/concerns/noise' },
             { icon: '💵', who: "I'm worried about my utility bill", want: 'When rates rise, when they fall, and who pays for the grid', to: '/concerns/power' },
             { icon: '🚜', who: 'I farm or own land nearby', want: 'Water, wells, land conversion, and what happens at end of life', to: '/concerns/water' },
             { icon: '🏫', who: 'I care about school funding', want: 'What the tax deal actually delivers, and the abatement fine print', to: '/concerns/taxes' },

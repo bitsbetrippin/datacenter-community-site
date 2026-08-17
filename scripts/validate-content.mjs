@@ -18,6 +18,8 @@ const faqs = load('faq.json')
 const caseStudies = load('case-studies.json')
 const rumorFacts = load('rumorfact.json')
 const pareto = load('pareto.json')
+const jobsRoles = load('jobsroles.json')
+const realityCheck = load('realitycheck.json')
 
 const errors = []
 const factIds = new Set()
@@ -71,6 +73,19 @@ for (const e of [...pareto.quantified, ...pareto.qualitative]) {
   if (!factIds.has(e.factId)) errors.push(`pareto "${e.concern}": references unknown fact "${e.factId}"`)
 }
 if (!pareto.methodology) errors.push('pareto: missing methodology statement (required — brief §7)')
+
+for (const fid of jobsRoles.staffing?.factIds ?? []) {
+  if (!factIds.has(fid)) errors.push(`jobsroles staffing: references unknown fact "${fid}"`)
+}
+for (const r of jobsRoles.roles ?? []) {
+  if (!r.sourceUrl || !/^https:\/\//.test(r.sourceUrl)) errors.push(`jobsroles "${r.role}": missing/invalid sourceUrl`)
+}
+for (const item of realityCheck.items ?? []) {
+  for (const fid of item.factIds ?? []) {
+    if (!factIds.has(fid)) errors.push(`realitycheck ${item.id}: references unknown fact "${fid}"`)
+  }
+  if (!item.verdict || !item.whatDataShows) errors.push(`realitycheck ${item.id}: missing verdict or whatDataShows`)
+}
 
 if (errors.length) {
   console.error(`✗ Content validation failed (${errors.length} problem${errors.length > 1 ? 's' : ''}):`)
