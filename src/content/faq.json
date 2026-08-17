@@ -1,0 +1,1468 @@
+[
+  {
+    "id": "faq-bill-increase",
+    "question": "Will my electric bill increase?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "It depends on your state's rate design. Bills have risen in some regions and stayed flat in others.",
+    "answer100w": "Data centers pay for the electricity they use, usually on industrial rate schedules. The real question is who pays for new grid infrastructure (transmission lines, substations, and generation) built to serve them. Where regulators require data centers to cover those costs (through special rate classes or contribution agreements), residential impact is limited. Where costs are shared across all customers, bills can rise. Studies currently disagree on the net effect nationally, which is why this site shows the conditions rather than a single answer.",
+    "factIds": [
+      "arxiv-rates-fell-2019-2024",
+      "ncsu-2030-price-projection",
+      "jlarc-virginia-2024"
+    ]
+  },
+  {
+    "id": "faq-where-power-from",
+    "question": "Where will the electricity actually come from?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "From the same regional grid you use: power plants feeding transmission lines and substations, usually at high voltage.",
+    "answer100w": "A data center does not have its own separate electricity supply. It connects to the regional grid, typically at transmission voltage through a dedicated substation, and draws from the same mix of power plants that serves your home. The hard part is timing: a data center can be built in 18-24 months, while the transmission upgrades needed to serve it can take 7-10 years. That mismatch, more than total energy volume, is what creates local grid stress, and it is why utilities and regulators, not just the developer, decide whether a project can be served.",
+    "factIds": [
+      "timeline-mismatch",
+      "lbnl-2023-share"
+    ]
+  },
+  {
+    "id": "faq-how-much-power",
+    "question": "How much electricity does one data center use?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "It varies enormously. A large campus can use as much electricity as tens of thousands of homes.",
+    "answer100w": "Size matters more than the label. A small facility may draw a few megawatts; a hyperscale AI campus can draw hundreds. Using federal data on average household consumption, a 100 MW campus running at high load uses electricity comparable to roughly 65,000-81,000 homes. That is why the single most important question to ask a developer is the contracted megawatt figure, in writing, including future phases. The interconnection request filed with the utility is a public-record way to check the real number against the marketing number.",
+    "factIds": [
+      "eia-household-kwh",
+      "lbnl-2023-share"
+    ]
+  },
+  {
+    "id": "faq-power-national",
+    "question": "Are data centers going to use up the country's electricity?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "No, but their share is growing fast: from about 4.4 percent in 2023 to possibly 9-17 percent by 2030.",
+    "answer100w": "U.S. data centers used about 176 TWh in 2023, roughly 4.4 percent of national electricity. Federal researchers project that share could reach 6.7-12 percent by 2028, and independent scenario studies put 2030 somewhere between 9 and 17 percent depending on how fast AI grows and how efficient facilities become. So data centers will not consume most of the nation's power, but they are the fastest-growing large electricity user, and that growth is real, which is why the honest debate is about who pays for the new infrastructure, not whether demand is rising.",
+    "factIds": [
+      "lbnl-2023-share",
+      "lbnl-2025-update-2030",
+      "epri-2030-range"
+    ]
+  },
+  {
+    "id": "faq-grid-handle",
+    "question": "Can our grid even handle this?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "Usually yes physically, but not always on schedule. Facilities build faster than the grid that must serve them.",
+    "answer100w": "The core problem is timing, not physics. Data centers go up in 18-24 months; transmission upgrades take 7-10 years and new generation interconnection averages 4-5 years. Utilities manage this by phasing projects or requiring the developer to wait for infrastructure. A complication: utilities receive an estimated 5-10 times more interconnection requests than projects that actually get built, because developers file duplicate requests across candidate sites. That inflates both fear of grid strain and the risk of overbuilding. Ask your utility which requests are contracted with financial commitments, not just announced.",
+    "factIds": [
+      "timeline-mismatch",
+      "phantom-load-ratio"
+    ]
+  },
+  {
+    "id": "faq-who-pays-substation",
+    "question": "Who pays for the new substation and power lines?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "The data center pays for its dedicated equipment. Shared network upgrades are where costs can spread to everyone.",
+    "answer100w": "Under standard interconnection rules, the facility pays for its own substation bays, transformers, and tap lines. The fight is over wider network upgrades: new transmission and generation that serve the whole region. Virginia's legislative watchdog found data centers there currently pay their full cost of service, but projected growth could still raise typical residential bills without new rules. Some states are acting: Ohio requires large data centers to pay for at least 85 percent of contracted capacity whether used or not, and Virginia created a rate class with 14-year minimum contracts. Ask whether your state has similar protections.",
+    "factIds": [
+      "jlarc-virginia-2024",
+      "aep-ohio-tariff",
+      "dominion-gs5-rate-class"
+    ]
+  },
+  {
+    "id": "faq-blackouts",
+    "question": "Will we have more blackouts because of it?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "Blackouts are unlikely; utilities will not connect load they cannot serve. Tight supply shows up first as higher prices.",
+    "answer100w": "Grid operators are required to maintain reliability, and utilities phase or delay large connections they cannot serve. So the realistic near-term effect of data center growth is economic, not lights out: in the PJM region, capacity prices jumped roughly elevenfold in two years as demand tightened, and those costs flow into bills. The timing mismatch between fast data center construction and slow grid construction is the pressure point. Some operators are also becoming flexible loads: Google has contracted a gigawatt of demand response, shifting computing work off the grid's peak hours, which helps rather than hurts reliability.",
+    "factIds": [
+      "pjm-capacity-price-record",
+      "timeline-mismatch",
+      "google-demand-response-1gw"
+    ]
+  },
+  {
+    "id": "faq-during-blackout",
+    "question": "What happens during a blackout?",
+    "concernTags": [
+      "power",
+      "safety"
+    ],
+    "answer20w": "The facility switches to batteries, then onsite diesel generators. It does not pull scarce power from your neighborhood.",
+    "answer100w": "Data centers are designed to ride through outages: batteries carry the load for minutes while diesel generators start, and EPA rules allow unlimited generator operation during true emergencies. During a blackout the facility is off the grid entirely, so it is not competing with homes for scarce power. The community tradeoffs are noise and exhaust while generators run, which is why generator counts matter: Northern Virginia alone hosts thousands of data center diesel generators. Ask how many generators the project includes, where they sit relative to homes, and what the air permit allows.",
+    "factIds": [
+      "epa-emergency-engine-rules",
+      "virginia-generator-fleet"
+    ]
+  },
+  {
+    "id": "faq-capacity-auction",
+    "question": "I keep hearing about capacity auctions raising bills. What is that?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "A market where the grid buys future power commitments. Data center demand has driven those prices sharply higher.",
+    "answer100w": "In regions like PJM (13 states), the grid operator runs auctions paying power plants to be available in future years. When demand grows faster than supply, auction prices rise, and those costs flow into everyone's bills. PJM's independent market monitor attributed $29.4 billion of $63.6 billion in recent capacity costs, about 46 percent, to data center load, and prices jumped from $28.92 to a record $329.17 per megawatt-day across successive auctions. This is the clearest documented channel by which data center growth has raised household costs, and it operates regionally, whether or not the facility is in your town.",
+    "factIds": [
+      "pjm-imm-capacity-attribution",
+      "pjm-capacity-price-record"
+    ]
+  },
+  {
+    "id": "faq-pay-own-way",
+    "question": "Can rules force the data center to pay its own way?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "Yes. Several states now require large data centers to guarantee payment for infrastructure whether or not they use it.",
+    "answer100w": "This is the fastest-moving area of data center regulation. Ohio regulators approved a tariff requiring facilities over 25 MW to pay for at least 85 percent of their contracted capacity even if unused, with collateral and exit fees equal to three years of minimum charges. Virginia created a rate class requiring 14-year contracts covering most transmission and generation costs regardless of usage. These rules exist because Virginia's own watchdog warned that unmanaged growth could raise residential bills. Ask your utility commission whether a similar tariff applies before your project is approved, because protections adopted afterward may not cover it.",
+    "factIds": [
+      "aep-ohio-tariff",
+      "dominion-gs5-rate-class",
+      "jlarc-virginia-2024"
+    ]
+  },
+  {
+    "id": "faq-stranded",
+    "question": "What if the utility builds everything and the data center never shows up?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "That is stranded asset risk, and it is real: many announced projects are never built. Contracts can protect ratepayers.",
+    "answer100w": "Utilities receive an estimated 5-10 times more interconnection requests than projects actually built, because developers file duplicates across candidate sites. If a utility builds for phantom demand, the fixed costs land on remaining customers. The protection is contractual: Ohio's tariff requires large data centers to pay minimum charges for years and post collateral, with exit fees if they walk away, and Virginia's new rate class requires 14-year commitments. Before celebrating or fighting an announcement, ask one question: has the company signed a binding agreement with financial guarantees, or just reserved a place in line?",
+    "factIds": [
+      "phantom-load-ratio",
+      "aep-ohio-tariff",
+      "dominion-gs5-rate-class"
+    ]
+  },
+  {
+    "id": "faq-secret-utility-deals",
+    "question": "Are utilities cutting secret deals that raise my rates?",
+    "concernTags": [
+      "power",
+      "trust"
+    ],
+    "answer20w": "It has happened. Confidential contracts can shift infrastructure costs onto other customers, which is why disclosure fights matter.",
+    "answer100w": "A Harvard Law review of roughly 50 regulatory proceedings found that confidential special contracts between utilities and data center operators can shift infrastructure costs onto other ratepayers through discounted rates and socialized costs, and secrecy makes the shift hard to detect. Separately, nondisclosure agreements covered data center deals in about 80 percent of Virginia localities with facilities. None of this means every deal is bad; it means the terms matter and are often hidden. Residents can push their utility commission to require the contract terms be filed publicly, and intervene in the rate case.",
+    "factIds": [
+      "harvard-cost-shift-mechanisms",
+      "public-citizen-ndas"
+    ]
+  },
+  {
+    "id": "faq-grid-help",
+    "question": "Can a data center ever actually help the grid?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "Yes, under specific conditions: spreading fixed costs over more sales, and curtailing use during peaks. Neither is automatic.",
+    "answer100w": "Two mechanisms are documented. First, large steady loads can spread the grid's fixed costs across more kilowatt-hours: a retrospective causal study found data center growth from 2019-2024 slightly lowered average U.S. residential rates, about 6 percent cumulatively, though it warned supply constraints could reverse this. Second, flexible operation: Google has signed a gigawatt of demand response with five utilities, shifting machine learning workloads off grid peaks. The honest summary: benefits are real where supply keeps up and the operator agrees to flexibility, and costs dominate where supply is tight. Ask which situation your region is in.",
+    "factIds": [
+      "arxiv-rates-fell-2019-2024",
+      "google-demand-response-1gw"
+    ]
+  },
+  {
+    "id": "faq-nuclear",
+    "question": "Is it true data centers are restarting nuclear plants?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "Yes. Three Mile Island Unit 1 is being restarted under a Microsoft contract, and Amazon contracted large nuclear supply.",
+    "answer100w": "Data center demand is financing the return of existing nuclear capacity. Constellation's $1.6 billion restart of Three Mile Island Unit 1, backed by a 20-year, 835 MW Microsoft purchase agreement, is on track for power by mid-2027 with about 600 permanent workers. Amazon and Talen restructured a deal to supply 1,920 MW from the Susquehanna nuclear plant through 2042 after federal regulators rejected an earlier structure. These deals add or preserve carbon-free supply, but note the structure: the tech company buys the output, and the question for everyone else is what happens to regional supply and prices.",
+    "factIds": [
+      "tmi-crane-restart",
+      "aws-talen-restructure"
+    ]
+  },
+  {
+    "id": "faq-own-power-plant",
+    "question": "Why don't they just build their own power plant?",
+    "concernTags": [
+      "power"
+    ],
+    "answer20w": "Some try. Onsite generation avoids grid strain but brings its own air permits, emissions, and regulatory fights.",
+    "answer100w": "Self-supply happens, with very different outcomes. Amazon contracted directly with an existing nuclear plant, though federal regulators forced the deal into a structure that keeps it visible to the grid. At the other extreme, environmental groups allege xAI's Memphis-area facilities have run 33 gas turbines without Clean Air Act permits, projected to emit thousands of tons of smog-forming pollution annually in a metro already failing federal standards. So dedicated generation solves one community concern (grid competition) and can create another (local air quality). The type of generation, and whether it is fully permitted, is what determines which story you get.",
+    "factIds": [
+      "aws-talen-restructure",
+      "xai-memphis-turbines"
+    ]
+  },
+  {
+    "id": "faq-water-use",
+    "question": "How much water will it use?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "Anywhere from almost none to hundreds of thousands of gallons daily; the cooling design determines it.",
+    "answer100w": "Water use is a design choice, not a fixed property of data centers. Evaporative cooling trades water for energy efficiency and can consume large volumes on hot days. Closed-loop liquid cooling and air-cooled designs use minimal water onsite. There is also indirect water use from the power plants generating the facility's electricity, which is often larger than onsite use. Before approval, a community can require disclosure of the cooling design, projected consumption by season, and the water source, and can write consumption limits into the approval.",
+    "factIds": [
+      "eli-water-variance"
+    ]
+  },
+  {
+    "id": "faq-well-dry",
+    "question": "Will my well go dry?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "Only if the facility pumps your aquifer or strains your shared source. Most buy municipal water, but problems have occurred.",
+    "answer100w": "The first question is where the water comes from. Most large facilities buy municipal water, which affects wells only through overall system strain. Direct aquifer pumping is the higher-stakes case: near Meta's Newton County, Georgia facility, residents on private wells reported sediment and dry taps beginning during construction, though causation is disputed. In Missouri, AWS plans deep wells that state officials call routine while neighbors worry. The protection that works is a hard cap tied to aquifer science: St. Joseph County, Indiana capped combined industrial pumping at just over half the aquifer's estimated safe yield. Demand baseline well testing before construction.",
+    "factIds": [
+      "newton-county-meta-wells",
+      "new-florence-aws-wells",
+      "st-joseph-aquifer-cap"
+    ]
+  },
+  {
+    "id": "faq-water-comeback",
+    "question": "Is the water used up, or does it come back?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "In evaporative systems most of it evaporates and leaves the local watershed; the rest returns as sewer discharge.",
+    "answer100w": "It depends on the cooling design. Evaporative cooling towers reject heat by evaporating water into the atmosphere: that water leaves the local watershed rather than returning to the treatment plant, and the remainder is discharged as concentrated blowdown to the sewer. This evaporation is why cooling towers are the single biggest driver of data center water variance, consuming roughly 1-9 liters per kilowatt-hour of server energy depending on climate and season. Closed-loop and air-cooled designs recirculate a fixed volume instead, consuming very little. When a developer states a water number, ask how much is consumed (evaporated) versus withdrawn and returned.",
+    "factIds": [
+      "cooling-tower-wue-range",
+      "eli-water-variance"
+    ]
+  },
+  {
+    "id": "faq-aircooled-nowater",
+    "question": "If it's air cooled, does it really use no water?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "Onsite, close to none. But the electricity it buys consumes water at power plants, often the larger footprint.",
+    "answer100w": "Air-cooled and closed-loop facilities use very little water onsite, and that is a genuine improvement. But every data center uses water indirectly through electricity: U.S. power generation consumes about 3.1 liters of water per kilowatt-hour on average, mostly for power plant cooling. Nationally, the indirect water consumed at power plants on behalf of data centers in 2023 was roughly 12 times their onsite use. So 'waterless' claims are true for your local water system but not for the watersheds where the power is made. Both numbers are worth asking for; they answer different community questions.",
+    "factIds": [
+      "grid-water-intensity",
+      "us-indirect-water-2023"
+    ]
+  },
+  {
+    "id": "faq-water-vs-homes",
+    "question": "How does its water use compare to our homes?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "A medium evaporative facility can use as much as about a thousand homes; air-cooled designs use a small fraction.",
+    "answer100w": "The EPA benchmark for an average American family is over 300 gallons per day at home. Against that, a medium evaporatively cooled data center can use up to about 300,000 gallons daily, roughly a thousand households, and the largest campuses can reach several million gallons daily. An air-cooled or closed-loop facility of the same computing size uses a small fraction of those figures. This is why the comparison to homes is meaningless without knowing the cooling design: the same question, asked about two facilities with identical server counts, can have answers a hundredfold apart.",
+    "factIds": [
+      "facility-size-ladder",
+      "epa-household-use"
+    ]
+  },
+  {
+    "id": "faq-water-secrecy",
+    "question": "Why won't they tell us how much water they'll use?",
+    "concernTags": [
+      "water",
+      "trust"
+    ],
+    "answer20w": "Historically many treated it as a trade secret, and some fought disclosure in court. That is changing under pressure.",
+    "answer100w": "Industry surveys have found fewer than one-third of operators even track their water use, and site-level disclosure remains rare. The most famous case is The Dalles, Oregon, where the city, with Google funding, sued a local newspaper to keep usage records secret; when the suit was dropped, records showed Google used 355.1 million gallons in 2021, about 29 percent of the city's municipal supply. The lesson communities have drawn: make disclosure a condition of approval, in gallons, by season, before the vote. A developer who will not commit to publishing metered water data is telling you something.",
+    "factIds": [
+      "uptime-disclosure-gap",
+      "the-dalles-google"
+    ]
+  },
+  {
+    "id": "faq-water-cap",
+    "question": "Can the town put a hard cap on their water use?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "Yes, and some have: enforceable gallon-per-day caps written into approvals or agreements, tied to aquifer capacity.",
+    "answer100w": "Hard caps exist and are enforceable when written into permits or contracts. St. Joseph County, Indiana capped combined water use by an Amazon data center campus and a GM battery plant at 24 million gallons per day, just over half the local aquifer's estimated safe yield, tying industrial growth to hydrology rather than promises. Lancaster, Pennsylvania's community benefits agreement caps each campus at 20,000 gallons per day and requires closed-loop cooling outright. The design lesson: caps work best when set before approval, matched to the water source's measured capacity, and paired with public metering so compliance is checkable.",
+    "factIds": [
+      "st-joseph-aquifer-cap",
+      "lancaster-cba"
+    ]
+  },
+  {
+    "id": "faq-water-improving",
+    "question": "Are data centers actually getting better about water?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "The leaders are, by company-reported numbers: closed-loop designs and falling water intensity. The industry average lags behind.",
+    "answer100w": "By their own reporting, the largest operators are improving. Microsoft reports fleet water intensity fell from 0.49 to 0.27 liters per kilowatt-hour since 2021, and since August 2024 its standard new design uses closed-loop chip-level cooling that eliminates evaporative water use entirely. Google reports consuming 8.1 billion gallons in 2024 while replenishing about 64 percent, with a pledge to replenish more than it consumes by 2030. Treat these as company-reported claims, not independent findings, and note they describe new builds by the richest operators; the question for your project is which design it will actually use.",
+    "factIds": [
+      "microsoft-wue",
+      "microsoft-zero-water-design",
+      "google-2024-water"
+    ]
+  },
+  {
+    "id": "faq-aquifer",
+    "question": "Will it drain the aquifer that farms and wells depend on?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "It depends on withdrawal volume versus aquifer capacity. Demand the hydrology study, and a cap tied to it.",
+    "answer100w": "This is a site-specific hydrology question, and both reassuring and cautionary answers exist. In Missouri, state groundwater officials describe AWS's planned pumping, about 50 million gallons per year from deep wells, as a routine addition of roughly 0.03 percent to current aquifer use; residents on shallow private wells remain worried anyway. In Indiana, St. Joseph County did the math publicly and capped combined industrial pumping at just over half the aquifer's estimated daily safe yield. The verifiable path: require an independent aquifer study before approval, a withdrawal cap based on it, monitoring wells, and baseline testing of neighboring wells.",
+    "factIds": [
+      "new-florence-aws-wells",
+      "st-joseph-aquifer-cap"
+    ]
+  },
+  {
+    "id": "faq-water-office",
+    "question": "Is it true a data center can use less water than an office building?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "Yes, when it uses closed-loop or air cooling. Virginia's audit found most facilities there fit that description.",
+    "answer100w": "Virginia's legislative audit found most data centers in the state use about the same water as a large office building or less, because most Virginia facilities use closed-loop or air cooling rather than evaporative towers. This surprises people, and it is legitimately true where those designs are used. It is equally true that a large evaporatively cooled campus can use hundreds of thousands of gallons daily. Both facts are real; the difference is engineering. So neither 'data centers barely use water' nor 'data centers drain towns' is reliable as a general claim. The cooling specification in the actual permit application is the answer.",
+    "factIds": [
+      "jlarc-water-office-comparison",
+      "eli-water-variance"
+    ]
+  },
+  {
+    "id": "faq-drinking-water",
+    "question": "Will it use our drinking water?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "Often yes, evaporative facilities typically buy treated municipal water. Reclaimed water and closed-loop designs avoid that.",
+    "answer100w": "Many facilities buy potable municipal water because it is the connection that exists, and in The Dalles, Oregon that reached 29 percent of the city's supply. Whether that matters depends on your system's headroom: a facility drawing from a system with surplus capacity is a rate-paying customer; the same draw from a strained system competes with growth and drought resilience. Alternatives are real: closed-loop designs that need little water, and reclaimed (non-potable) water where infrastructure allows. Ask three things: which source, what percentage of system capacity at peak, and whether the utility modeled drought years before signing.",
+    "factIds": [
+      "the-dalles-google",
+      "eli-water-variance"
+    ]
+  },
+  {
+    "id": "faq-us-water-total",
+    "question": "How much water do data centers use nationally?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "About 17 billion gallons directly onsite in 2023, and roughly 12 times more indirectly at power plants.",
+    "answer100w": "U.S. data centers directly consumed about 66 billion liters, roughly 17 billion gallons, onsite in 2023, up about threefold since 2014. The larger and less visible number is indirect: the electricity they used caused roughly 800 billion liters of water consumption at power plants, about 12 times the onsite figure. National totals are context, not a verdict on your project: water stress is local, and a modest facility in a strained basin can matter more than a large one beside abundant supply. Use these numbers to understand the trend; use the site-specific permit numbers to judge the project.",
+    "factIds": [
+      "us-direct-water-2023",
+      "us-indirect-water-2023"
+    ]
+  },
+  {
+    "id": "faq-closed-loop",
+    "question": "What is closed loop cooling, and why does everyone keep mentioning it?",
+    "concernTags": [
+      "water"
+    ],
+    "answer20w": "It recirculates the same water instead of evaporating fresh water, nearly eliminating onsite consumption at some energy cost.",
+    "answer100w": "Closed-loop systems circulate a fixed volume of fluid to move heat, rejecting it through heat exchangers instead of evaporating fresh water. Microsoft has made chip-level closed-loop cooling standard for new builds since August 2024, reporting it avoids over 125 million liters per facility per year. The tradeoff is energy: avoiding evaporation raises total facility energy use roughly 10-15 percent in Uptime Institute's modeled comparison. Adoption is real but incomplete: about 22 percent of surveyed operators use direct liquid cooling while most still use air-based systems. If water is your community's binding constraint, requiring closed-loop or air cooling is a concrete, provable condition.",
+    "factIds": [
+      "microsoft-zero-water-design",
+      "air-cooling-energy-penalty",
+      "uptime-dlc-adoption-2025"
+    ]
+  },
+  {
+    "id": "faq-hear-from-house",
+    "question": "Will I hear it from my house?",
+    "concernTags": [
+      "noise"
+    ],
+    "answer20w": "It depends on distance, equipment, and mitigation. Unmitigated cooling gear has been clearly audible at nearby homes.",
+    "answer100w": "There is no universal answer, only physics and design. Cooling equipment can emit up to 70 dBA within 400 feet, and unmitigated installations have produced continuous 45-65 dBA at property lines in documented cases. Sound from compact equipment drops about 6 dB with each doubling of distance, so setbacks matter enormously. Well-designed facilities with quiet equipment, orientation away from homes, and real setbacks can be effectively inaudible; badly designed ones have generated years of complaints. Before approval, demand a professional sound study modeling your specific property, and a property-line limit written into the permit with required compliance testing.",
+    "factIds": [
+      "cooling-tower-70dba-400ft",
+      "fhwa-distance-attenuation",
+      "spotsylvania-permit-conditions"
+    ]
+  },
+  {
+    "id": "faq-sound-like",
+    "question": "What does a data center actually sound like?",
+    "concernTags": [
+      "noise"
+    ],
+    "answer20w": "A continuous mechanical hum from cooling equipment, roughly comparable to an air conditioner or appliance depending on distance.",
+    "answer100w": "The dominant sound is continuous: fans and chillers rejecting heat around the clock. For reference, CDC everyday levels are 40 dB for a refrigerator hum, 60 dB for normal conversation or an air conditioner, 70 dB for a washing machine. Documented data center levels at neighboring property lines have ranged from the 40s to the 60s dBA when unmitigated. The character matters as much as the level: a steady or tonal hum is more noticeable than variable neighborhood sound at the same reading, which is why residents can be genuinely bothered by a facility that a sound meter calls moderate.",
+    "factIds": [
+      "cdc-everyday-reference-levels",
+      "cooling-tower-70dba-400ft"
+    ]
+  },
+  {
+    "id": "faq-noise-night",
+    "question": "Does the noise ever stop at night?",
+    "concernTags": [
+      "noise"
+    ],
+    "answer20w": "No. Servers run around the clock, so cooling does too. Nighttime is when complaints and lawsuits concentrate.",
+    "answer100w": "Unlike a factory shift, computing does not sleep, so cooling runs continuously and the hum is most noticeable at night when everything else quiets down. This is the pattern behind the documented failures: Prince William County residents measured noise at or above 60 dB while the ordinance then in force exempted cooling equipment, and Dowagiac, Michigan homeowners sued in 2026 over roughly two years of continuous high-pitched cooling noise the city had already fined. The practical protections are nighttime-specific limits (lower than daytime), equipment specifications chosen for night compliance, and enforcement that measures at your property line after dark.",
+    "factIds": [
+      "pwc-resident-measurements-60db",
+      "dowagiac-mi-lawsuit-2026"
+    ]
+  },
+  {
+    "id": "faq-generators-loud",
+    "question": "How loud are the backup generators?",
+    "concernTags": [
+      "noise"
+    ],
+    "answer20w": "Very loud up close during tests, roughly 90-105 dBA at 25 feet, but brief, schedulable, and infrequent.",
+    "answer100w": "Diesel generators are the loudest equipment on site, producing roughly 90-105 dBA at about 25 feet during load testing. The saving grace is duration: testing typically runs 30-60 minutes per unit, monthly, and EPA rules cap non-emergency operation at 100 hours per year per engine. That makes generator noise a manageable, schedulable event, unlike the continuous cooling hum. Reasonable permit conditions include daytime-only testing on published schedules, staggering units rather than testing many at once, sound attenuation on the units, and advance notice to neighbors. If a developer resists putting test schedules in writing, that is worth noting publicly.",
+    "factIds": [
+      "generator-test-90-105dba-25ft",
+      "epa-emergency-engine-rules"
+    ]
+  },
+  {
+    "id": "faq-code-still-annoying",
+    "question": "If it meets the noise ordinance, can it still bother me?",
+    "concernTags": [
+      "noise"
+    ],
+    "answer20w": "Yes. Ordinances measure dBA averages, which undercount the low-frequency and tonal hum people find most annoying.",
+    "answer100w": "Legally compliant and genuinely annoying can both be true. Standard ordinances measure A-weighted averages, but the complaints that end up in court are usually about character: a tonal whine or low-frequency hum that stands out against quiet backgrounds. A Wisconsin class action alleges a low-frequency hum audible far from the site, and Prince William County's old ordinance exempted cooling equipment entirely, so residents measuring 60 dB had no remedy. Stronger protections exist: tonal penalties (stricter limits for pure-tone noise), low-frequency dBC limits, and Chandler, Arizona's approach of requiring operational noise to stay at or below the pre-existing ambient baseline.",
+    "factIds": [
+      "dowagiac-mi-lawsuit-2026",
+      "pwc-resident-measurements-60db",
+      "chandler-ordinance-2023"
+    ]
+  },
+  {
+    "id": "faq-noise-walls",
+    "question": "Do sound walls and berms actually work?",
+    "concernTags": [
+      "noise"
+    ],
+    "answer20w": "Partially. Good barriers cut 5-10 dBA, which helps, but they struggle with low-frequency sound and rooftop equipment.",
+    "answer100w": "Engineered barriers deliver real but bounded results: well-designed walls achieve 5-10 dBA of reduction, and a 10 dB cut is perceived as halving loudness. The limits matter. Barriers must physically block the line of sight to equipment, so rooftop units often clear them entirely, and low-frequency sound bends over walls that stop higher frequencies. That is why barriers work best as one layer in a design that starts with quieter equipment and distance, not as an apology afterward. When reviewing plans, ask specifically what the barrier's modeled insertion loss is at your home, and whether rooftop equipment is included in the model.",
+    "factIds": [
+      "barrier-insertion-loss-5-10",
+      "fhwa-perception-3db-10db"
+    ]
+  },
+  {
+    "id": "faq-noise-fix-later",
+    "question": "If it turns out too loud, can they fix it later?",
+    "concernTags": [
+      "noise"
+    ],
+    "answer20w": "Only partially, based on documented cases. Retrofits reduce but rarely eliminate noise. Prevention before approval is far more effective.",
+    "answer100w": "The best documented retrofit case is discouraging: in Chandler, Arizona, CyrusOne installed acoustic blankets, attenuation panels, and screen walls, which reduced but did not eliminate a chiller hum residents had endured since around 2014, with complaints persisting into 2022. Years of partial fixes eventually pushed Chandler to adopt one of the nation's first data center noise ordinances, requiring pre-construction acoustic baselines and that operational noise not exceed pre-existing ambient levels. The lesson communities keep relearning: noise is cheap to prevent through equipment selection and layout, and expensive, slow, and incomplete to fix after the concrete is poured.",
+    "factIds": [
+      "chandler-retrofit-partial-fix",
+      "chandler-ordinance-2023"
+    ]
+  },
+  {
+    "id": "faq-noise-limits",
+    "question": "What noise limits can we demand before approval?",
+    "concernTags": [
+      "noise"
+    ],
+    "answer20w": "Numeric property-line limits, baseline studies, developer-funded compliance testing, and revocation for repeat violations. All have real precedents.",
+    "answer100w": "Working models exist. Spotsylvania County, Virginia writes conditions into every approval: 55-65 dBA property-line maximums, pre-approval sound assessments for homes within 500 feet, developer-funded compliance testing before occupancy, and permit revocation for repeat violations. Chandler, Arizona requires a pre-construction baseline shared with residents, mitigation keeping noise at or below that baseline, annual studies for five years, generator testing time limits, and a resident liaison. Compare Prince William County, which adopted 73 dBA day and 68 night, weaker than its own consultants' recommendation, showing limits are negotiated outcomes. The common thread in strong ordinances: numbers, measurement, and consequences, not adjectives.",
+    "factIds": [
+      "spotsylvania-permit-conditions",
+      "chandler-performance-ordinance",
+      "pwc-ordinance-2025"
+    ]
+  },
+  {
+    "id": "faq-noise-complaint",
+    "question": "Who do I call if it's too loud at night?",
+    "concernTags": [
+      "noise",
+      "trust"
+    ],
+    "answer20w": "Depends on your local ordinance: code enforcement, a required facility liaison, or ultimately court. Ask before approval, not after.",
+    "answer100w": "The honest answer is that it depends on what your jurisdiction negotiated. Chandler's ordinance requires an on-site resident liaison, giving neighbors a named contact. Prince William County budgeted for enforcement engineers who can take calibrated measurements, because a complaint without a measurement usually goes nowhere. Where neither exists, residents have ended up suing, as in Dowagiac, Michigan, after two years of fines failed to fix the problem. The time to establish the complaint path is during permitting: require a published hotline, defined response times, county-verified measurement, and escalating penalties. A complaint process invented after the noise starts is invariably weaker.",
+    "factIds": [
+      "chandler-performance-ordinance",
+      "pwc-ordinance-2025",
+      "dowagiac-mi-lawsuit-2026"
+    ]
+  },
+  {
+    "id": "faq-setbacks-matter",
+    "question": "Does distance from homes really make a difference?",
+    "concernTags": [
+      "noise",
+      "landuse"
+    ],
+    "answer20w": "Yes, physics guarantees it: sound drops about 6 dB per doubling of distance. That is why setback rules exist.",
+    "answer100w": "Distance is the most reliable noise mitigation there is. Sound from compact equipment falls about 6 dB for every doubling of distance: equipment at 70 dBA at 50 feet is roughly 58 dBA at 200 feet and 46 dBA at 800 feet under ideal conditions. Jurisdictions have turned this into law: Fairfax County requires buildings at least 200 feet from residential lot lines and generators 300 feet, with pre- and post-construction noise studies; Henrico County adopted a 500-foot setback with screening and vegetative buffers. When you evaluate a site plan, the distance from the loudest equipment to the nearest bedroom is the single most predictive number.",
+    "factIds": [
+      "fhwa-distance-attenuation",
+      "fairfax-setbacks-2024",
+      "henrico-500ft-setback"
+    ]
+  },
+  {
+    "id": "faq-noise-health",
+    "question": "Can the noise hurt my health?",
+    "concernTags": [
+      "noise"
+    ],
+    "answer20w": "It will not damage hearing at neighborhood distances. The documented harms are sleep disruption, stress, and chronic annoyance.",
+    "answer100w": "At neighboring homes, data center noise is far below hearing-damage levels; documented community exposures of continuous 50-65 dBA are in the range of conversation and appliances. The real, documented harms are different: sleep disruption, stress, and chronic annoyance from a sound that never stops. Research on opposition backs up how much this matters: a Harvard/MIT survey found quality-of-life concerns roughly twice as important as electricity prices in explaining local opposition. Taking the annoyance seriously, with nighttime limits and enforceable measurement, is both better health policy and better politics than telling residents the noise is technically harmless.",
+    "factIds": [
+      "cdc-everyday-reference-levels",
+      "harvard-mit-qol"
+    ]
+  },
+  {
+    "id": "faq-why-tax-break",
+    "question": "Why does a trillion dollar company need a tax break?",
+    "concernTags": [
+      "taxes"
+    ],
+    "answer20w": "It doesn't need one; states offer them to win projects. The honest debate is whether your state overpays.",
+    "answer100w": "Data center incentives exist because states compete, not because projects are unprofitable. The sums are large: Virginia's sales-tax exemption on data center equipment provided $928.6 million in savings in one fiscal year, the state's largest economic development incentive, though it does carry requirements including jobs at 150 percent of prevailing wage. Watchdog analyses of megadeals found subsidies averaging roughly $2 million per permanent job. Defenders argue the facilities would go elsewhere and the remaining tax base is still enormous; critics note states rarely test that claim. Ask what your state's incentive costs per actual permanent job, in writing.",
+    "factIds": [
+      "va-sales-tax-exemption",
+      "gjf-2m-per-job"
+    ]
+  },
+  {
+    "id": "faq-community-gets",
+    "question": "How much tax money does the community actually get?",
+    "concernTags": [
+      "taxes"
+    ],
+    "answer20w": "Potentially a lot, mostly from taxes on the equipment inside. Loudoun County budgets hundreds of millions annually.",
+    "answer100w": "Where local taxes apply to data center property and equipment, revenue can be transformative. Loudoun County, Virginia budgeted $794.8 million from data center computer-equipment personal property tax alone for FY2026, with data centers providing roughly 42 percent of local tax funding. Virginia's statewide audit found $733 million flowing to Loudoun and $110 million to Prince William County in a single year. Two cautions: the big money comes from taxing the servers, which not every state allows, and revenue share ranged from under 1 percent to 31 percent across Virginia's own mature markets. Your deal's structure determines which end you get.",
+    "factIds": [
+      "loudoun-dc-ppt-fy26",
+      "jlarc-local-revenue"
+    ]
+  },
+  {
+    "id": "faq-lower-my-taxes",
+    "question": "Will this lower my property taxes?",
+    "concernTags": [
+      "taxes"
+    ],
+    "answer20w": "It can, and has in Loudoun County, but only where the revenue is large and officials choose rate cuts.",
+    "answer100w": "There is one strong precedent: Loudoun County, where data centers occupy about 4 percent of commercial parcels but yield roughly 38 percent of general fund revenue, and the county cut residential tax rates annually for a decade. An industry-aligned analysis claims Loudoun homeowners would pay about $5,856 more per year without data center revenue, but treat that as a modeled counterfactual with favorable assumptions, not a measurement. Whether you see relief depends on three things: whether your state taxes the equipment, how much abatement was negotiated away, and whether your board chooses rate cuts over new spending. None is automatic.",
+    "factIds": [
+      "loudoun-share-and-rates",
+      "chamber-progress-homeowner-offset"
+    ]
+  },
+  {
+    "id": "faq-school-money",
+    "question": "Will our schools get more money?",
+    "concernTags": [
+      "taxes"
+    ],
+    "answer20w": "If the property is taxed normally, yes, schools typically benefit most. Heavy abatements have cost districts real money.",
+    "answer100w": "Schools are usually the largest recipient of local property tax, so an untaxed-away data center can be a major funding source, as in Virginia's mature markets where facilities generate hundreds of millions locally. The opposite outcome is also documented: tax abatements cost 24 St. Louis-area school districts $381 million over an eight-year span, and watchdogs identify long-abated data centers as an emerging threat to school funding, concentrated in Black and low-income communities. The determining variable is the abatement structure. Ask your school board whether it was consulted on the deal, and what the district receives during the abatement years, not after.",
+    "factIds": [
+      "jlarc-local-revenue",
+      "gjf-schools"
+    ]
+  },
+  {
+    "id": "faq-incentives-worth",
+    "question": "Are the tax incentives actually worth it?",
+    "concernTags": [
+      "taxes"
+    ],
+    "answer20w": "States that studied their own returns found losses per subsidy dollar. The local math can still work; demand the analysis.",
+    "answer100w": "The independent evidence is uncomfortable for incentive advocates. States that analyzed the return on their data center exemptions found losses of 52-70 cents per subsidy dollar, and annual exemption costs run around a billion dollars each in Texas and Virginia. Subsidy cost per permanent job has ranged from $1 million to over $2 million in analyzed deals. The counterargument is real too: localities that tax equipment can collect far more than they give up, and the state and local ledgers differ. The takeaway is procedural: require an independent fiscal analysis of your specific deal before the vote, not the developer's projection.",
+    "factIds": [
+      "gjf-disclosure-2025",
+      "gjf-2m-per-job"
+    ]
+  },
+  {
+    "id": "faq-deal-disclosure",
+    "question": "How do we find out what deal our officials actually made?",
+    "concernTags": [
+      "taxes",
+      "trust"
+    ],
+    "answer20w": "Often with difficulty: most states don't disclose data center subsidies, and NDAs are common. Public records requests help.",
+    "answer100w": "Transparency is the exception. Only 11 states disclose which companies receive data center subsidies; more than 24, including Virginia, Georgia, and North Carolina, do not. Nondisclosure agreements covered deals in roughly 80 percent of Virginia localities with facilities, and in documented cases residents learned of multi-billion-dollar projects only weeks before operation. Practical steps: file public records requests for the economic development agreement and utility agreements, ask officials directly at public meetings whether an NDA exists and when it expires, and push for the deal terms to be an explicit exhibit in the zoning approval, which is public by law.",
+    "factIds": [
+      "gjf-disclosure-2025",
+      "public-citizen-ndas"
+    ]
+  },
+  {
+    "id": "faq-old-servers",
+    "question": "What happens to tax revenue when the servers get old?",
+    "concernTags": [
+      "taxes"
+    ],
+    "answer20w": "Equipment taxes depend on constant server replacement. Revenue drops if refresh slows, as Loudoun's shortfall showed.",
+    "answer100w": "The big equipment-tax revenue rests on a treadmill: servers are assessed highest when new (Loudoun uses 50 percent of purchase price in year one) and depreciate sharply, so sustained revenue requires operators to keep buying new hardware. Modeled AI facility economics assume roughly five-year IT equipment lifespans versus fourteen for the building, which is why the treadmill usually keeps turning. But it can stumble: in 2021, slower server deployment left Loudoun $60 million short of forecast. Budget officials should treat data center revenue as cyclical, stress-test against refresh slowdowns, and avoid funding permanent obligations from the most volatile revenue layer.",
+    "factIds": [
+      "loudoun-depreciation-volatility",
+      "epoch-server-share"
+    ]
+  },
+  {
+    "id": "faq-revenue-reliable",
+    "question": "Can our town safely budget around this revenue?",
+    "concernTags": [
+      "taxes"
+    ],
+    "answer20w": "Treat it as valuable but volatile. It swings with equipment cycles, and concentration creates dependence on one industry.",
+    "answer100w": "The revenue is real but behaves differently from residential property tax. It is volatile: Loudoun missed forecast by $60 million in a single year when server deployment slowed, because assessments track equipment purchases. And it concentrates: across Virginia's five mature markets, data centers ranged from under 1 percent to 31 percent of local revenue, and at the high end the locality's budget is effectively tied to one industry's capital spending. Sensible practices: budget conservatively against forecast, direct surges toward one-time capital rather than recurring salaries, and build reserves. The counties that treat it as a windfall rather than a wage handle downturns best.",
+    "factIds": [
+      "loudoun-depreciation-volatility",
+      "jlarc-local-revenue"
+    ]
+  },
+  {
+    "id": "faq-cba",
+    "question": "What is a community benefits agreement, and should we demand one?",
+    "concernTags": [
+      "taxes",
+      "trust"
+    ],
+    "answer20w": "A binding contract of specific commitments: payments, caps, and standards. Worth demanding, but scrutinize the enforceable versus aspirational language.",
+    "answer100w": "A community benefits agreement (CBA) converts promises into contract terms. Lancaster, Pennsylvania's 20-year agreement is a working example: $20.25 million in community payments, water capped at 20,000 gallons per day per campus, closed-loop cooling required, certified noise plans, and 100-foot buffers. Note its instructive weakness: local hiring appears only as non-binding 'good faith' language, showing that within a single agreement some clauses have teeth and others are decoration. When negotiating, sort every proposed commitment into enforceable (number, deadline, remedy) versus aspirational, and assume only the first category will survive a change of ownership or a bad year.",
+    "factIds": [
+      "lancaster-cba"
+    ]
+  },
+  {
+    "id": "faq-capex",
+    "question": "The developer says a billion dollar investment. What does that number mean for us?",
+    "concernTags": [
+      "taxes"
+    ],
+    "answer20w": "It's the construction and equipment cost, not community benefit. What matters locally is what gets taxed and what's abated.",
+    "answer100w": "Headline investment figures are real, data centers cost roughly $7-12 million per megawatt to build, but the number describes the developer's spending, not your benefit. Most of the money buys equipment and construction services, much of it from outside the region, and in modeled AI facilities about 60 percent of annualized cost is the servers themselves. The community-relevant questions are narrower: which portions land on your tax rolls, at what assessment, for how long, and with what abatements. A billion-dollar project with everything exempted can yield less local revenue than a far smaller taxed one. Ask for the fiscal analysis, not the press release.",
+    "factIds": [
+      "capex-per-mw",
+      "epoch-server-share"
+    ]
+  },
+  {
+    "id": "faq-be-like-loudoun",
+    "question": "Could our county be the next Loudoun County?",
+    "concernTags": [
+      "taxes"
+    ],
+    "answer20w": "Probably not fully. Loudoun's results reflect unique density, equipment taxation, and decades of clustering. Revenue elsewhere varies widely.",
+    "answer100w": "Loudoun County is the best case, not the base case. Its data centers yield roughly 38 percent of general fund revenue from about 4 percent of commercial parcels, funded by taxing computer equipment at $4.15 per $100 of value, and it sits atop decades of fiber and market clustering that made it the world's densest market. Across Virginia's own five mature markets, data center revenue share ranged from under 1 percent to 31 percent, so even in the industry's home state most localities see far less. Model your deal with your tax structure and abatements, and treat Loudoun comparisons in developer presentations as a ceiling.",
+    "factIds": [
+      "loudoun-share-and-rates",
+      "jlarc-local-revenue"
+    ]
+  },
+  {
+    "id": "faq-who-benefits",
+    "question": "Who really benefits economically from this project?",
+    "concernTags": [
+      "taxes",
+      "trust"
+    ],
+    "answer20w": "Mostly the company and the local tax base. Broad job and wage gains for residents are typically modest.",
+    "answer100w": "The most rigorous independent evidence draws a two-sided picture. Virginia's legislative watchdog concluded data centers deliver substantial economic and fiscal benefits to hosting localities while creating unprecedented energy demand with cost and reliability risks. A quasi-experimental Brookings study of roughly 1,500 facilities over two decades found host counties typically gained only about 100-200 jobs, wages were unchanged, and home prices rose modestly. So the honest summary: the company gets computing capacity, the local government can get significant revenue, nearby workers get a construction boom and a modest number of good permanent jobs, and the average resident's benefit depends almost entirely on how the revenue is used.",
+    "factIds": [
+      "jlarc-two-sided",
+      "brookings-jobs"
+    ]
+  },
+  {
+    "id": "faq-jobs-real",
+    "question": "How many people will actually work there?",
+    "concernTags": [
+      "jobs"
+    ],
+    "answer20w": "Typically dozens to a few hundred permanent jobs per campus, plus hundreds to thousands of multi-year construction jobs.",
+    "answer100w": "Data centers are capital-intensive, not labor-intensive. A large campus commonly employs a permanent staff in the dozens to low hundreds (technicians, security, facilities engineers) with above-average wages. Construction is the bigger employment event: hundreds to thousands of trades workers over several years of phased building. Independent studies also count indirect and induced jobs, but those multipliers are modeled estimates and should be labeled as such. If a project's marketing promises thousands of permanent jobs, ask for the direct-employment number in writing.",
+    "factIds": [
+      "jlarc-two-sided",
+      "gjf-subsidy-disclosure"
+    ]
+  },
+  {
+    "id": "faq-construction-jobs",
+    "question": "How many construction jobs will there be?",
+    "concernTags": [
+      "jobs",
+      "construction"
+    ],
+    "answer20w": "Substantial: up to roughly 1,500 workers at peak per building. Construction is the real employment event.",
+    "answer100w": "Construction dwarfs permanent employment. Virginia's audit found the industry supports about 74,000 jobs annually there, but roughly 59,000 are construction-phase versus 15,000 in operations, and a single building can peak around 1,500 construction workers. Benchmarks put peak staffing at roughly 0.7-2.0 workers per megawatt over an 18-36 month build. For local trades, a multi-building campus can mean many years of steady work as phases roll. The catch: whether those paychecks land locally depends on the local labor pool and union or contractor arrangements; large projects routinely import travelers when local trades are thin. Negotiate local-hire reporting if this matters to you.",
+    "factIds": [
+      "jlarc-jobs",
+      "usc-construction-workforce-2025"
+    ]
+  },
+  {
+    "id": "faq-job-pay",
+    "question": "What do the permanent jobs pay?",
+    "concernTags": [
+      "jobs"
+    ],
+    "answer20w": "Technicians average around $54,000 nationally; engineers and IT roles pay more. Solid wages, but headcounts are small.",
+    "answer100w": "Data center technicians average about $54,000 nationally, with the middle range roughly $42,500-$60,000; facility engineers and IT roles pay more. Some incentive programs enforce a wage floor: Virginia's sales-tax exemption requires qualifying jobs at 150 percent of the prevailing local wage. These are genuinely good jobs, frequently accessible with certifications rather than four-year degrees. The honest caveat is arithmetic: good pay times a small headcount is a modest payroll for the county as a whole, which is why independent studies find little county-wide wage effect. Evaluate the jobs claim as quality times quantity, not either alone.",
+    "factIds": [
+      "datacenter-tech-salary",
+      "va-sales-tax-exemption"
+    ]
+  },
+  {
+    "id": "faq-locals-hired",
+    "question": "Will local people actually get hired?",
+    "concernTags": [
+      "jobs"
+    ],
+    "answer20w": "Only if it's negotiated and a training pipeline exists. Local hiring clauses are often non-binding; read the language.",
+    "answer100w": "There is no automatic mechanism steering jobs to locals. Operations roles require certifications your workforce may not yet hold, and construction staffing follows contractor networks. Even in a strong community benefits agreement like Lancaster, Pennsylvania's, local hiring appears only as non-binding 'good faith' language while water caps and noise plans are enforceable, a telling contrast. What works better: funded training partnerships with community colleges established before hiring begins, and public reporting of local-hire percentages so the claim is checkable. Since technician roles average around $54,000 and are certification-based, a modest training investment can genuinely connect residents to them.",
+    "factIds": [
+      "lancaster-cba",
+      "datacenter-tech-salary"
+    ]
+  },
+  {
+    "id": "faq-economy-boost",
+    "question": "Will it boost our local economy overall?",
+    "concernTags": [
+      "jobs"
+    ],
+    "answer20w": "Fiscally often yes; in jobs and wages, modestly. Independent research finds about 100-200 net jobs per county.",
+    "answer100w": "Separate the fiscal effect from the labor market effect. Virginia's watchdog found substantial economic and fiscal benefits to hosting localities, and tax revenue is where the money concentrates. But a quasi-experimental Brookings study of roughly 1,500 facilities over two decades found host counties typically gained only about 100-200 jobs, with no measurable wage change and modest home price gains. A data center is closer to a power plant than a factory in economic character: enormous capital, few workers. Communities that do best convert the revenue deliberately, into schools, infrastructure, or tax relief, rather than expecting the facility itself to transform the job market.",
+    "factIds": [
+      "brookings-jobs",
+      "jlarc-two-sided"
+    ]
+  },
+  {
+    "id": "faq-why-few-jobs",
+    "question": "Why does such a huge building employ so few people?",
+    "concernTags": [
+      "jobs"
+    ],
+    "answer20w": "Because it houses machines, not workers. Staffing runs a fraction of one employee per megawatt of capacity.",
+    "answer100w": "A data center is a machine hall: the floor space goes to servers, cooling, and power gear that largely run themselves, monitored by small shifts of technicians. Benchmarks put permanent staffing at roughly 0.15-0.35 full-time workers per megawatt, so even a very large facility runs on shifts of dozens. Virginia's audit found a typical 250,000 square foot facility employs about 50 permanent workers, roughly half of them contractors. This is not the developer being stingy; it is the nature of the asset. Which means job counts should never be the deciding rationale for approval; the fiscal and infrastructure terms should be.",
+    "factIds": [
+      "usc-construction-workforce-2025",
+      "jlarc-jobs"
+    ]
+  },
+  {
+    "id": "faq-job-skills",
+    "question": "What skills do the data center jobs require?",
+    "concernTags": [
+      "jobs"
+    ],
+    "answer20w": "Electrical, mechanical, HVAC, and IT skills, usually via certifications and trades training rather than four-year degrees.",
+    "answer100w": "Operations roles cluster around keeping power and cooling running: electricians, HVAC and controls technicians, mechanical specialists, plus IT hardware and network technicians and security staff. Many are certification-based career paths rather than degree-gated, with technicians averaging about $54,000 nationally and engineers above that. Virginia's data shows about half of typical facility staff are contractors, meaning local electrical and mechanical firms can capture ongoing service work beyond the direct payroll. For a community, the practical play is a community college partnership aligned to these certifications, ideally funded by the developer and launched during construction so residents are qualified when operations hiring starts.",
+    "factIds": [
+      "datacenter-tech-salary",
+      "jlarc-jobs"
+    ]
+  },
+  {
+    "id": "faq-job-promises",
+    "question": "Are the job numbers in the press release real?",
+    "concernTags": [
+      "jobs",
+      "trust"
+    ],
+    "answer20w": "Treat them skeptically. Announcements often blend construction, indirect, and modeled jobs. Independent counts are much lower.",
+    "answer100w": "Announcement numbers commonly merge three different things: temporary construction jobs, modeled 'indirect and induced' jobs from economic multipliers, and actual permanent positions. Independent measurements are sobering: Brookings' study of roughly 1,500 facilities found counties typically gained about 100-200 jobs, and watchdog analyses found subsidies running $1-2 million per permanent job in reviewed deals, which only makes sense to scrutinize because the permanent numbers are small. Virginia's audit is a good template for honesty: it reports construction (about 59,000) and operations (about 15,000) jobs separately. Ask your developer to do the same, in the development agreement, with clawbacks if targets are missed.",
+    "factIds": [
+      "brookings-jobs",
+      "gjf-2m-per-job",
+      "jlarc-jobs"
+    ]
+  },
+  {
+    "id": "faq-worker-influx",
+    "question": "Will out of town construction workers overwhelm our housing?",
+    "concernTags": [
+      "jobs",
+      "construction"
+    ],
+    "answer20w": "On mega-projects in small communities, yes, it has happened: RV camps, rent spikes, and strained services are documented.",
+    "answer100w": "The scale mismatch is the risk factor. Meta's Hyperion campus in rural Louisiana has about 3,700 construction workers heading toward a projected 5,000 peak, and the documented spillover includes RV camps with hundreds of hookups, rent spikes, pre-dawn truck traffic, and road damage. A single suburban building peaking near 1,500 workers in a metro area is absorbed far more easily. Questions that predict your outcome: peak workforce versus your housing vacancy, whether the contractor plans workforce housing, and whether the development agreement funds impacts. Temporary worker demand also cuts both ways: it fills restaurants and hotels while straining rentals.",
+    "factIds": [
+      "meta-hyperion-construction-strain",
+      "usc-construction-workforce-2025"
+    ]
+  },
+  {
+    "id": "faq-home-value",
+    "question": "Will my home lose value?",
+    "concernTags": [
+      "property"
+    ],
+    "answer20w": "Large studies find no consistent decline, some even find gains, but street-level evidence is mixed. Distance and noise matter.",
+    "answer100w": "The evidence is genuinely mixed, and honest answers say so. On the reassuring side: a Brookings study of roughly 1,500 facilities found modest county-level home price gains of 2-5 percent, an analysis of 2023 Northern Virginia sales found no negative proximity effect, and a Realtor.com study of 43 ZIP codes that gained data centers found values tracked matched comparison areas. On the cautionary side: press reporting documents localized problems, including Granbury, Texas prices down 8.2 percent in a year near a noisy facility. The pattern suggests well-sited, quiet facilities do not measurably hurt values, while noise and nuisance problems can.",
+    "factIds": [
+      "brookings-jobs",
+      "gmu-nova-home-sales-2023",
+      "realtor-matched-zip-2026",
+      "granbury-mixed-price-signals"
+    ]
+  },
+  {
+    "id": "faq-can-sell",
+    "question": "Will anyone want to buy my house near a data center?",
+    "concernTags": [
+      "property"
+    ],
+    "answer20w": "Homes near data centers keep selling at market-typical prices in most studied areas, with documented exceptions near problem facilities.",
+    "answer100w": "In the broadest matched study available, home values in 43 ZIP codes that gained large data centers moved in line with comparable neighborhoods for two years after activation, meaning buyers kept buying at normal prices. The exceptions cluster around facilities with active nuisance problems: agents near Granbury, Texas report hard-to-sell homes amid a well-publicized noise controversy. In other words, the market prices the nuisance, not the label 'data center.' If you live near a proposed site, your financial interest is in the permit conditions (noise limits, setbacks, screening) that determine whether your facility becomes the unremarkable kind.",
+    "factIds": [
+      "realtor-matched-zip-2026",
+      "granbury-mixed-price-signals"
+    ]
+  },
+  {
+    "id": "faq-value-studies",
+    "question": "What do studies actually show about property values?",
+    "concernTags": [
+      "property"
+    ],
+    "answer20w": "Most rigorous studies find neutral to slightly positive effects, with meaningful exceptions in some counties and near problem sites.",
+    "answer100w": "Reading the studies together: an analysis of 2023 Northern Virginia sales found homes closer to data centers sold for more on average, with no statistical evidence of harm. Realtor.com's matched ZIP code comparison found no meaningful difference for two years after facilities opened. An Indiana appraisal study found homes within 1.5 miles appreciated 42 percent versus 41 percent countywide, yet three of the four counties studied underperformed their county averages by 1-9 percent, showing county-level and neighborhood-level answers can differ. No rigorous study shows large systematic losses; several show localized underperformance. Anyone claiming certainty in either direction is ahead of the evidence.",
+    "factIds": [
+      "gmu-nova-home-sales-2023",
+      "realtor-matched-zip-2026",
+      "integra-indiana-appraisal-2026"
+    ]
+  },
+  {
+    "id": "faq-how-close",
+    "question": "How close to my house can they build it?",
+    "concernTags": [
+      "property",
+      "landuse"
+    ],
+    "answer20w": "Whatever your zoning allows. Some jurisdictions require 200-500 foot setbacks from homes; many have no data center rules.",
+    "answer100w": "Setbacks are purely a local policy choice, and the spread is wide. Fairfax County requires data center buildings at least 200 feet from adjacent residential lot lines and generators 300 feet from residential property, with pre- and post-construction noise studies. Henrico County adopted a 500-foot setback from residential areas plus substation screening and vegetative buffers. Many jurisdictions have no data-center-specific rules at all, leaving only generic industrial zoning. If a project is proposed near you, the first document to pull is your zoning ordinance; if it is silent on data centers, the time to fix that is before the public hearing.",
+    "factIds": [
+      "fairfax-setbacks-2024",
+      "henrico-500ft-setback"
+    ]
+  },
+  {
+    "id": "faq-quality-of-life",
+    "question": "Will living near one change my daily life?",
+    "concernTags": [
+      "property",
+      "noise"
+    ],
+    "answer20w": "A well-designed facility is a quiet, low-traffic neighbor. A badly designed one intrudes daily. Design determines which you get.",
+    "answer100w": "Day to day, an operating data center generates little traffic, no smoke, and no crowds; its main sensory footprint is continuous mechanical sound and night lighting, both of which are design-controllable. Research shows this is exactly what residents care about: a Harvard/MIT survey found quality-of-life concerns roughly twice as important as electricity prices in explaining opposition. The documented bad outcomes, like the Granbury, Texas noise controversy, come from facilities where equipment noise was not controlled. The practical checklist for your comfort: distance from equipment to homes, nighttime noise limits with enforcement, downward-shielded lighting, and screening. Those conditions, not the logo on the building, decide your experience.",
+    "factIds": [
+      "harvard-mit-qol",
+      "granbury-mixed-price-signals"
+    ]
+  },
+  {
+    "id": "faq-lights-ugly",
+    "question": "Will it be a giant lit-up box ruining the view?",
+    "concernTags": [
+      "property",
+      "landuse"
+    ],
+    "answer20w": "Without conditions, it can be: construction lighting visible for miles is documented. Screening and lighting rules are negotiable.",
+    "answer100w": "The visual footprint is real: these are very large windowless buildings, and at Meta's Louisiana mega-campus, construction lighting is reportedly visible for miles, while a Virginia homeowner's lawsuit describes light pollution reaching bedrooms during round-the-clock construction. But visual impact is among the most controllable impacts. Henrico County's rules pair setbacks with substation screening and vegetative buffers, and jurisdictions routinely require earth-tone facades, berms, and full-cutoff downward lighting. Ask for photometric plans (light levels at the property line), renderings from your actual viewpoint rather than aerial views, and lighting curfews for construction, all as permit conditions rather than assurances.",
+    "factIds": [
+      "meta-hyperion-construction-strain",
+      "louisa-amazon-nuisance-suit",
+      "henrico-500ft-setback"
+    ]
+  },
+  {
+    "id": "faq-compensation",
+    "question": "Shouldn't nearby homeowners get something out of this?",
+    "concernTags": [
+      "property",
+      "trust"
+    ],
+    "answer20w": "Some communities negotiate exactly that through community benefits agreements. Research shows residents value compensation at meaningful levels.",
+    "answer100w": "The idea has research behind it: UVA's opinion project found the median non-supporter said it would take around $10,000 per household in compensation to accept a nearby data center, evidence that residents perceive real costs and expect something in return. Formal mechanisms exist: Lancaster, Pennsylvania's community benefits agreement secured $20.25 million in community payments over 20 years alongside enforceable water and noise terms. Direct payments to nearest neighbors are rarer than community-wide funds, but nothing prevents negotiating either. If your locality is granting rezoning, that approval is leverage; the time to convert it into binding neighbor benefits is before the vote.",
+    "factIds": [
+      "uva-opinion-project",
+      "lancaster-cba"
+    ]
+  },
+  {
+    "id": "faq-construction-length",
+    "question": "How long will construction actually last?",
+    "concernTags": [
+      "construction"
+    ],
+    "answer20w": "Roughly one to three years per building, but multi-building campuses build in phases that can roll on for years.",
+    "answer100w": "A single data center building takes about 12-24 months of physical construction, with hyperscale buildings running 24-36 months, and the full lifecycle from site selection to commissioning spans 3-6 years. The number that matters for neighbors is the campus plan: developers build in phases, so a multi-building campus can mean rolling construction, with its trucks and cranes, for the better part of a decade. Before approval, ask for the full phasing schedule, not just building one, and push for conditions that cap simultaneous phases or require haul route and hours agreements that persist across all phases, not just the first.",
+    "factIds": [
+      "single-building-construction-months",
+      "usc-construction-workforce-2025"
+    ]
+  },
+  {
+    "id": "faq-truck-traffic",
+    "question": "How bad will the truck traffic get?",
+    "concernTags": [
+      "construction"
+    ],
+    "answer20w": "Heaviest during construction: documented cases include pre-dawn convoys and road damage. Operations traffic afterward is comparatively light.",
+    "answer100w": "Construction is the traffic event. At the extreme end, Meta's Louisiana mega-campus generates documented pre-dawn truck traffic, vehicle damage from gravel, and worker convoys thousands strong. A Virginia homeowner's nuisance suit against Amazon likewise describes months of dust clouds and late-night construction activity. Once operating, a data center produces modest traffic: small permanent staffs mean commuting volumes closer to an office park than a distribution center. The enforceable protections are standard but must be demanded: designated haul routes avoiding neighborhoods, restricted hours, wheel washing and dust control, road condition surveys before construction, and developer-funded repair of documented damage.",
+    "factIds": [
+      "meta-hyperion-construction-strain",
+      "louisa-amazon-nuisance-suit"
+    ]
+  },
+  {
+    "id": "faq-construction-damage",
+    "question": "Can construction damage my house or my water?",
+    "concernTags": [
+      "construction",
+      "water"
+    ],
+    "answer20w": "Allegations of both are documented: vibration cracking, brown tap water, well sediment during construction. Baseline documentation protects you.",
+    "answer100w": "Court records and reporting document the failure modes. A Louisa County, Virginia homeowner's nuisance suit against Amazon, which survived dismissal, alleges months of brown tap water, dust clouds, foundation cracking from vibration, and light and noise intrusions during construction. Near Meta's Georgia site, residents on private wells reported sediment and dry taps beginning during construction, with causation disputed. Your practical protection is evidence created before ground breaks: a pre-construction survey of your foundation (photographed and dated), baseline water quality and level tests on your well at the developer's expense, and a written claims process in the permit conditions.",
+    "factIds": [
+      "louisa-amazon-nuisance-suit",
+      "newton-county-meta-wells"
+    ]
+  },
+  {
+    "id": "faq-runoff",
+    "question": "Will construction runoff pollute our creeks?",
+    "concernTags": [
+      "construction",
+      "environment"
+    ],
+    "answer20w": "It can. Repeated sediment violations at one major site flooded neighbors' garages and muddied a river tributary.",
+    "answer100w": "Mass grading hundreds of acres creates serious stormwater risk, and enforcement records show it is not hypothetical: West Virginia regulators issued repeated erosion and sediment violation notices at the Monarch data center site, where sediment discharged into an Ohio River tributary and a silt fence failure flooded neighbors' garages. Erosion permits and stormwater pollution prevention plans are public documents, and violations are inspectable records. Residents can request the site's permit, attend pre-construction meetings, photograph discharges after storms, and report to the state environmental agency, whose inspection reports are themselves public. Repeat violations are grounds to demand stop-work conditions.",
+    "factIds": [
+      "wv-stormwater-habitat"
+    ]
+  },
+  {
+    "id": "faq-construction-hours",
+    "question": "Will they be working all night?",
+    "concernTags": [
+      "construction"
+    ],
+    "answer20w": "On aggressive schedules, yes: late-night noise and lighting are documented complaints. Hours limits must be permit conditions.",
+    "answer100w": "Data center schedules are compressed because computing demand is urgent, and the documented result is round-the-clock activity: the Louisa County, Virginia nuisance suit describes late-night noise and light pollution reaching bedrooms, and Meta's Louisiana campus generates pre-dawn truck movements. No rule prevents this unless your jurisdiction writes one. Standard, achievable conditions include construction hours limits (for example, daytime and early evening only near homes), quiet hours for the loudest activities like pile driving, lighting curfews and shielding, and a posted complaint line with required response times. Developers agree to these regularly; they just rarely volunteer them.",
+    "factIds": [
+      "louisa-amazon-nuisance-suit",
+      "meta-hyperion-construction-strain"
+    ]
+  },
+  {
+    "id": "faq-phases",
+    "question": "They say two years, but is construction ever really done?",
+    "concernTags": [
+      "construction"
+    ],
+    "answer20w": "Per building, yes. Per campus, phases can continue for many years, and expansions often follow initial approval.",
+    "answer100w": "The two-year figure describes one building: physical construction runs about 12-24 months, longer for hyperscale. Campuses are different animals: phased construction is standard practice, and expansion after initial approval is common, as with Meta's Louisiana campus adding roughly 1,400 acres to an already enormous project mid-construction. The approval stage is when a community has leverage over the full buildout, not just phase one. Ask for the master plan in megawatts, buildings, and acres; condition later phases on compliance performance in earlier ones; and require that each expansion trigger fresh traffic, noise, and water review rather than riding the original approval.",
+    "factIds": [
+      "single-building-construction-months",
+      "meta-hyperion-construction-strain"
+    ]
+  },
+  {
+    "id": "faq-road-damage",
+    "question": "Who fixes the roads their trucks tear up?",
+    "concernTags": [
+      "construction"
+    ],
+    "answer20w": "Whoever the development agreement says. Without written terms, taxpayers often do. Road repair clauses are standard and negotiable.",
+    "answer100w": "Road damage from heavy construction traffic is well documented, including gravel-related vehicle damage around Meta's Louisiana site. Who pays is decided by paperwork, not fairness: absent a written obligation, road maintenance defaults to the public. The fix is routine when demanded early: pre-construction pavement condition surveys on designated haul routes, a developer obligation to repair documented degradation, bonding or escrow to guarantee funds exist, and weight or route restrictions near homes. Broader community payments can cover infrastructure too, as in Lancaster, Pennsylvania's benefits agreement with its multi-million-dollar community fund. If the agreement is silent on roads, assume the answer is you.",
+    "factIds": [
+      "meta-hyperion-construction-strain",
+      "lancaster-cba"
+    ]
+  },
+  {
+    "id": "faq-construction-rules",
+    "question": "What rules actually protect us during construction?",
+    "concernTags": [
+      "construction",
+      "trust"
+    ],
+    "answer20w": "Erosion permits, noise and hours conditions, and whatever your approval documents require. Enforcement depends on inspections and complaints.",
+    "answer100w": "Three layers exist. State environmental rules govern erosion and stormwater, enforceable by inspection, though the West Virginia record of repeated violations at one site shows paper protections require active enforcement. Local permit conditions govern noise, hours, routes, and lighting, but only if written in: Chandler, Arizona's ordinance shows what codified protections look like, with baseline studies and a resident liaison. Private law is the backstop: the Louisa County nuisance suit that survived dismissal shows courts remain available when the first two layers fail. Residents strengthen all three by documenting problems with dates and photos and filing complaints that create official records.",
+    "factIds": [
+      "wv-stormwater-habitat",
+      "chandler-performance-ordinance",
+      "louisa-amazon-nuisance-suit"
+    ]
+  },
+  {
+    "id": "faq-dangerous-live-near",
+    "question": "Is it dangerous to live near a data center?",
+    "concernTags": [
+      "safety"
+    ],
+    "answer20w": "Day-to-day risk is low. The real hazards are diesel storage, battery fires, and generator exhaust, all regulated and manageable.",
+    "answer100w": "A data center is not a chemical plant; it has no process explosions or toxic feedstocks. Its hazards are specific and knowable: large diesel fuel storage for backup generators (Northern Virginia hosts thousands of generators, and one permit contemplates up to 10 million gallons of diesel used annually across a large campus), lithium battery rooms that can burn, as in the contained 2025 Hillsboro, Oregon fire, and generator exhaust during testing and outages under EPA operating rules. Each is addressed through fire code, containment, and air permits. The right question is not whether hazards exist but whether permits, inspections, and your fire department's preparation match them.",
+    "factIds": [
+      "virginia-generator-fleet",
+      "hillsboro-battery-fire-2025",
+      "epa-emergency-engine-rules"
+    ]
+  },
+  {
+    "id": "faq-whats-stored",
+    "question": "What hazardous materials are stored on site?",
+    "concernTags": [
+      "safety"
+    ],
+    "answer20w": "Mainly large diesel fuel stocks for generators and lithium battery rooms, plus standard industrial coolants and refrigerants.",
+    "answer100w": "The two materials that matter are diesel and batteries. Backup generation requires substantial onsite fuel: Northern Virginia's data centers host more than 4,000 diesel generators, and one Amazon permit contemplates up to 10 million gallons of diesel annually across 173 generators, stored in tanks with required containment. Battery rooms bridge power until generators start; lithium chemistries carry fire risk, demonstrated by the 2025 Hillsboro, Oregon battery-room fire, contained without injuries. Cooling systems add refrigerants and water treatment chemicals in ordinary industrial quantities. All of it appears in fire code filings and air permits, which are public: ask your fire marshal for the hazardous materials inventory.",
+    "factIds": [
+      "virginia-generator-fleet",
+      "hillsboro-battery-fire-2025"
+    ]
+  },
+  {
+    "id": "faq-battery-fire",
+    "question": "Can the batteries catch fire?",
+    "concernTags": [
+      "safety"
+    ],
+    "answer20w": "Yes, it has happened: a 2025 Oregon data center battery fire was contained without injuries. Suppression design matters.",
+    "answer100w": "Battery fires at data centers are rare but documented: on May 22, 2025, a battery-room fire at a Digital Realty-linked facility in Hillsboro, Oregon was contained without injuries, though it knocked a major online platform offline the next day. Lithium fires burn hot, can reignite, and resist water, which is why codes increasingly require dedicated detection, suppression, thermal runaway protection, and separation for battery rooms. For residents, two checks matter: whether the design follows current fire code for energy storage, and whether your fire department has been trained and equipped for lithium incidents before the facility energizes, not after.",
+    "factIds": [
+      "hillsboro-battery-fire-2025"
+    ]
+  },
+  {
+    "id": "faq-fire-dept-ready",
+    "question": "Is our volunteer fire department ready for this?",
+    "concernTags": [
+      "safety"
+    ],
+    "answer20w": "Probably not without investment: lithium and large-fuel incidents need training and equipment. Some developers fund exactly that.",
+    "answer100w": "Data centers rarely generate calls, but the calls they can generate (battery fires, large fuel incidents) demand preparation many small departments lack. The documented model for closing the gap is developer funding: Amazon's $1.5 million partnership with the fire department in Hamlet, North Carolina funded a new substation, two trucks, equipment, and two years of staffing, cutting response times by 6-7 minutes and improving the town's insurance rating from 10 to 4, which reportedly saves homeowners $300-500 annually. Communities should treat fire capability as a negotiable project cost: pre-incident planning, lithium training, equipment, and staffing support written into the development agreement.",
+    "factIds": [
+      "aws-hamlet-fire-funding",
+      "hillsboro-battery-fire-2025"
+    ]
+  },
+  {
+    "id": "faq-emergency-services",
+    "question": "Will it strain our police and ambulance services?",
+    "concernTags": [
+      "safety"
+    ],
+    "answer20w": "Unlikely in operations: few workers, gated sites, minimal call volume. Construction phases with thousands of workers are the exception.",
+    "answer100w": "An operating data center is among the quietest neighbors emergency services can have: small staffs, professional security, controlled access, and little public interaction generate minimal police and EMS volume. The demand it does create is specialized fire capability rather than call quantity, which is why the Hamlet, North Carolina model of developer-funded fire investment addresses the real gap. The construction phase is different: thousands of temporary workers mean more traffic incidents and medical calls for a few years, worth planning for in staffing. Net fiscally, a facility paying substantial taxes while generating few calls typically subsidizes emergency services rather than straining them.",
+    "factIds": [
+      "aws-hamlet-fire-funding"
+    ]
+  },
+  {
+    "id": "faq-diesel-groundwater",
+    "question": "Could the diesel tanks leak into our groundwater?",
+    "concernTags": [
+      "safety",
+      "environment"
+    ],
+    "answer20w": "The volumes justify the question: millions of gallons on large campuses. Containment rules apply; verify inspection and monitoring.",
+    "answer100w": "The stored volumes are genuinely large: Northern Virginia data centers collectively host thousands of generators, and a single Amazon permit contemplates up to 10 million gallons of diesel used annually across one campus. Fuel storage is governed by tank regulations requiring secondary containment, leak detection, and spill plans, and site environmental compliance is inspectable, though enforcement records elsewhere (like the repeated stormwater violations at a West Virginia site) show rules only work when enforced. Reasonable resident asks: above-ground tanks with visible containment rather than buried ones, groundwater monitoring wells if the site sits over a drinking aquifer, and public spill reporting.",
+    "factIds": [
+      "virginia-generator-fleet",
+      "wv-stormwater-habitat"
+    ]
+  },
+  {
+    "id": "faq-generator-often",
+    "question": "How often do those generators actually run?",
+    "concernTags": [
+      "safety",
+      "environment"
+    ],
+    "answer20w": "Mostly brief monthly tests, capped at 100 hours yearly for non-emergencies, plus real outages, which are unlimited.",
+    "answer100w": "Under EPA rules, emergency engines may run up to 100 hours per year for maintenance, testing, and qualifying demand response (at most 50 hours for non-emergency grid support), with unlimited operation only during true emergencies; engines running 15-100 hours annually must report locations, dates, and times, creating a paper trail. Typical practice is a monthly test of roughly 30-60 minutes per unit. The community-scale caveat is fleet size: where thousands of generators concentrate, as in Northern Virginia, even limited hours add up, and worst-case modeling there projects emissions rivaling a large share of regional totals. Ask for the site's testing schedule and annual runtime reports.",
+    "factIds": [
+      "epa-emergency-engine-rules",
+      "generator-test-90-105dba-25ft",
+      "virginia-generator-fleet"
+    ]
+  },
+  {
+    "id": "faq-generator-emissions",
+    "question": "What comes out of the generator stacks?",
+    "concernTags": [
+      "environment"
+    ],
+    "answer20w": "Diesel exhaust: nitrogen oxides, fine particulates, carbon monoxide, and air toxics, permitted but exempt from standard limits during allowed hours.",
+    "answer100w": "Diesel generators emit nitrogen oxides, fine particulate matter, carbon monoxide, and air toxics. EPA rules allow emergency engines to run up to 100 hours yearly for testing and maintenance without meeting the emission limits that apply to power plants, which is defensible per engine but adds up per region: Virginia legislative research warns that worst-case operation of Northern Virginia's fleet, more than 4,000 generators exceeding 11 gigawatts, could emit 9,000 tons of nitrogen oxides in a year, about half the region's typical annual emissions from all sources. Fleet size and permit terms, not the existence of generators, are what deserve community scrutiny.",
+    "factIds": [
+      "epa-emergency-engine-rules",
+      "virginia-generator-fleet"
+    ]
+  },
+  {
+    "id": "faq-renewable-real",
+    "question": "They say it runs on 100 percent renewable energy. Is that real?",
+    "concernTags": [
+      "environment",
+      "trust"
+    ],
+    "answer20w": "Usually it's accounting: certificates matching annual usage, not the actual grid mix powering the building hour by hour.",
+    "answer100w": "Most '100 percent renewable' claims rest on market-based accounting: the company buys renewable energy certificates or contracts equal to its annual consumption somewhere on the grid, while the facility physically runs on whatever the local grid delivers, including fossil generation at night and in winter. That accounting is legal and standardized, but it does not mean what most people hear. More credible standards exist: location-based reporting (what actually powers the region) and hourly matching backed by real power purchase agreements and storage. Fair questions for any claim: matched annually or hourly? Certificates or new-build contracts? What is the local grid mix at night?",
+    "factIds": [
+      "recs-renewable-claims"
+    ]
+  },
+  {
+    "id": "faq-carbon",
+    "question": "Will it increase carbon emissions?",
+    "concernTags": [
+      "environment",
+      "power"
+    ],
+    "answer20w": "It adds large electricity demand, so it depends on what supplies that demand: new clean generation or existing fossil plants.",
+    "answer100w": "A data center's carbon footprint is mostly its electricity, so the question becomes what generates the added demand. National projections show the scale: federal researchers' reference case has data centers reaching 11.8 percent of U.S. electricity by 2030. Where demand is met by new clean supply, the increment can be small: Microsoft's 20-year contract is financing the restart of Three Mile Island Unit 1, adding 835 megawatts of carbon-free generation. Where it is met by running existing fossil plants harder, emissions rise. Renewable certificates do not settle this; ask what new generation, if any, is contractually tied to the project.",
+    "factIds": [
+      "lbnl-2025-update-2030",
+      "tmi-crane-restart",
+      "recs-renewable-claims"
+    ]
+  },
+  {
+    "id": "faq-air-quality",
+    "question": "Will it make the air in my neighborhood worse?",
+    "concernTags": [
+      "environment"
+    ],
+    "answer20w": "A grid-powered facility with limited generator testing, minimally. Onsite fossil generation is a different and documented story.",
+    "answer100w": "Two very different cases share the name data center. A grid-powered facility's local emissions come from backup generators running limited test hours under EPA rules, a modest neighborhood impact when the fleet is ordinary sized. Onsite fossil generation changes everything: environmental groups allege xAI's Memphis-area facilities run 33 gas turbines without Clean Air Act permits, projected to emit 2,507 tons of nitrogen oxides annually in a metro already failing federal smog standards, which would make it the area's largest industrial source of that pollutant. Before forming an opinion, find out which case yours is: the air permit application tells you.",
+    "factIds": [
+      "xai-memphis-turbines",
+      "epa-emergency-engine-rules"
+    ]
+  },
+  {
+    "id": "faq-wildlife",
+    "question": "What happens to the wetlands and wildlife on the site?",
+    "concernTags": [
+      "environment",
+      "landuse"
+    ],
+    "answer20w": "Large sites can destroy real habitat: one proposal would eliminate over 34 acres of wetlands and impact dozens of streams.",
+    "answer100w": "Mass-graded campuses of hundreds or thousands of acres can carry major ecological costs, and the permitting record shows the stakes: Google's proposed Project Avalon in West Virginia would eliminate more than 34 acres of wetlands and impact over 45,000 feet of 34 streams on a 1,699-acre parcel, with nine federally protected species at risk, while a nearby data center site drew repeated sediment violation notices for discharges into an Ohio River tributary. Wetland and stream impacts require federal and state permits with public comment periods, and those filings are where residents have standing to demand avoidance, minimization, and real mitigation rather than paper offsets.",
+    "factIds": [
+      "wv-stormwater-habitat"
+    ]
+  },
+  {
+    "id": "faq-efficiency",
+    "question": "Are data centers at least getting more efficient?",
+    "concernTags": [
+      "environment",
+      "power"
+    ],
+    "answer20w": "New flagship facilities are; the industry average has plateaued. Efficiency gains have not stopped total demand from rising.",
+    "answer100w": "Two true statements coexist. The newest hyperscale facilities report design power usage effectiveness well below 1.3, meaning very little energy is lost beyond the computers themselves, and leading operators report falling water intensity too. Meanwhile the industry-wide average PUE has plateaued in the mid-1.5s, because older facilities keep running. And efficiency has not reduced total consumption: demand growth from AI swamps per-facility gains. For your community, the actionable point is that a new build should be held to new-build standards: ask for the design PUE and water intensity in the application, and require annual reporting against them.",
+    "factIds": [
+      "uptime-pue-2025",
+      "microsoft-wue"
+    ]
+  },
+  {
+    "id": "faq-water-energy-tradeoff",
+    "question": "Is saving water just a tradeoff for using more energy?",
+    "concernTags": [
+      "environment",
+      "water",
+      "power"
+    ],
+    "answer20w": "Partly, yes: avoiding evaporative cooling raises facility energy use roughly 10-15 percent in modeled comparisons. Communities should choose knowingly.",
+    "answer100w": "There is a genuine engineering tradeoff. Evaporative cooling is energy-efficient because evaporating water removes heat cheaply; replacing it with air-cooled plants raises total facility energy use roughly 10-15 percent in Uptime Institute's modeled example. And more energy means more indirect water at power plants, which consume about 3.1 liters per kilowatt-hour on average. So 'waterless' is not free; it shifts burden from the local watershed to the grid. That can still be the right choice, especially in dry regions where local water is the scarce resource. The point is that it is a choice, and communities deserve to see both numbers before making it.",
+    "factIds": [
+      "air-cooling-energy-penalty",
+      "grid-water-intensity"
+    ]
+  },
+  {
+    "id": "faq-env-enforcement",
+    "question": "Who enforces the environmental rules if they break them?",
+    "concernTags": [
+      "environment",
+      "trust"
+    ],
+    "answer20w": "State environmental agencies and EPA, driven by inspections, complaints, and lawsuits. Enforcement records show violations do happen.",
+    "answer100w": "Enforcement runs through state environmental agencies for water and erosion permits, EPA and state air agencies for emissions, and citizen suits where agencies lag. The record shows both that violations occur and that the system responds unevenly: West Virginia regulators issued repeated sediment violation notices at one data center site while construction continued, and in Memphis it took NAACP and environmental-law groups to challenge allegedly unpermitted gas turbines. Residents are part of enforcement: violation notices, inspection reports, and permits are public records; complaints create official paper trails; and public comment periods on permits are where conditions get strengthened. Passive communities get passive enforcement.",
+    "factIds": [
+      "wv-stormwater-habitat",
+      "xai-memphis-turbines"
+    ]
+  },
+  {
+    "id": "faq-ai-worse",
+    "question": "Is AI making all of this worse?",
+    "concernTags": [
+      "environment",
+      "power"
+    ],
+    "answer20w": "AI is the main driver of the current buildout: national projections roughly double or triple data centers' electricity share.",
+    "answer100w": "Yes, AI is why the numbers changed. Data centers used about 4.4 percent of U.S. electricity in 2023; federal researchers now project 11.8 percent by 2030 in their reference case, with scenarios up to 15.3 percent, and independent estimates span 9-17 percent. AI training and inference demand denser, more power-hungry facilities, which is also why projects grew from tens to hundreds of megawatts. For communities this cuts both ways: the projects are bigger and more consequential, and the developers are better funded and under more scrutiny than ever, which is leverage a well-prepared community can use.",
+    "factIds": [
+      "lbnl-2023-share",
+      "lbnl-2025-update-2030",
+      "epri-2030-range"
+    ]
+  },
+  {
+    "id": "faq-build-elsewhere",
+    "question": "Why can't they build it somewhere else?",
+    "concernTags": [
+      "landuse"
+    ],
+    "answer20w": "They can, but sites need huge power, fiber, land, and willing zoning, a combination fewer places offer than you'd think.",
+    "answer100w": "Site selection is driven by a short checklist: available electric capacity (hyperscale projects now seek sites capable of 300 or more megawatts), fiber routes, large parcels, and zoning that allows the use. Places with all four are scarcer than open land suggests, which is why projects cluster where infrastructure already exists. 'Somewhere else' is also somewhere: the Farm Bureau, worried about permanent farmland conversion, urges steering projects to brownfields and industrial sites first, a legitimate policy your community can adopt in its comprehensive plan. A town that maps preferred sites in advance has far more influence than one that just says no.",
+    "factIds": [
+      "lightbox-site-selection",
+      "afbf-farmland-2026"
+    ]
+  },
+  {
+    "id": "faq-why-our-town",
+    "question": "Why did they pick our town?",
+    "concernTags": [
+      "landuse"
+    ],
+    "answer20w": "Almost certainly power capacity, fiber, land price, and zoning. It's an infrastructure decision, not a community judgment.",
+    "answer100w": "Data center siting is unsentimental: developers screen for electric capacity (hyperscale sites now target 300 or more megawatts of capability), fiber connectivity, large affordable parcels, and permissive or industrial zoning, with campus assemblies running from around 10 acres to 200 or more. If your town appeared on a shortlist, you likely have a substation, transmission line, or fiber route nearby, plus land priced below metro cores. Understanding this helps negotiation: the developer chose you because alternatives are limited, which means you have more leverage than the 'they'll just go elsewhere' argument implies, especially if your site's power position is strong.",
+    "factIds": [
+      "lightbox-site-selection"
+    ]
+  },
+  {
+    "id": "faq-how-much-land",
+    "question": "How much land does a data center actually take?",
+    "concernTags": [
+      "landuse"
+    ],
+    "answer20w": "Recent projects average about 0.5-1.5 acres per megawatt, so campuses run from tens to thousands of acres.",
+    "answer100w": "The useful ratio: recent U.S. projects average roughly 0.5-1.5 acres per megawatt of IT load, with 5,000-12,000 square feet of building per megawatt. A modest 30-megawatt facility fits a parcel similar to a large school site; a 300-megawatt campus needs a few hundred acres; and the new mega-campuses, like Meta's multi-thousand-acre Louisiana project, are small towns' worth of land. Much of a campus footprint is actually setbacks, stormwater, and buffer, which is negotiable space: communities can require that buffer acreage be genuinely landscaped or conserved rather than graded and left bare.",
+    "factIds": [
+      "acres-per-mw-apa",
+      "meta-hyperion-construction-strain"
+    ]
+  },
+  {
+    "id": "faq-farmland",
+    "question": "Will data centers eat up our farmland?",
+    "concernTags": [
+      "landuse"
+    ],
+    "answer20w": "It's a real concern the Farm Bureau itself raises: conversion is essentially permanent. Brownfield-first policies are the counter.",
+    "answer100w": "The American Farm Bureau Federation, hardly an anti-development group, warns that farmland conversion for data centers is generally permanent and urges brownfield-first siting. The scale is national: nearly 5,000 U.S. data centers are active or under construction, led by Virginia and Texas, and buildable rural land with power access is exactly where projects and farms compete. Local policy has real teeth here: agricultural zoning, comprehensive plan designations steering data centers to industrial land, and conservation easements all shape outcomes. A community can plausibly welcome data centers and protect farmland at once, but only by deciding where projects belong before the first application arrives.",
+    "factIds": [
+      "afbf-farmland-2026"
+    ]
+  },
+  {
+    "id": "faq-company-leaves",
+    "question": "What happens if the company leaves in ten years?",
+    "concernTags": [
+      "landuse",
+      "trust"
+    ],
+    "answer20w": "Usually nothing is guaranteed: few places require decommissioning bonds. A handful of jurisdictions now do, and you can too.",
+    "answer100w": "Most jurisdictions have no data center exit rules, unlike solar farms where decommissioning bonds are routine. That is starting to change: two Pennsylvania jurisdictions require decommissioning within 12 months including removal of hazardous materials and cabling, and Ohio's tariff requires large data centers with weak credit to post financial assurances plus multi-year minimum payment terms and exit fees protecting utility investments. The building itself is heavy industrial shell with substantial power infrastructure, which has reuse value, but no community should rely on that. Require a decommissioning plan and financial assurance in the approval; it costs the developer little if they intend to stay.",
+    "factIds": [
+      "decommissioning-rules-emerging",
+      "aep-ohio-tariff"
+    ]
+  },
+  {
+    "id": "faq-teardown",
+    "question": "Can we require them to remove everything someday?",
+    "concernTags": [
+      "landuse"
+    ],
+    "answer20w": "Yes, jurisdictions have: decommissioning within 12 months, hazardous material removal, and posted financial assurance are working precedents.",
+    "answer100w": "Precedents exist and are recent. Susquehanna County and Smithfield Township, Pennsylvania require decommissioning within 12 months of closure, including removal of hazardous materials and cabling. Ohio's 2025 tariff adds a financial dimension: data centers above 25 megawatts with weak credit must post assurances, alongside eight-year minimum terms and exit fees. The essential elements of a strong condition: a defined trigger (months of non-operation), a defined scope (structures, tanks, batteries, cabling), a funding mechanism that survives bankruptcy (bond or escrow, not a promise), and periodic cost re-estimation as the facility grows. Written before approval, this is a routine ask; afterward, it is nearly impossible.",
+    "factIds": [
+      "decommissioning-rules-emerging"
+    ]
+  },
+  {
+    "id": "faq-zoning-protect",
+    "question": "Can zoning actually keep these away from neighborhoods?",
+    "concernTags": [
+      "landuse"
+    ],
+    "answer20w": "Yes, where communities write data-center-specific rules: setbacks, buffers, screening, and noise studies all have working examples.",
+    "answer100w": "Generic industrial zoning was written before 100-megawatt buildings with acres of rooftop cooling, so communities are updating codes. Fairfax County requires data center buildings 200 feet from residential lot lines and generators 300 feet, with noise studies before and after construction. Henrico County requires 500-foot setbacks from residential areas plus substation screening and vegetative buffers. Other proven elements include special use permits (giving the board discretion project by project), equipment enclosure requirements, and performance standards measured at the property line. The critical timing point: these rules only bind applications filed after adoption, so the window to modernize your ordinance is before the land rush arrives.",
+    "factIds": [
+      "fairfax-setbacks-2024",
+      "henrico-500ft-setback"
+    ]
+  },
+  {
+    "id": "faq-more-coming",
+    "question": "If we approve one, will ten more follow?",
+    "concernTags": [
+      "landuse"
+    ],
+    "answer20w": "Clustering is the industry's defining pattern: infrastructure attracts infrastructure. Plan for the district, not the building.",
+    "answer100w": "Data centers cluster because the expensive ingredients (transmission capacity, substations, fiber) serve neighbors as easily as pioneers: Virginia alone hosts 706 facilities and Texas 546 of roughly 4,925 nationally, and Loudoun County's concentration grew over decades into the world's densest market. Your first approval builds the case for the second application. That is manageable if intentional: define a data center overlay district with a capacity expectation, require cumulative impact analysis (water, power, noise from all facilities, not each alone), and set the ordinance before approving the first project. Communities that zoned for one building have repeatedly found themselves hosting a corridor.",
+    "factIds": [
+      "afbf-farmland-2026",
+      "loudoun-share-and-rates"
+    ]
+  },
+  {
+    "id": "faq-vs-warehouse",
+    "question": "Is a data center better or worse than a warehouse or factory?",
+    "concernTags": [
+      "landuse"
+    ],
+    "answer20w": "Different, not simply better: far more tax revenue and electricity use, fewer trucks and jobs, comparable or less water.",
+    "answer100w": "Against realistic alternatives for industrial land, the tradeoffs are distinct. Revenue: a taxed data center can massively outearn a warehouse; Virginia facilities generated hundreds of millions for host counties. Traffic: minimal in operations, far below distribution centers. Jobs: fewer than a factory or fulfillment center. Water: Virginia's audit found most facilities there use about the same as a large office building or less, though evaporative designs elsewhere use far more. Electricity: in a class of its own. Land intensity runs about 0.5-1.5 acres per megawatt. The comparison worth making is against what would plausibly be built there instead, not against an empty field.",
+    "factIds": [
+      "jlarc-local-revenue",
+      "jlarc-water-office-comparison",
+      "acres-per-mw-apa"
+    ]
+  },
+  {
+    "id": "faq-secretive",
+    "question": "Why are they so secretive about everything?",
+    "concernTags": [
+      "trust"
+    ],
+    "answer20w": "Competitive habit plus NDAs local officials sign. The secrecy is real, documented, and a legitimate grievance to push back on.",
+    "answer100w": "The secrecy is not your imagination. Nondisclosure agreements covered data center deals in roughly 80 percent of Virginia localities with proposed or existing facilities, and in documented cases residents learned of multi-billion-dollar projects weeks before operation. In The Dalles, Oregon, the city, with Google funding, sued a newspaper to keep water usage records from the public. Companies cite competition among rivals and land speculation as reasons. Whatever the motive, communities are not powerless: officials can decline NDAs or negotiate expiration before public hearings, and permits, utility filings, and zoning applications are public records that no NDA can erase.",
+    "factIds": [
+      "public-citizen-ndas",
+      "the-dalles-google"
+    ]
+  },
+  {
+    "id": "faq-code-names",
+    "question": "Why do they hide behind shell companies and code names?",
+    "concernTags": [
+      "trust"
+    ],
+    "answer20w": "To assemble land and power quietly before speculation and competitors react. Understandable commercially, corrosive to public trust.",
+    "answer100w": "Projects routinely arrive as LLCs with placeless names because early disclosure raises land prices, tips competitors to power-rich sites, and invites speculation before the company has committed. Commercially rational, but the community cost is real: residents asked to evaluate a project without knowing the operator cannot assess its track record, and Virginia's experience shows NDA-wrapped deals leaving residents in the dark until nearly operational. A reasonable middle exists and communities can require it: identity disclosure to officials under seal early, and full public disclosure before any public hearing or incentive vote. A company unwilling to be named before your board votes is asking for trust it has not earned.",
+    "factIds": [
+      "public-citizen-ndas",
+      "lightbox-site-selection"
+    ]
+  },
+  {
+    "id": "faq-break-promises",
+    "question": "Can we make them leave if they break their promises?",
+    "concernTags": [
+      "trust"
+    ],
+    "answer20w": "Removal is unrealistic, but enforceable consequences are not: permit revocation, fines, and contract remedies exist where written in advance.",
+    "answer100w": "No one is going to demolish an operating billion-dollar facility, so the real question is whether breaking promises costs them anything. It can, when commitments are written as conditions rather than statements: Spotsylvania County, Virginia attaches noise limits to every data center approval with developer-funded compliance testing and permit revocation for repeat violations. Contract mechanisms work too: community benefits agreements like Lancaster, Pennsylvania's create enforceable payment and performance obligations, and emerging decommissioning rules add financial assurance if operations cease. The hierarchy to remember: permit conditions and contracts are enforceable; press releases and hearing testimony are not. Negotiate accordingly, before approval.",
+    "factIds": [
+      "spotsylvania-permit-conditions",
+      "lancaster-cba",
+      "decommissioning-rules-emerging"
+    ]
+  },
+  {
+    "id": "faq-regret",
+    "question": "Do communities that said yes regret it?",
+    "concernTags": [
+      "trust"
+    ],
+    "answer20w": "Both outcomes exist: entrenched host communities keep expanding, while national sentiment has swung sharply toward opposition.",
+    "answer100w": "The record contains both satisfied and regretful hosts. Virginia's statewide audit found data centers deliver substantial economic and fiscal benefits to hosting localities, and its biggest host counties have continued approving projects for decades, which is its own evidence. Yet sentiment nationally has moved fast the other way: polled opposition to a nearby data center jumped from 42 to 71 percent of registered voters in about nine months. The pattern in the case record: communities that negotiated enforceable terms and taxed the equipment tend to defend their decision; those surprised by noise, secrecy, or weak deals become the cautionary tales driving the backlash.",
+    "factIds": [
+      "jlarc-two-sided",
+      "embold-heatmap-swing"
+    ]
+  },
+  {
+    "id": "faq-why-opposition",
+    "question": "Why is everyone suddenly against data centers?",
+    "concernTags": [
+      "trust"
+    ],
+    "answer20w": "Opposition surged as AI-scale projects spread: 71 percent of adults now oppose one nearby, up sharply within months.",
+    "answer100w": "The shift is measured, recent, and bipartisan. Gallup found 71 percent of U.S. adults oppose an AI data center in their area, nearly half strongly; among opponents, half cite water and energy overuse, with quality of life, utility costs, and pollution following. Annenberg tracking showed opposition rising from 49 to 61 percent in about four months during 2026, across both parties. The drivers are the industry's own growing pains: bigger projects, visible utility-bill fights, water disclosure battles, and noise controversies that made national news. For any new project, this baseline of distrust is the starting condition, not a communications problem to spin away.",
+    "factIds": [
+      "gallup-2026-oppose-71",
+      "annenberg-trend"
+    ]
+  },
+  {
+    "id": "faq-top-worries",
+    "question": "What are people in other communities most worried about?",
+    "concernTags": [
+      "trust"
+    ],
+    "answer20w": "Energy and water top every measure, followed by quality of life, bills, property values, and tax deals.",
+    "answer100w": "Multiple independent measures agree on the ranking. Gallup found half of opponents cite resource overuse (water and energy), followed by quality of life, utility costs, and pollution. UVA's opinion project found opponents' most common words were water, resources, and environment. A national tracker of contested projects lists the most-cited concerns as grid and energy, water, noise, property values, environment, infrastructure, and tax abatements, in that order, across the fights that blocked or delayed $64 billion in projects in under a year. If you are organizing, or answering organizers, these are the issues where evidence and commitments matter most.",
+    "factIds": [
+      "gallup-2026-oppose-71",
+      "uva-opinion-project",
+      "dcw-64b"
+    ]
+  },
+  {
+    "id": "faq-stopped-projects",
+    "question": "Have communities actually stopped these projects?",
+    "concernTags": [
+      "trust"
+    ],
+    "answer20w": "Yes, at scale: tens of billions in projects blocked or delayed by local opposition, and the pace is accelerating.",
+    "answer100w": "Local opposition is demonstrably effective. From May 2024 to March 2025, $64 billion in U.S. data center projects were blocked or delayed by local opposition, driven by 142 activist groups across 24 states. The pace then accelerated: in the first quarter of 2026 alone, roughly 75 projects worth about $130 billion were blocked or delayed, matching all of the prior year in three months, while more than 300 state data center bills were filed in six weeks. The practical lesson cuts both ways: communities have real power to refuse, and equally real power to use that leverage to negotiate enforceable terms instead.",
+    "factIds": [
+      "dcw-64b",
+      "dcw-q1-2026"
+    ]
+  },
+  {
+    "id": "faq-verify-claims",
+    "question": "How can I verify anything the developer claims?",
+    "concernTags": [
+      "trust"
+    ],
+    "answer20w": "Through public records: permits, utility filings, and required reports. Claims that never appear in a filed document are just marketing.",
+    "answer100w": "Paper beats presentations. Power claims appear in utility interconnection filings and rate cases; air and generator claims in air permits, and engines running certain hours must report operating dates and times under EPA rules; noise commitments are verifiable only if the permit requires compliance testing, as Spotsylvania County's conditions do; water claims are checkable only where metering disclosure is required, and industry surveys show most operators historically have not even tracked water use. The universal test: ask where each claim appears in a document a government agency holds. If the answer is nowhere, ask that it be made a permit condition, then it becomes verifiable.",
+    "factIds": [
+      "uptime-disclosure-gap",
+      "epa-emergency-engine-rules",
+      "spotsylvania-permit-conditions"
+    ]
+  },
+  {
+    "id": "faq-what-demand",
+    "question": "What should our town demand before saying yes?",
+    "concernTags": [
+      "trust"
+    ],
+    "answer20w": "Enforceable numbers: water caps, noise limits with testing, ratepayer protections, decommissioning assurance, and disclosed deal terms. All have precedents.",
+    "answer100w": "Every major protection now has a working precedent. Water: a hard cap tied to source capacity, as St. Joseph County, Indiana set against its aquifer's safe yield. Noise: numeric property-line limits with developer-funded testing and revocation for violations, per Spotsylvania County. Ratepayers: minimum-payment tariffs with collateral and exit fees, per Ohio. Community benefit: a binding agreement with payments and enforceable caps, per Lancaster, Pennsylvania, while noting its non-binding local-hire clause as the cautionary example. Add disclosed deal terms and decommissioning assurance, and you have a template. None of this kills viable projects; it filters for operators who intend to keep their word.",
+    "factIds": [
+      "st-joseph-aquifer-cap",
+      "spotsylvania-permit-conditions",
+      "aep-ohio-tariff",
+      "lancaster-cba"
+    ]
+  }
+]

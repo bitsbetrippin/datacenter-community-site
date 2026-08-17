@@ -1,0 +1,80 @@
+{
+  "comparison": {
+    "rows": [
+      {
+        "use": "100 MW data center",
+        "jobs": "About 50 direct jobs per typical building; roughly 100-200 direct jobs at county level (independent research). Industry studies citing ~1,300 jobs per 100 MW include modeled indirect and induced effects and are not comparable to direct counts.",
+        "water": "Design-dependent: most Virginia facilities use about the same or less water than a large office building; evaporative designs use far more.",
+        "power": "~100 MW continuous, orders of magnitude above any comparably sized warehouse or most factories. This is the defining impact and the reason for utility and grid review.",
+        "truckTraffic": "Very low in operations (small headcount, occasional deliveries); heavy truck traffic concentrates in the 12-36 month construction period. Qualitative: no published operational traffic study exists.",
+        "taxRevenue": "Highest per acre of the three where equipment is taxable: data centers supply 38% of Loudoun County's general fund on ~4% of commercial parcels. Ohio modeling put a 250,000 sq ft data center at $84M annual peak taxes vs $62M for comparable manufacturing.",
+        "notes": "Low jobs, low operating traffic, very high power demand, high per-acre tax yield where personal property taxes apply."
+      },
+      {
+        "use": "Large distribution warehouse",
+        "jobs": "Varies enormously: general warehousing employs relatively few per square foot, while e-commerce fulfillment centers employ hundreds to over a thousand.",
+        "water": "Low: domestic and fire protection use only, no process cooling load.",
+        "power": "Low single-digit MW typical for lighting, conveyors, and HVAC (qualitative).",
+        "truckTraffic": "Measured: 0.22-0.60 daily vehicle trips per 1,000 sq ft (PennDOT / ITE), roughly 190-520 daily trips for an 870,000 sq ft building with a large share of heavy trucks, continuing for the life of the facility.",
+        "taxRevenue": "Lower per acre: value sits in the building shell and land, with far less taxable equipment than a data center.",
+        "notes": "More jobs per building than a data center in the fulfillment case, dramatically more permanent truck traffic, minimal power and water."
+      },
+      {
+        "use": "Mid-size manufacturing plant",
+        "jobs": "About 250 direct jobs in Ohio modeling, roughly 3x a same-size data center's direct count.",
+        "water": "Highly process-dependent: food processing and chemicals can exceed data center use; light assembly uses little. No single figure is defensible.",
+        "power": "Process-dependent, typically 5-30+ MW, almost always well below a hyperscale data center (qualitative).",
+        "truckTraffic": "Moderate to high: inbound materials and outbound product generate sustained truck volumes (qualitative).",
+        "taxRevenue": "$62M modeled annual peak taxes vs $84M for the comparable data center in the Ohio analysis.",
+        "notes": "The classic tradeoff: manufacturing brings roughly 3x the direct jobs; the data center brings more tax revenue in the Ohio model."
+      }
+    ],
+    "sources": [
+      {"title": "JLARC Data Centers in Virginia", "url": "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp"},
+      {"title": "Brookings: data center employment effects", "url": "https://www.brookings.edu/articles/new-evidence-on-data-center-employment-effects/"},
+      {"title": "PennDOT warehouse trip generation memo", "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/programs-and-doing-business/permits/highwayoccupancypermits/2024-06_warehouse_trip_generation_memo.pdf"},
+      {"title": "Vorys: comparative economic impacts, Ohio", "url": "https://www.vorys.com/publication-comparative-economic-impacts-of-data-centers-and-manufacturing-centers-in-ohio"},
+      {"title": "Loudoun County data center FAQ", "url": "https://www.loudoun.gov/faq.aspx?cat=242"},
+      {"title": "Cushman & Wakefield: megawatts to multipliers", "url": "https://www.cushmanwakefield.com/en/united-states/insights/from-megawatts-to-multipliers"}
+    ],
+    "defensibilityNote": "These comparisons contextualize orders of magnitude; they are not equivalent-confidence data. The Ohio data-center-vs-manufacturing figures are modeled projections summarized by a law firm serving the industry, and they count multiplier effects that independent research suggests are often overstated. Warehouse employment spans a 10x range by subtype, so no single jobs number is defensible. Warehouse and factory power and water figures are qualitative because no tier-1 per-facility source was located. Tax comparisons depend entirely on state tax structure. The traffic row mixes measured warehouse rates with inferred data center rates."
+  },
+  "receives": [
+    {"item": "Tax base", "detail": "Local property tax on buildings plus, in states that tax it, large business equipment tax revenue (up to 38% of the county budget in the extreme Loudoun case)."},
+    {"item": "Utility infrastructure", "detail": "Substations, water lines, and fiber routes built or funded by the project, which can serve wider growth."},
+    {"item": "Employment", "detail": "About 50 direct permanent jobs per building at solid wages, plus a large multi-year construction workforce."},
+    {"item": "Construction activity", "detail": "Hundreds to thousands of trades workers spending locally for 1-5+ years of phased building."},
+    {"item": "Community programs", "detail": "Negotiated benefits where communities ask: fire equipment and staffing, workforce training funds, scholarships, broadband extensions."},
+    {"item": "Fire and emergency capability", "detail": "Documented cases of developer-funded stations, trucks, and training that improved response times district-wide."}
+  ],
+  "accepts": [
+    {"item": "Industrial land conversion", "detail": "Hundreds of acres of buildings and pavement, effectively permanent, often on former farmland."},
+    {"item": "Large electrical demand", "detail": "Load comparable to tens of thousands of homes, with grid upgrade and rate-structure consequences that depend on state rules."},
+    {"item": "Construction disruption", "detail": "12-36 months per building of truck traffic, dust, and noise; years for phased campuses."},
+    {"item": "Operating noise risk", "detail": "Continuous cooling hum and periodic generator testing, manageable by design and enforceable limits, painful where those are absent."},
+    {"item": "Water and environmental footprint", "detail": "Design-dependent water consumption, generator emissions within permitted limits, stormwater and habitat impacts of a large campus."},
+    {"item": "Visual and character change", "detail": "Warehouse-scale architecture, security fencing, and lighting where fields or woods used to be."}
+  ],
+  "scorecard": [
+    {"id": "economic", "label": "Economic benefit (taxes, payroll)", "defaultWeight": 3},
+    {"id": "infrastructure", "label": "Infrastructure benefit (grid, water, fiber, fire)", "defaultWeight": 2},
+    {"id": "jobs", "label": "Employment", "defaultWeight": 2},
+    {"id": "environment", "label": "Environmental impact", "defaultWeight": 3},
+    {"id": "water", "label": "Water impact", "defaultWeight": 3},
+    {"id": "grid", "label": "Grid and rate impact", "defaultWeight": 3},
+    {"id": "noise", "label": "Noise", "defaultWeight": 2},
+    {"id": "landuse", "label": "Land use and character", "defaultWeight": 2},
+    {"id": "transparency", "label": "Developer transparency and commitments", "defaultWeight": 3}
+  ],
+  "futureTech": [
+    {"tech": "Direct-to-chip liquid cooling", "status": "deployed", "summary": "In production for AI racks (22% of surveyed operators) and effectively required for the highest-density systems; 75% of the installed base still uses air cooling.", "sourceUrl": "https://intelligence.uptimeinstitute.com/sites/default/files/2025-07/UI%20Field%20181_Data%20center%20cooling.pdf"},
+    {"tech": "Waterless / zero-evaporation cooling", "status": "deployed", "summary": "Microsoft's new-build standard since late 2024: closed-loop chip-level cooling that eliminates evaporative water use at the cost of modestly higher electricity (company-reported).", "sourceUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/"},
+    {"tech": "Waste heat reuse / district heating", "status": "deployed", "summary": "Operating in Europe (Amazon Dublin heating council buildings since 2022; Meta Odense feeding Danish district heat); rare in the US because district heating networks are scarce.", "sourceUrl": "https://nextcity.org/urbanist-news/waste-data-center-heat-is-warming-up-dublin-homes-is-it-working"},
+    {"tech": "Fuel cells (solid oxide)", "status": "deployed", "summary": "Bloom Energy reports 1.3+ GW deployed and a 1 GW agreement with AEP for AI data centers; gas-fed, so cleaner locally than diesel but not zero-carbon (company-reported).", "sourceUrl": "https://investor.bloomenergy.com/press-releases/press-release-details/2024/Bloom-Energy-Announces-Gigawatt-Fuel-Cell-Procurement-Agreement-with-AEP-to-Power-AI-Data-Centers/default.aspx"},
+    {"tech": "Grid-flexible / demand-response compute", "status": "early-deployment", "summary": "Google has contracted 1 GW of demand-response capacity with five US utilities, shifting AI workloads during grid peaks; contracted capacity, limited public curtailment data so far (company-reported).", "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/demand-response-data-center-milestone/"},
+    {"tech": "Existing-reactor nuclear deals", "status": "early-deployment", "summary": "Three Mile Island Unit 1 restart (835 MW, Microsoft) targets mid-2027; the restructured 1,920 MW Talen-AWS Susquehanna deal runs through 2042 after FERC rejected the behind-the-meter version.", "sourceUrl": "https://penncapital-star.com/energy-environment/concern-persists-as-crane-nuclear-plant-progresses-toward-2027-restart/"},
+    {"tech": "Immersion cooling", "status": "early-deployment", "summary": "Commercially available for high-density niches; adoption remains a small fraction of the market compared with direct-to-chip.", "sourceUrl": "https://intelligence.uptimeinstitute.com/resource/immersion-cooling-evolves-response-it-power-density"},
+    {"tech": "Long-duration storage (iron-air)", "status": "announced", "summary": "Google and Xcel plan a 300 MW / 30 GWh 100-hour battery for a Minnesota data center; in regulatory review, not operating.", "sourceUrl": "https://www.energy-storage.news/google-minnesota-data-centre-energy-deal-includes-30gwh-multi-day-iron-air-batteries-from-form-energy/"},
+    {"tech": "Small modular reactors (SMRs)", "status": "announced", "summary": "No SMR powers any data center today. Google-Kairos targets around 2030; Amazon-X-energy targets 320 MW initially. All dates are developer targets, not regulatory certainties.", "sourceUrl": "https://www.datacenterfrontier.com/energy/article/55235902/google-and-amazon-make-major-inroads-with-smrs-to-bring-nuclear-energy-to-data-centers"}
+  ]
+}

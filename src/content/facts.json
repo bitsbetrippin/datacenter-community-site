@@ -1,0 +1,1944 @@
+[
+  {
+    "id": "lbnl-2023-share",
+    "claim": "U.S. data centers consumed about 176 TWh in 2023, roughly 4.4% of total U.S. electricity, projected to reach 6.7-12% by 2028.",
+    "value": "176 TWh / 4.4% (2023); 6.7-12% by 2028 (projected)",
+    "sourceOrg": "Lawrence Berkeley National Laboratory (for U.S. DOE)",
+    "sourceTitle": "2024 United States Data Center Energy Usage Report",
+    "pubDate": "2024-12-20",
+    "tier": "government",
+    "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf",
+    "geography": "United States",
+    "methodologyNote": "Bottom-up model from IT equipment shipment data, device-level power models, and cooling simulations.",
+    "confidence": "high",
+    "caveats": "2028 figures are modeled projections with wide bands reflecting AI-demand uncertainty.",
+    "concernTags": [
+      "power"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "lbnl-2025-update-2030",
+    "claim": "LBNL's 2025 update projects data centers reach 11.8% of U.S. electricity by 2030 in its reference case (649 TWh), with scenarios spanning 9.5-15.3%.",
+    "value": "649 TWh / 11.8% reference; 9.5-15.3% range by 2030",
+    "sourceOrg": "Lawrence Berkeley National Laboratory",
+    "sourceTitle": "United States Data Center Energy Usage Report: 2025 Update",
+    "pubDate": "2026-06-01",
+    "tier": "government",
+    "url": "https://bies.lbl.gov/publications/united-states-data-center-energy-2025",
+    "geography": "United States",
+    "methodologyNote": "Bottom-up model with sensitivity cases on chip shipments, chip lifespan, and idle power.",
+    "confidence": "medium",
+    "caveats": "Entirely a modeled projection; depends on genuinely uncertain AI demand, chip supply, and utilization.",
+    "concernTags": [
+      "power"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "epri-2030-range",
+    "claim": "EPRI projects U.S. data centers will consume 9-17% of national electricity by 2030 under scenario-based forecasts.",
+    "value": "9-17% of U.S. electricity by 2030",
+    "sourceOrg": "Electric Power Research Institute",
+    "sourceTitle": "Powering Intelligence 2026: Updated U.S. Data Center Scenarios",
+    "pubDate": "2026-01-01",
+    "tier": "independent",
+    "url": "https://powering-intelligence.epri.com/executive-summary.html",
+    "geography": "United States, with state-level breakdowns",
+    "methodologyNote": "Scenario-based forecasting using state capacity factors and assumed growth rates.",
+    "confidence": "medium",
+    "caveats": "Modeled scenarios, not measurements; wide range reflects real forecast uncertainty.",
+    "concernTags": [
+      "power"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "eia-household-kwh",
+    "claim": "The average U.S. residential customer purchased 10,791 kWh of electricity in 2022, the standard denominator for 'homes-equivalent' comparisons. A 100 MW campus at high load uses electricity equal to roughly 65,000-81,000 homes.",
+    "value": "10,791 kWh/yr per home; 100 MW ≈ 65-81k homes",
+    "sourceOrg": "U.S. Energy Information Administration",
+    "sourceTitle": "FAQ: How much electricity does an American home use?",
+    "pubDate": "2023-10-01",
+    "tier": "government",
+    "url": "https://www.eia.gov/tools/faqs/faq.php?id=97&t=3",
+    "geography": "United States",
+    "methodologyNote": "Measured utility sales data; homes-equivalent conversion assumes 80-100% data center load factor.",
+    "confidence": "high",
+    "caveats": "Household use varies ~2x by state; homes-equivalent comparisons depend on the load-factor assumption, which should always be stated.",
+    "concernTags": [
+      "power"
+    ]
+  },
+  {
+    "id": "arxiv-rates-fell-2019-2024",
+    "claim": "A retrospective causal study finds data center growth from 2019-2024 slightly LOWERED average U.S. residential rates (~6% cumulatively) by spreading grid fixed costs over more sales, while warning that supply constraints could reverse the effect.",
+    "value": "-0.4% rates per +10% capacity; ~-6% cumulative 2019-2024",
+    "sourceOrg": "Watten, Bistline & Blanford (arXiv preprint; EPRI-affiliated authors)",
+    "sourceTitle": "Have Data Centers Raised Your Electric Bill? Causal Evidence from the United States",
+    "pubDate": "2026-06-18",
+    "tier": "academic",
+    "url": "https://arxiv.org/abs/2606.19777",
+    "geography": "United States, state-level",
+    "methodologyNote": "Instrumental-variables analysis; retrospective causal estimate, not a forecast.",
+    "confidence": "medium",
+    "caveats": "Preprint, not yet peer-reviewed; statistically weak instrument; authors are EPRI-affiliated (utility-funded). Applies to a period when new supply could be built cheaply.",
+    "concernTags": [
+      "power"
+    ]
+  },
+  {
+    "id": "ncsu-2030-price-projection",
+    "claim": "Peer-reviewed energy-system modeling projects data center growth raises U.S. electricity costs 6-29% nationally by 2030, and up to 57% in the hardest-hit regions, if supply cannot keep pace.",
+    "value": "+6-29% national; up to +57% regional by 2030",
+    "sourceOrg": "NC State University / Carnegie Mellon / Univ. of Pittsburgh",
+    "sourceTitle": "Study in Environmental Research Letters: data centers driving up power bills",
+    "pubDate": "2026-05-12",
+    "tier": "academic",
+    "url": "https://news.ncsu.edu/2026/05/data-centers-power-bills/",
+    "geography": "Lower 48 U.S.; worst regions include Virginia, PJM Mid-Atlantic, west Texas, Ohio",
+    "methodologyNote": "Hourly capacity-expansion and dispatch optimization model through 2030.",
+    "confidence": "medium",
+    "caveats": "Modeled projection; highly sensitive to gas prices and siting; dispersed siting and faster generation buildout substantially moderate the results.",
+    "concernTags": [
+      "power"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "jlarc-virginia-2024",
+    "claim": "Virginia's legislative watchdog found data centers currently pay their full cost of service, but the demand growth they drive could raise a typical Dominion residential bill by an estimated $14-37/month by 2040 without new rules.",
+    "value": "$14-37/month by 2040 (modeled)",
+    "sourceOrg": "Virginia Joint Legislative Audit & Review Commission",
+    "sourceTitle": "Data Centers in Virginia (Report 598)",
+    "pubDate": "2024-12-09",
+    "tier": "government",
+    "url": "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp",
+    "geography": "Virginia (Dominion territory)",
+    "methodologyNote": "Independent demand forecast plus rate modeling of generation and transmission costs.",
+    "confidence": "high",
+    "caveats": "Bill impact is a modeled projection contingent on unconstrained growth; 'pays full cost of service' describes current rate structures, not future ones.",
+    "concernTags": [
+      "power"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "pjm-imm-capacity-attribution",
+    "claim": "PJM's independent market monitor attributes $29.4B of $63.6B (46%) in capacity-auction costs across four consecutive auctions to data center load; these costs flow into residential bills in 13 states.",
+    "value": "$29.4B / 46% over four auctions",
+    "sourceOrg": "Monitoring Analytics (PJM Independent Market Monitor), via Utility Dive",
+    "sourceTitle": "Data centers drove $6.3B in PJM capacity auction costs: market monitor",
+    "pubDate": "2026-07-20",
+    "tier": "independent",
+    "url": "https://www.utilitydive.com/news/pjm-data-centers-capacity-auction-imm-bowring/825626/",
+    "geography": "PJM Interconnection (13 states + DC)",
+    "methodologyNote": "Market-monitor counterfactual analysis of auction clearing with vs. without data center load.",
+    "confidence": "high",
+    "caveats": "Attribution is a modeled counterfactual; PJM and others dispute how much stems from load growth vs. auction design and slow generator interconnection.",
+    "concernTags": [
+      "power"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "pjm-capacity-price-record",
+    "claim": "PJM capacity prices jumped from $28.92/MW-day to $269.92 and then a record $329.17/MW-day in successive auctions (roughly 11x in two years), a measured market outcome feeding into bills.",
+    "value": "$28.92 → $269.92 → $329.17/MW-day",
+    "sourceOrg": "Citizens Utility Board (PJM auction results)",
+    "sourceTitle": "PJM Capacity Auction Leads to Record Price Spike for Second Straight Year",
+    "pubDate": "2025-07-22",
+    "tier": "community",
+    "url": "https://www.citizensutilityboard.org/blog/2025/07/22/pjm-capacity-auction-leads-to-price-spike-for-second-straight-year-threatens-even-higher-com-ed-bills-in-2026-27/",
+    "geography": "PJM Interconnection",
+    "methodologyNote": "Measured auction clearing prices (actual market outcomes).",
+    "confidence": "high",
+    "caveats": "CUB attributes the spike partly to PJM policy failures (slow interconnection of new supply), not solely data centers.",
+    "concernTags": [
+      "power"
+    ]
+  },
+  {
+    "id": "aep-ohio-tariff",
+    "claim": "Ohio regulators approved a data-center tariff requiring facilities over 25 MW to pay for at least 85% of contracted capacity whether or not they use it, with collateral and exit fees equal to three years of minimum charges.",
+    "value": "85% minimum billing; 3-year exit fee",
+    "sourceOrg": "Public Utilities Commission of Ohio / AEP Ohio (legal analysis)",
+    "sourceTitle": "Regulating the Surge: AEP Ohio's Data Center Tariff and PUCO's Approval",
+    "pubDate": "2025-11-14",
+    "tier": "government",
+    "url": "https://kjk.com/2025/11/14/regulating-surge-legal-analysis-aep-ohios-data-center-tariff-and-pucos-approval/",
+    "geography": "AEP Ohio territory",
+    "methodologyNote": "Regulatory order approved July 2025; enforceable tariff provisions, not projections.",
+    "confidence": "high",
+    "caveats": "Challenged as discriminatory by Amazon, Google, Meta, and Microsoft; appeal possible.",
+    "concernTags": [
+      "power"
+    ]
+  },
+  {
+    "id": "dominion-gs5-rate-class",
+    "claim": "Virginia's SCC created a new GS-5 rate class (effective 2027) requiring data centers ≥25 MW to sign 14-year contracts covering at least 85% of transmission/distribution and 60% of generation costs regardless of usage, with collateral and exit fees.",
+    "value": "14-yr contracts; 85% T&D / 60% generation minimums",
+    "sourceOrg": "Virginia State Corporation Commission (via Inside Climate News)",
+    "sourceTitle": "Virginia Regulators Approve New Dominion Rates, Assign More Costs to Data Centers",
+    "pubDate": "2026-01-07",
+    "tier": "government",
+    "url": "https://insideclimatenews.org/news/07012026/virginia-regulators-approve-new-dominion-rates/",
+    "geography": "Dominion Energy Virginia territory",
+    "methodologyNote": "Regulatory order in Dominion's biennial review.",
+    "confidence": "high",
+    "caveats": "Critics note a substantial share of grid-upgrade costs still falls on general ratepayers after the 14-year window.",
+    "concernTags": [
+      "power"
+    ]
+  },
+  {
+    "id": "harvard-cost-shift-mechanisms",
+    "claim": "A Harvard Law review of ~50 regulatory proceedings found utilities' confidential special contracts with data center operators can shift infrastructure costs onto other ratepayers via discounted rates and rate-base socialization.",
+    "value": "~50 proceedings reviewed",
+    "sourceOrg": "Harvard Law School Electricity Law Initiative",
+    "sourceTitle": "Extracting Profits from the Public: How Utility Ratepayers Are Paying for Big Tech's Power",
+    "pubDate": "2025-03-05",
+    "tier": "academic",
+    "url": "https://eelp.law.harvard.edu/extracting-profits-from-the-public-how-utility-ratepayers-are-paying-for-big-techs-power/",
+    "geography": "United States (multi-state)",
+    "methodologyNote": "Legal/documentary analysis of PUC dockets.",
+    "confidence": "high",
+    "caveats": "Identifies mechanisms and risk, not a quantified national bill impact; contract confidentiality limits verification by design.",
+    "concernTags": [
+      "power",
+      "trust"
+    ]
+  },
+  {
+    "id": "phantom-load-ratio",
+    "claim": "Utilities receive an estimated 5-10x more data center interconnection requests than projects actually built, because developers file duplicate requests across sites, inflating both grid-strain fears and stranded-asset risk.",
+    "value": "5-10x requests vs. built (estimate)",
+    "sourceOrg": "Utility Dive / Harvard Belfer Center",
+    "sourceTitle": "A fraction of proposed data centers will get built. Utilities are wising up.",
+    "pubDate": "2025-05-15",
+    "tier": "independent",
+    "url": "https://www.utilitydive.com/news/a-fraction-of-proposed-data-centers-will-get-built-utilities-are-wising-up/748214/",
+    "geography": "United States",
+    "methodologyNote": "Expert estimate plus documented examples (e.g., ~226 GW of ERCOT requests vs ~51 GW expected 2030 growth).",
+    "confidence": "medium",
+    "caveats": "An informed estimate, not a census; the ratio varies by market.",
+    "concernTags": [
+      "power"
+    ]
+  },
+  {
+    "id": "timeline-mismatch",
+    "claim": "Data centers are built in 18-24 months while transmission upgrades take 7-10 years and generation interconnection averages 4-5 years. This timing mismatch, not total energy volume, drives most near-term grid stress.",
+    "value": "18-24 months vs 7-10 years",
+    "sourceOrg": "Harvard Belfer Center",
+    "sourceTitle": "Data Centers and Large-Scale Electric Growth: The Virginia and Texas Experiences",
+    "pubDate": "2026-04-20",
+    "tier": "academic",
+    "url": "https://www.belfercenter.org/research-analysis/data-centers-texas-virginia-comparison",
+    "geography": "United States (Virginia/PJM and Texas/ERCOT case studies)",
+    "methodologyNote": "Comparative policy analysis with industry timeline data.",
+    "confidence": "high",
+    "caveats": "Timelines vary by state permitting regime and equipment supply chains.",
+    "concernTags": [
+      "power"
+    ]
+  },
+  {
+    "id": "us-direct-water-2023",
+    "claim": "U.S. data centers directly consumed about 66 billion liters (~17 billion gallons) of water onsite in 2023, up from 21.2 billion liters in 2014.",
+    "value": "66 billion L (2023)",
+    "sourceOrg": "Environmental Law Institute (citing LBNL)",
+    "sourceTitle": "Data Centers and Water Fact Sheet",
+    "pubDate": "2026-01-15",
+    "tier": "independent",
+    "url": "https://www.eli.org/sites/default/files/files-pdf/Data%20Centers%20and%20Water%20Fact%20Sheet%20ELI%20January%202026%20(1).pdf",
+    "geography": "United States",
+    "methodologyNote": "ELI synthesis of LBNL 2024 report modeling.",
+    "confidence": "high",
+    "caveats": "Modeled national estimate, not metered; onsite/direct use only.",
+    "concernTags": [
+      "water"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "us-indirect-water-2023",
+    "claim": "Electricity used by U.S. data centers in 2023 caused roughly 800 billion liters of indirect water consumption at power plants, about 12 times their onsite use.",
+    "value": "~800 billion L indirect ≈ 12x onsite (2023)",
+    "sourceOrg": "Environmental Law Institute; corroborated by EESI",
+    "sourceTitle": "Data Centers and Water Fact Sheet",
+    "pubDate": "2026-01-15",
+    "tier": "independent",
+    "url": "https://www.eli.org/sites/default/files/files-pdf/Data%20Centers%20and%20Water%20Fact%20Sheet%20ELI%20January%202026%20(1).pdf",
+    "geography": "United States",
+    "methodologyNote": "Applies electricity-water intensity factors of the U.S. generation mix to data center load.",
+    "confidence": "high",
+    "caveats": "Depends on regional grid mix; falls as grids shift away from thermoelectric generation.",
+    "concernTags": [
+      "water",
+      "power"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "cooling-tower-wue-range",
+    "claim": "Evaporative cooling towers consume roughly 1-9 liters of water per kWh of server energy onsite depending on climate and season; this is the single biggest driver of data center water variance.",
+    "value": "1-9 L/kWh (fleet avg ~1; Arizona summer ~9)",
+    "sourceOrg": "UC Riverside / UT Arlington researchers",
+    "sourceTitle": "Making AI Less Thirsty: Uncovering and Addressing the Secret Water Footprint of AI Models",
+    "pubDate": "2025-03-26",
+    "tier": "academic",
+    "url": "https://arxiv.org/html/2304.03271v5",
+    "geography": "United States / global",
+    "methodologyNote": "WUE modeled as a function of wet-bulb temperature, validated against company disclosures.",
+    "confidence": "high",
+    "caveats": "Onsite use only, per kWh of server energy (not total facility energy).",
+    "concernTags": [
+      "water"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "grid-water-intensity",
+    "claim": "U.S. electricity generation consumes about 3.1 liters of water per kWh on average, so even 'waterless' air-cooled data centers have a substantial indirect water footprint at the power plant.",
+    "value": "~3.1 L/kWh consumed (U.S. grid average)",
+    "sourceOrg": "UC Riverside / UT Arlington researchers",
+    "sourceTitle": "Making AI Less Thirsty",
+    "pubDate": "2025-03-26",
+    "tier": "academic",
+    "url": "https://arxiv.org/html/2304.03271v5",
+    "geography": "United States",
+    "methodologyNote": "Electricity water intensity factors from national generation data.",
+    "confidence": "high",
+    "caveats": "Varies widely by regional grid mix; water 'consumption' and 'withdrawal' are different metrics, often conflated.",
+    "concernTags": [
+      "water",
+      "power"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "facility-size-ladder",
+    "claim": "A medium evaporatively cooled data center can use up to ~300,000 gallons/day (~1,000 households); the largest campuses can reach ~5 million gallons/day. Air-cooled and closed-loop facilities of the same size use a small fraction of this.",
+    "value": "up to 300k gal/day (medium); up to 5M gal/day (largest)",
+    "sourceOrg": "University of Georgia CAES Extension; EESI",
+    "sourceTitle": "How Data Centers Impact Surface and Ground Waters (TP121)",
+    "pubDate": "2026-06-10",
+    "tier": "academic",
+    "url": "https://fieldreport.caes.uga.edu/publications/TP121/how-data-centers-impact-surface-and-ground-waters/",
+    "geography": "United States",
+    "methodologyNote": "Extension synthesis of published estimates; 'up to' figures describe evaporative designs at high load.",
+    "confidence": "medium",
+    "caveats": "Upper-bound ranges, not typical values.",
+    "concernTags": [
+      "water"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "epa-household-use",
+    "claim": "The average American family uses more than 300 gallons of water per day at home, the benchmark for comparing facility water use to household use.",
+    "value": ">300 gal/day per family",
+    "sourceOrg": "U.S. EPA WaterSense",
+    "sourceTitle": "How We Use Water",
+    "pubDate": "2025-01-01",
+    "tier": "government",
+    "url": "https://www.epa.gov/watersense/how-we-use-water",
+    "geography": "United States",
+    "methodologyNote": "EPA national residential end-use statistics.",
+    "confidence": "high",
+    "caveats": "Outdoor share is much higher in the arid West; page is periodically updated.",
+    "concernTags": [
+      "water"
+    ]
+  },
+  {
+    "id": "the-dalles-google",
+    "claim": "Google's data centers in The Dalles, Oregon used 355.1 million gallons in 2021 (29% of the city's municipal water), a figure released only after the city dropped a Google-funded lawsuit against a newspaper seeking the records.",
+    "value": "355.1M gal (2021); 29% of city supply",
+    "sourceOrg": "Data Center Dynamics (reporting The Oregonian public-records outcome)",
+    "sourceTitle": "We now know how much water Google's Oregon data centers use, after city drops lawsuit against journalists",
+    "pubDate": "2022-12-19",
+    "tier": "community",
+    "url": "https://www.datacenterdynamics.com/en/news/we-now-know-how-much-water-googles-oregon-data-centers-use-after-city-drops-lawsuit-against-journalists/",
+    "geography": "The Dalles, Oregon",
+    "methodologyNote": "Municipal metered records released under Oregon public-records law.",
+    "confidence": "high",
+    "caveats": "Metered municipal deliveries; Google has since expanded and use has grown.",
+    "concernTags": [
+      "water",
+      "trust"
+    ]
+  },
+  {
+    "id": "newton-county-meta-wells",
+    "claim": "Meta's Newton County, Georgia facility uses ~500,000 gallons/day of municipal water (~10% of county use); nearby residents on private wells reported sediment and dry taps beginning during construction; causation is disputed.",
+    "value": "~500k gal/day; ~10% of county consumption",
+    "sourceOrg": "PPC Land (summarizing New York Times investigation)",
+    "sourceTitle": "Meta data center impacts local water supply in Newton County",
+    "pubDate": "2025-07-14",
+    "tier": "community",
+    "url": "https://ppc.land/meta-data-center-impacts-local-water-supply-in-newton-county/",
+    "geography": "Newton County, Georgia",
+    "methodologyNote": "Investigative reporting; resident interviews plus county water data.",
+    "confidence": "medium",
+    "caveats": "A Meta-commissioned study called a well link 'unlikely'; the facility uses municipal water, so the alleged mechanism is construction disturbance and system strain, not aquifer pumping.",
+    "concernTags": [
+      "water"
+    ]
+  },
+  {
+    "id": "st-joseph-aquifer-cap",
+    "claim": "St. Joseph County, Indiana capped combined water use by Amazon's data center campus and GM's battery plant at 24 million gallons/day, just over half the local aquifer's estimated 44.5 million gallons/day safe yield.",
+    "value": "24M gal/day cap vs 44.5M gal/day safe yield",
+    "sourceOrg": "ABC57 News (county commissioners' agreement)",
+    "sourceTitle": "County sets water usage limit on Amazon, GM projects",
+    "pubDate": "2024-07-23",
+    "tier": "community",
+    "url": "https://www.abc57.com/news/county-sets-water-usage-limit-on-amazon-gm-projects",
+    "geography": "St. Joseph County, Indiana",
+    "methodologyNote": "Local government agreement; safe yield from county-cited aquifer study.",
+    "confidence": "medium",
+    "caveats": "Cap is combined across two industrial projects; this is the model of publishing aquifer math before approval.",
+    "concernTags": [
+      "water",
+      "trust"
+    ]
+  },
+  {
+    "id": "new-florence-aws-wells",
+    "claim": "AWS's planned New Florence, Missouri campus would pump ~50 million gallons/year from 1,500-foot wells; state groundwater officials call the volume routine (~0.03% addition to current aquifer use) while residents worry about private wells.",
+    "value": "~50M gal/yr from deep confined aquifer",
+    "sourceOrg": "The Cooldown (citing engineering report and Missouri DNR)",
+    "sourceTitle": "Amazon plans 1,500-foot wells beneath Missouri town",
+    "pubDate": "2026-06-06",
+    "tier": "community",
+    "url": "https://www.thecooldown.com/green-tech/amazon-data-center-new-florence-missouri/",
+    "geography": "New Florence, Missouri",
+    "methodologyNote": "Aquifer figures from an engineering assessment; state DNR commentary.",
+    "confidence": "medium",
+    "caveats": "Pre-operational projections; a deep confined aquifer interacts less with shallow domestic wells, reducing but not eliminating interference risk.",
+    "concernTags": [
+      "water"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "microsoft-wue",
+    "claim": "Microsoft reports fleet-average water usage effectiveness of 0.27 L/kWh in FY25 (down from 0.49 in 2021), ranging from 0.03 L/kWh in Europe to 0.34 in the Americas.",
+    "value": "0.27 L/kWh fleet WUE (FY25)",
+    "sourceOrg": "Microsoft",
+    "sourceTitle": "Measuring energy and water efficiency for Microsoft datacenters",
+    "pubDate": "2025-06-30",
+    "tier": "industry",
+    "url": "https://datacenters.microsoft.com/sustainability/efficiency/",
+    "geography": "Global (Microsoft fleet)",
+    "methodologyNote": "Company-reported metered fleet averages.",
+    "confidence": "medium",
+    "caveats": "Company-reported, not independently audited; fleet averages mask site-level extremes.",
+    "concernTags": [
+      "water"
+    ],
+    "companyReported": true
+  },
+  {
+    "id": "microsoft-zero-water-design",
+    "claim": "Microsoft's closed-loop chip-level liquid cooling design (standard for its new builds since August 2024) eliminates evaporative water use, avoiding a reported 125+ million liters per datacenter per year at the cost of a modest energy-efficiency penalty.",
+    "value": ">125M L/yr avoided per datacenter (company estimate)",
+    "sourceOrg": "Microsoft",
+    "sourceTitle": "Sustainable by design: Next-generation datacenters consume zero water for cooling",
+    "pubDate": "2024-12-09",
+    "tier": "industry",
+    "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+    "geography": "Global; first units 2026-2027",
+    "methodologyNote": "Company engineering estimate; loop filled once at construction.",
+    "confidence": "medium",
+    "caveats": "Company-reported; energy tradeoff acknowledged by Microsoft itself.",
+    "concernTags": [
+      "water"
+    ],
+    "modeled": true,
+    "companyReported": true
+  },
+  {
+    "id": "google-2024-water",
+    "claim": "Google reports consuming 8.1 billion gallons of water across its operations in 2024 and replenishing about 64% of it; in 2026 it pledged to replenish more than it consumes by 2030.",
+    "value": "8.1B gal consumed; 64% replenished (2024)",
+    "sourceOrg": "Google",
+    "sourceTitle": "Google water stewardship commitments / 2025 Environmental Report",
+    "pubDate": "2026-06-03",
+    "tier": "industry",
+    "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/new-water-stewardship-commitments/",
+    "geography": "Global (Google fleet)",
+    "methodologyNote": "Company-reported totals; replenishment credits come from funded watershed projects.",
+    "confidence": "medium",
+    "caveats": "Company-reported; replenishment often occurs in different watersheds than consumption, so it does not restore the affected local supply.",
+    "concernTags": [
+      "water",
+      "trust"
+    ],
+    "companyReported": true
+  },
+  {
+    "id": "uptime-disclosure-gap",
+    "claim": "Industry surveys have found fewer than one-third of data center operators track their water usage, and site-level public disclosure remains rare.",
+    "value": "<33% of operators tracked water use",
+    "sourceOrg": "Uptime Institute",
+    "sourceTitle": "Ignore Data Center Water Consumption at Your Own Peril",
+    "pubDate": "2016-06-01",
+    "tier": "independent",
+    "url": "https://journal.uptimeinstitute.com/dont-ignore-water-consumption/",
+    "geography": "Global industry survey",
+    "methodologyNote": "Uptime Institute operator survey.",
+    "confidence": "medium",
+    "caveats": "Survey dates to the mid-2010s; tracking has likely improved, but public site-level disclosure remains rare (see The Dalles case).",
+    "concernTags": [
+      "water",
+      "trust"
+    ]
+  },
+  {
+    "id": "eli-water-variance",
+    "claim": "Data center water use varies enormously by cooling design and climate, from near-zero onsite use for closed-loop and air-cooled designs to hundreds of thousands of gallons per day for large evaporatively cooled campuses.",
+    "sourceOrg": "Environmental Law Institute",
+    "sourceTitle": "Data Centers and Water Fact Sheet",
+    "pubDate": "2026-01-15",
+    "tier": "independent",
+    "url": "https://www.eli.org/sites/default/files/files-pdf/Data%20Centers%20and%20Water%20Fact%20Sheet%20ELI%20January%202026%20(1).pdf",
+    "geography": "United States",
+    "confidence": "high",
+    "caveats": "Ranges, not site-specific values; any real project requires its own engineering disclosure.",
+    "concernTags": [
+      "water"
+    ]
+  },
+  {
+    "id": "cooling-tower-70dba-400ft",
+    "claim": "Data center cooling towers can emit up to 70 dBA at distances within 400 feet, and unmitigated cooling equipment has produced 45-65 dBA continuously at property lines in documented cases.",
+    "value": "up to 70 dBA within 400 ft",
+    "sourceOrg": "Environmental and Energy Study Institute",
+    "sourceTitle": "Communities Are Raising Noise Pollution Concerns About Data Centers",
+    "pubDate": "2026-03-23",
+    "tier": "independent",
+    "url": "https://www.eesi.org/articles/view/communities-are-raising-noise-pollution-concernsabout-data-centers",
+    "geography": "United States",
+    "methodologyNote": "Policy-institute synthesis of news reports and studies; secondary source.",
+    "confidence": "medium",
+    "caveats": "Upper-bound figure; actual level depends on equipment, load, and shielding.",
+    "concernTags": [
+      "noise"
+    ]
+  },
+  {
+    "id": "generator-test-90-105dba-25ft",
+    "claim": "Diesel backup generators produce roughly 90-105 dBA at ~25 feet during load testing, which typically runs 30-60 minutes per unit monthly: loud but brief and schedulable, unlike continuous cooling noise.",
+    "value": "90-105 dBA @ 25 ft; monthly 30-60 min tests",
+    "sourceOrg": "Stop Ohio Data Centers (community advocacy)",
+    "sourceTitle": "Data Center Noise in Ohio",
+    "pubDate": "2025-06-01",
+    "tier": "community",
+    "url": "https://stopohiodatacenters.org/data-center-noise-ohio",
+    "geography": "Generic equipment specifications",
+    "methodologyNote": "Advocacy compilation of manufacturer-typical levels; consistent with generator manufacturer data.",
+    "confidence": "medium",
+    "caveats": "Advocacy source; exact levels vary by generator model and attenuation package. Should be replaced with manufacturer datasheets for final publication.",
+    "concernTags": [
+      "noise"
+    ]
+  },
+  {
+    "id": "fhwa-distance-attenuation",
+    "claim": "Sound from a compact (point) source drops about 6 dB for every doubling of distance, so equipment at 70 dBA at 50 feet is roughly 58 dBA at 200 feet and 46 dBA at 800 feet under ideal conditions.",
+    "value": "-6 dB per distance doubling",
+    "sourceOrg": "Federal Highway Administration (U.S. DOT)",
+    "sourceTitle": "Construction Noise Handbook: Noise Terminology",
+    "pubDate": "2006-01-01",
+    "tier": "government",
+    "url": "https://www.fhwa.dot.gov/Environment/noise/construction_noise/handbook/handbook02.cfm",
+    "geography": "Universal physics",
+    "methodologyNote": "Standard acoustics (spherical spreading).",
+    "confidence": "high",
+    "caveats": "Idealized free-field propagation; wind, nighttime temperature inversions, and reflections alter real-world results, and low-frequency sound fades more slowly.",
+    "concernTags": [
+      "noise"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "fhwa-perception-3db-10db",
+    "claim": "A 3 dB change in sound level is barely perceptible to the human ear; a 10 dB reduction is perceived as cutting loudness in half.",
+    "value": "3 dB barely perceptible; -10 dB ≈ half as loud",
+    "sourceOrg": "Federal Highway Administration (U.S. DOT)",
+    "sourceTitle": "Highway Traffic Noise Analysis and Abatement Policy and Guidance",
+    "pubDate": "1995-06-01",
+    "tier": "government",
+    "url": "https://www.fhwa.dot.gov/environMent/noise/regulations_and_guidance/polguide/polguide02.cfm",
+    "geography": "Universal",
+    "methodologyNote": "Established psychoacoustic rule used in federal noise policy.",
+    "confidence": "high",
+    "caveats": "Perception of tonal/low-frequency noise can diverge from broadband loudness rules.",
+    "concernTags": [
+      "noise"
+    ]
+  },
+  {
+    "id": "barrier-insertion-loss-5-10",
+    "claim": "Well-designed sound barriers are engineered for 5-10 dBA of noise reduction; they must block the line of sight to the equipment and are least effective against low-frequency sound and rooftop equipment.",
+    "value": "5-10 dBA typical design target",
+    "sourceOrg": "Concrete Masonry & Hardscapes Association (based on FHWA practice)",
+    "sourceTitle": "TEK 13-03A: Concrete Masonry Highway Sound Barriers",
+    "pubDate": "2012-01-01",
+    "tier": "industry",
+    "url": "https://www.cmha.org/resource/tek-13-03a/",
+    "geography": "U.S. engineering practice",
+    "methodologyNote": "Trade-association engineering guide summarizing federal barrier design methods.",
+    "confidence": "high",
+    "caveats": "Trade-association source; acoustic consultants cite 5-15 dBA for equipment shrouds and 10-20 dBA for walls/berms.",
+    "concernTags": [
+      "noise"
+    ],
+    "companyReported": true
+  },
+  {
+    "id": "pwc-ordinance-2025",
+    "claim": "Prince William County, Virginia adopted a compromise data-center noise ordinance of 73 dBA day / 68 dBA night in industrial areas (weaker than its own consultants' recommended 67/62) and budgeted ~$219,000 for enforcement engineers.",
+    "value": "73/68 dBA adopted vs 67/62 recommended",
+    "sourceOrg": "Prince William Times",
+    "sourceTitle": "County board OKs compromise noise rules for data centers",
+    "pubDate": "2025-10-31",
+    "tier": "community",
+    "url": "https://www.princewilliamtimes.com/news/supervisors-ok-compromise-noise-ordinance-aimed-at-data-centers/article_1288e464-5559-4c12-ab8f-2a28ca28d819.html",
+    "geography": "Prince William County, Virginia",
+    "methodologyNote": "Local news account of the 5-2 board vote.",
+    "confidence": "medium",
+    "caveats": "Resident advisory-group members called the limits inadequate; verify exact provisions against county code before quoting specific numbers.",
+    "concernTags": [
+      "noise",
+      "trust"
+    ]
+  },
+  {
+    "id": "chandler-retrofit-partial-fix",
+    "claim": "CyrusOne's Chandler, Arizona noise retrofits (acoustic blankets, attenuation panels, screen walls) reduced but did not eliminate a chiller hum residents had endured since ~2014; complaints persisted into 2022, showing after-the-fact mitigation is partial at best.",
+    "value": "8+ years of complaints; partial mitigation",
+    "sourceOrg": "Chandler Arizonan / SanTan Sun News",
+    "sourceTitle": "Residents skeptical about noise declines at data center",
+    "pubDate": "2022-11-01",
+    "tier": "community",
+    "url": "https://www.chandlernews.com/news/residents-skeptical-about-noise-declines-at-data-center/article_c7300e30-593b-11ed-a088-cb76499dd165.html",
+    "geography": "Chandler, Arizona",
+    "methodologyNote": "Local news; no published before/after dBA measurements.",
+    "confidence": "medium",
+    "caveats": "No quantified before/after data was made public.",
+    "concernTags": [
+      "noise"
+    ]
+  },
+  {
+    "id": "chandler-ordinance-2023",
+    "claim": "After years of hum complaints, Chandler, Arizona adopted one of the first U.S. data-center noise ordinances (January 2023), requiring pre-construction acoustic baselines, resident meetings, a noise liaison, and that operational noise not exceed pre-existing ambient levels.",
+    "value": "ambient-based standard; baseline measurement required",
+    "sourceOrg": "Prince William Times (reporting on Chandler's ordinance)",
+    "sourceTitle": "Some cities suffering from data center noise turn to tough limits",
+    "pubDate": "2023-02-27",
+    "tier": "community",
+    "url": "https://www.princewilliamtimes.com/news/some-cities-suffering-from-data-center-noise-turn-to-tough-limits/article_2aa7fb8c-b6aa-11ed-8626-5738aae2f76c.html",
+    "geography": "Chandler, Arizona",
+    "methodologyNote": "News reporting plus county consultant benchmarking.",
+    "confidence": "medium",
+    "caveats": "Ambient reference figure is secondhand; pull Chandler's ordinance text for exact language.",
+    "concernTags": [
+      "noise",
+      "trust"
+    ]
+  },
+  {
+    "id": "spotsylvania-permit-conditions",
+    "claim": "Spotsylvania County, Virginia wrote noise commitments into every approved data center: 55-65 dBA property-line maximums, pre-approval sound assessments for homes within 500 feet, developer-funded compliance testing before occupancy, and permit revocation for repeat violations.",
+    "value": "55-65 dBA enforceable property-line maximums",
+    "sourceOrg": "Spotsylvania County, Virginia",
+    "sourceTitle": "Data Center FAQs",
+    "pubDate": "2024-06-01",
+    "tier": "government",
+    "url": "https://www.spotsylvania.va.us/3241/Data-Center-FAQs",
+    "geography": "Spotsylvania County, Virginia",
+    "methodologyNote": "Official county summary of special-use-permit conditions.",
+    "confidence": "high",
+    "caveats": "No continuous public noise monitoring is required yet; enforcement is complaint- and inspection-driven.",
+    "concernTags": [
+      "noise",
+      "trust"
+    ]
+  },
+  {
+    "id": "pwc-resident-measurements-60db",
+    "claim": "Residents near operating data centers in Prince William County, Virginia reported noise routinely at or above 60 dB (the county's daytime limit) while the ordinance then in force exempted cooling equipment, the main noise source.",
+    "value": "60+ dB reported at homes",
+    "sourceOrg": "Prince William Times / EESI",
+    "sourceTitle": "Some cities suffering from data center noise turn to tough limits",
+    "pubDate": "2023-02-27",
+    "tier": "community",
+    "url": "https://www.princewilliamtimes.com/news/some-cities-suffering-from-data-center-noise-turn-to-tough-limits/article_2aa7fb8c-b6aa-11ed-8626-5738aae2f76c.html",
+    "geography": "Prince William County, Virginia",
+    "methodologyNote": "Resident-reported measurements described in local press.",
+    "confidence": "medium",
+    "caveats": "Not a controlled acoustic study; instruments and conditions undocumented.",
+    "concernTags": [
+      "noise"
+    ]
+  },
+  {
+    "id": "dowagiac-mi-lawsuit-2026",
+    "claim": "Homeowners in Dowagiac, Michigan sued a data center operator in 2026 over roughly two years of continuous high-pitched cooling noise the city had already fined under its 65/55 dBA ordinance; a separate Wisconsin class action alleges a low-frequency hum audible far from the site.",
+    "value": "Active litigation in MI and WI (2026)",
+    "sourceOrg": "Newsweek",
+    "sourceTitle": "Michigan residents sue over AI data center noise: they're not alone",
+    "pubDate": "2026-07-01",
+    "tier": "community",
+    "url": "https://www.newsweek.com/michigan-residents-sue-ai-data-center-noise-not-alone-12254427",
+    "geography": "Dowagiac, Michigan; Mount Pleasant, Wisconsin",
+    "methodologyNote": "News report on active lawsuits.",
+    "confidence": "medium",
+    "caveats": "Distance-audibility figures are plaintiff allegations, not independent measurements; litigation unresolved.",
+    "concernTags": [
+      "noise"
+    ]
+  },
+  {
+    "id": "cdc-everyday-reference-levels",
+    "claim": "CDC everyday sound references: refrigerator hum 40 dB, normal conversation or air conditioner 60 dB, washing machine 70 dB, lawn mower 80-85 dB. Community impact from data centers is sleep disruption and chronic annoyance at 50-65 dBA continuous, far below hearing-damage levels.",
+    "value": "40/60/70/80-85 dB ladder",
+    "sourceOrg": "Centers for Disease Control and Prevention",
+    "sourceTitle": "Loud Noise Can Cause Hearing Loss (2022 guidance)",
+    "pubDate": "2022-01-01",
+    "tier": "government",
+    "url": "https://www.mvcommission.org/sites/default/files/docs/CDC%20guidance%20on%20loud%20noises%202022.pdf",
+    "geography": "United States",
+    "methodologyNote": "CDC public-health reference table.",
+    "confidence": "high",
+    "caveats": "Hearing-damage thresholds address sustained loud exposure; annoyance and sleep disturbance occur at much lower levels.",
+    "concernTags": [
+      "noise"
+    ]
+  },
+  {
+    "id": "gallup-2026-oppose-71",
+    "claim": "71% of U.S. adults oppose an AI data center being built in their area (48% strongly); among opponents, 50% cite resource overuse (water/energy), 22% quality of life, 20% utility-bill costs, 16% pollution, and 14% negative views of AI.",
+    "value": "71% oppose (Mar 2026)",
+    "sourceOrg": "Gallup",
+    "sourceTitle": "Americans Oppose AI Data Centers in Their Area",
+    "pubDate": "2026-04-01",
+    "tier": "independent",
+    "url": "https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx",
+    "geography": "United States (national)",
+    "methodologyNote": "National poll, n=1,000, March 2026, MoE ±4; reason shares are among opponents only and are not mutually exclusive.",
+    "confidence": "high",
+    "caveats": "Measures stated national sentiment, not behavior at actual hearings; reason categories overlap.",
+    "concernTags": [
+      "trust",
+      "power",
+      "water"
+    ]
+  },
+  {
+    "id": "embold-heatmap-swing",
+    "claim": "Opposition to a nearby data center among registered voters rose from 42% (August 2025) to 71% (May 2026) in Embold Research polling for Heatmap News, a collapse of net support in about nine months.",
+    "value": "42% → 71% opposed in ~9 months",
+    "sourceOrg": "Embold Research / Heatmap News",
+    "sourceTitle": "Americans Now Overwhelmingly Oppose New Data Centers Near Them",
+    "pubDate": "2026-06-01",
+    "tier": "independent",
+    "url": "https://heatmap.news/politics/americans-oppose-data-centers-poll",
+    "geography": "United States (national)",
+    "methodologyNote": "May 2026 wave n=4,118 registered voters, MoE ±1.6; prior wave Aug 2025 n=3,741.",
+    "confidence": "high",
+    "caveats": "Question wording between waves should be checked before charting the trend as a single series.",
+    "concernTags": [
+      "trust"
+    ]
+  },
+  {
+    "id": "embold-message-testing",
+    "claim": "In message testing, the most persuasive argument against data centers is that electricity use may raise utility bills, followed by water consumption; the most persuasive arguments in favor are jobs and local tax revenue.",
+    "value": "rates +46 / water +34 / jobs +26 / taxes +24 (net convincingness)",
+    "sourceOrg": "Embold Research / Heatmap News",
+    "sourceTitle": "Heatmap Poll: Only 44% of Americans Would Welcome a Data Center Nearby",
+    "pubDate": "2025-09-01",
+    "tier": "independent",
+    "url": "https://heatmap.news/politics/data-center-survey",
+    "geography": "United States (national)",
+    "methodologyNote": "Aug 2025, n=3,741 registered voters, message-testing design.",
+    "confidence": "medium",
+    "caveats": "Message testing measures the persuasiveness of framed arguments, not organic concern frequency.",
+    "concernTags": [
+      "trust",
+      "power",
+      "water"
+    ]
+  },
+  {
+    "id": "harvard-mit-qol",
+    "claim": "A Harvard/MIT survey found quality-of-life concerns were roughly twice as important as electricity prices in explaining local opposition to data centers, even though most respondents expected rates to rise.",
+    "value": "QoL ~2x the weight of rates",
+    "sourceOrg": "Harvard/MIT researchers via YouGov (reported by Axios)",
+    "sourceTitle": "Electricity rates aren't top concern about data centers, poll shows",
+    "pubDate": "2026-04-03",
+    "tier": "academic",
+    "url": "https://www.axios.com/2026/04/03/data-centers-concerns-ai-electricity-harvard-mit",
+    "geography": "United States (national)",
+    "methodologyNote": "n=1,000, fielded Nov 2025; regression-style importance weighting, reported secondhand.",
+    "confidence": "medium",
+    "caveats": "Underlying paper not reviewed; its topline support numbers diverge from Gallup/Embold, likely due to question wording.",
+    "concernTags": [
+      "trust",
+      "property",
+      "noise"
+    ]
+  },
+  {
+    "id": "annenberg-trend",
+    "claim": "Opposition to new local data centers rose from 49% to 61% of U.S. adults in about four months during 2026, rising among both parties.",
+    "value": "49% → 61% (Feb-Jul 2026)",
+    "sourceOrg": "University of Pennsylvania Annenberg Public Policy Center (via WHYY)",
+    "sourceTitle": "Data center opposition is rising significantly, Penn survey shows",
+    "pubDate": "2026-08-01",
+    "tier": "academic",
+    "url": "https://whyy.org/articles/data-center-opposition-growing-survey/",
+    "geography": "United States (national)",
+    "methodologyNote": "Panel survey, Jun-Jul 2026 wave n=1,320 adults.",
+    "confidence": "high",
+    "caveats": "Reason breakdown not quantified in the reporting.",
+    "concernTags": [
+      "trust"
+    ]
+  },
+  {
+    "id": "uva-opinion-project",
+    "claim": "UVA's Data Center Opinion Project found ~65% of Americans oppose local data centers; opponents' most common open-text words were 'water,' 'resources,' and 'environment,' and the median non-supporter said it would take $10,000/household in compensation to accept one.",
+    "value": "~65% oppose; $10k median willingness-to-accept",
+    "sourceOrg": "UVA National Security Data and Policy Institute",
+    "sourceTitle": "Data Center Opinion Project",
+    "pubDate": "2026-06-01",
+    "tier": "academic",
+    "url": "https://nationalsecurity.virginia.edu/research/data-center-opinion-project",
+    "geography": "United States (national)",
+    "methodologyNote": "n=3,200+ adults; open-text word analysis plus willingness-to-accept experiment.",
+    "confidence": "medium",
+    "caveats": "Compensation figures are stated preferences, not revealed behavior.",
+    "concernTags": [
+      "trust",
+      "water"
+    ]
+  },
+  {
+    "id": "dcw-64b",
+    "claim": "$64B in U.S. data center projects were blocked or delayed by local opposition from May 2024 to March 2025, with 142 activist groups across 24 states; the tracker's most-cited concerns in order: grid/energy, water, noise, property values, environment, infrastructure, tax abatements.",
+    "value": "$64B; 142 groups; 24 states",
+    "sourceOrg": "Data Center Watch (10a Labs)",
+    "sourceTitle": "$64 billion of data center projects blocked or delayed amid local opposition",
+    "pubDate": "2025-04-01",
+    "tier": "independent",
+    "url": "https://www.datacenterwatch.org/report",
+    "geography": "United States (28 states)",
+    "methodologyNote": "Media and public-records monitoring; concern ranking is frequency-of-mention without published counts.",
+    "confidence": "medium",
+    "caveats": "Publisher is industry-adjacent (10a Labs serves AI companies); dollar figures are announced project values and 'blocked' includes relocations; treat as directional.",
+    "concernTags": [
+      "trust",
+      "landuse"
+    ]
+  },
+  {
+    "id": "dcw-q1-2026",
+    "claim": "In Q1 2026 alone, roughly 75 projects worth ~$130B were blocked or delayed (matching all of 2025 in three months), while 300+ state data center bills were filed in the first six weeks of 2026.",
+    "value": "~$130B; ~75 projects (Q1 2026)",
+    "sourceOrg": "Data Center Watch (10a Labs)",
+    "sourceTitle": "Data Center Watch Report Q1 2026",
+    "pubDate": "2026-07-01",
+    "tier": "independent",
+    "url": "https://www.datacenterwatch.org/q1-2026",
+    "geography": "United States (national)",
+    "methodologyNote": "Same monitoring methodology as the prior report; corroborated by wire-service coverage.",
+    "confidence": "medium",
+    "caveats": "Same definitional caveats as the $64B report; announced values, not verified investment.",
+    "concernTags": [
+      "trust"
+    ]
+  },
+  {
+    "id": "brookings-jobs",
+    "claim": "A quasi-experimental Brookings study of ~1,500 facilities (2003-2024) found counties that built data centers typically gained only ~100-200 jobs, wages were unchanged, and nearby home prices rose modestly (2-5%).",
+    "value": "~100-200 jobs/county; home prices +2-5%",
+    "sourceOrg": "Brookings Institution",
+    "sourceTitle": "New evidence on data center employment effects",
+    "pubDate": "2026-05-04",
+    "tier": "independent",
+    "url": "https://www.brookings.edu/articles/new-evidence-on-data-center-employment-effects/",
+    "geography": "United States (county-level)",
+    "methodologyNote": "Uses announced-but-canceled projects as a counterfactual to control for site-selection bias.",
+    "confidence": "high",
+    "caveats": "County-level averages; does not capture construction-phase employment or fiscal effects, which can be substantial.",
+    "concernTags": [
+      "jobs",
+      "property",
+      "taxes"
+    ]
+  },
+  {
+    "id": "public-citizen-ndas",
+    "claim": "NDAs covered data center deals in roughly 80% of Virginia localities with proposed or existing facilities; in several documented cases residents learned of multi-billion-dollar projects only weeks before operation.",
+    "value": "~80% of VA localities under NDAs",
+    "sourceOrg": "Public Citizen (consumer advocacy)",
+    "sourceTitle": "The Secret Data Center Buildout: How States Can Stop Big Tech's Abuse of NDAs",
+    "pubDate": "2026-07-08",
+    "tier": "community",
+    "url": "https://www.citizen.org/news/the-secret-data-center-buildout-how-states-can-stop-big-techs-abuse-of-ndas/",
+    "geography": "United States (multiple states)",
+    "methodologyNote": "Advocacy report compiling public records and press accounts.",
+    "confidence": "medium",
+    "caveats": "Advocacy-affiliated source with a policy agenda; individual case facts corroborated by local reporting. Microsoft pledged in 2026 to stop local-government NDAs.",
+    "concernTags": [
+      "trust"
+    ]
+  },
+  {
+    "id": "jlarc-two-sided",
+    "claim": "Virginia's legislative watchdog found data centers deliver substantial economic and fiscal benefits to hosting localities, while also creating unprecedented energy demand that poses cost and reliability challenges.",
+    "sourceOrg": "Virginia Joint Legislative Audit & Review Commission",
+    "sourceTitle": "Data Centers in Virginia (Report 598)",
+    "pubDate": "2024-12-09",
+    "tier": "government",
+    "url": "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp",
+    "geography": "Virginia",
+    "methodologyNote": "Independent state legislative audit; the most comprehensive single-state impact study to date.",
+    "confidence": "high",
+    "caveats": "Virginia-specific (the world's largest data center market); findings do not transfer one-for-one to other states.",
+    "concernTags": [
+      "taxes",
+      "jobs",
+      "power"
+    ]
+  },
+  {
+    "id": "gjf-subsidy-disclosure",
+    "claim": "Most U.S. states do not disclose which companies receive data center tax incentives or what those incentives cost, and several studies find very high subsidy cost per permanent job.",
+    "sourceOrg": "Good Jobs First",
+    "sourceTitle": "Cloudy Data, Costly Deals: How Poorly States Disclose Data Center Subsidies",
+    "pubDate": "2025-11-01",
+    "tier": "independent",
+    "url": "https://goodjobsfirst.org/cloudy-data-costly-deals-how-poorly-states-disclose-data-center-subsidies/",
+    "geography": "United States",
+    "confidence": "high",
+    "caveats": "Good Jobs First is a subsidy-accountability advocacy research group; its counts are documented but its framing is critical of incentives.",
+    "concernTags": [
+      "taxes",
+      "trust"
+    ]
+  },
+  {
+    "id": "uptime-pue-2025",
+    "claim": "Industry-average data center power usage effectiveness (PUE) has plateaued around the mid-1.5s, while the newest hyperscale facilities report design PUEs well below 1.3.",
+    "value": "~1.5x average; <1.3 for new hyperscale (company-reported)",
+    "sourceOrg": "Uptime Institute",
+    "sourceTitle": "Global Data Center Survey 2025",
+    "pubDate": "2025-07-30",
+    "tier": "independent",
+    "url": "https://uptimeinstitute.com/resources/research-and-reports/uptime-institute-global-data-center-survey-results-2025",
+    "geography": "Global",
+    "methodologyNote": "Annual operator survey (self-reported by operators).",
+    "confidence": "medium",
+    "caveats": "Survey self-reporting; hyperscaler sub-1.3 figures are company-reported. Efficiency says nothing about total consumption growth.",
+    "concernTags": [
+      "power",
+      "environment"
+    ],
+    "companyReported": true
+  },
+  {
+    "id": "loudoun-dc-ppt-fy26",
+    "claim": "Loudoun County budgeted $794.8M in data center computer-equipment personal property tax for FY2026 (up from $670.3M in FY2025); combined data center real + personal property taxes are ~42% of total local tax funding.",
+    "value": "$794.8M equipment tax FY2026; ~42% of local tax funding",
+    "sourceOrg": "Loudoun County Coalition (analysis of Loudoun County FY2026 budget)",
+    "sourceTitle": "Review of the Loudoun County Proposed FY2026 Budget",
+    "pubDate": "2025-03-01",
+    "tier": "community",
+    "url": "https://loudouncoalition.org/wp-content/uploads/2025/03/FY2026-Budget-Review.pdf",
+    "geography": "Loudoun County, Virginia",
+    "methodologyNote": "Community group analysis of official county proposed budget line items.",
+    "confidence": "high",
+    "caveats": "Budgeted (forecast) figures, not final audited collections; Loudoun is the extreme case, not typical.",
+    "concernTags": [
+      "taxes"
+    ]
+  },
+  {
+    "id": "loudoun-share-and-rates",
+    "claim": "Loudoun County: data centers occupy ~4% of commercial parcels but yield ~38% of general fund revenue; computer equipment is taxed at $4.15/$100 of assessed value vs real property at $0.805/$100, alongside a decade of annual residential rate cuts.",
+    "value": "~38% of general fund; $4.15 vs $0.805 per $100",
+    "sourceOrg": "Loudoun County Government",
+    "sourceTitle": "FAQ: Data Centers - Tax Revenues and the County Budget",
+    "pubDate": "2026-01-01",
+    "tier": "government",
+    "url": "https://www.loudoun.gov/FAQ.aspx?QID=1790",
+    "geography": "Loudoun County, Virginia",
+    "methodologyNote": "County finance department figures; measured collections and adopted rates.",
+    "confidence": "high",
+    "caveats": "County has an incentive to present favorably; rate-cut causation is asserted by the county; revenue growth expected to plateau in 5-10 years.",
+    "concernTags": [
+      "taxes"
+    ]
+  },
+  {
+    "id": "jlarc-local-revenue",
+    "claim": "JLARC found data centers generated $733M for Loudoun County (31% of total local revenues) and $110M for Prince William County (7%); across five mature Virginia markets the local revenue share ranged from under 1% to 31%.",
+    "value": "$733M / 31% (Loudoun); $110M / 7% (Prince William)",
+    "sourceOrg": "Virginia Joint Legislative Audit & Review Commission",
+    "sourceTitle": "Data Centers in Virginia (Report 598, Commission Briefing)",
+    "pubDate": "2024-12-09",
+    "tier": "government",
+    "url": "https://jlarc.virginia.gov/pdfs/presentations/Rpt598Pres-1.pdf",
+    "geography": "Virginia",
+    "methodologyNote": "Independent legislative audit using locality tax records.",
+    "confidence": "high",
+    "caveats": "FY2023-era data; benefits concentrate in a few jurisdictions with mature markets.",
+    "concernTags": [
+      "taxes"
+    ]
+  },
+  {
+    "id": "jlarc-jobs",
+    "claim": "Virginia's data center industry supports ~74,000 jobs annually, but ~59,000 are construction-phase vs ~15,000 operations; a typical 250,000 sq ft facility employs ~50 permanent workers (about half contractors), with up to 1,500 construction workers at peak per building.",
+    "value": "~50 permanent per facility; ~1,500 peak construction; 74k modeled total",
+    "sourceOrg": "Virginia Joint Legislative Audit & Review Commission",
+    "sourceTitle": "Data Centers in Virginia (Report 598)",
+    "pubDate": "2024-12-09",
+    "tier": "government",
+    "url": "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp",
+    "geography": "Virginia",
+    "methodologyNote": "Economic contribution analysis including indirect/induced effects via input-output modeling.",
+    "confidence": "high",
+    "caveats": "The 74,000 figure is a modeled total contribution, not a headcount of data center employees; JLARC notes most benefits derive from the construction phase.",
+    "concernTags": [
+      "jobs"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "va-sales-tax-exemption",
+    "claim": "Virginia's data center sales-and-use tax exemption provided $928.6M in tax savings in FY23 (by far the state's largest economic development incentive), used by ~90% of the industry by MW; requires 50+ jobs at 150% of prevailing wage; expires 2035.",
+    "value": "$928.6M foregone in FY23",
+    "sourceOrg": "Virginia Joint Legislative Audit & Review Commission",
+    "sourceTitle": "Data Centers in Virginia (Report 598)",
+    "pubDate": "2024-12-09",
+    "tier": "government",
+    "url": "https://jlarc.virginia.gov/pdfs/presentations/Rpt598Pres-1.pdf",
+    "geography": "Virginia",
+    "methodologyNote": "Legislative audit estimate of foregone state revenue.",
+    "confidence": "high",
+    "caveats": "Foregone-revenue estimates assume the investment would occur without the exemption, which is contested; this is a state cost, separate from local property taxes.",
+    "concernTags": [
+      "taxes"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "gjf-2m-per-job",
+    "claim": "State and local governments awarded an average of ~$2M in subsidies per data center job across 11 megadeals analyzed in 2016; 2025 follow-up found $1M-$2.1M per job in recent Illinois, Nevada, and Ohio deals.",
+    "value": "~$1M-$2.1M subsidy per permanent job",
+    "sourceOrg": "Good Jobs First",
+    "sourceTitle": "Money Lost to the Cloud",
+    "pubDate": "2016-10-11",
+    "tier": "independent",
+    "url": "https://goodjobsfirst.org/study-state-and-local-governments-pay-2-million-job-tech-giants-data-centers/",
+    "geography": "United States",
+    "methodologyNote": "Deal-level analysis of disclosed subsidy values divided by promised permanent jobs.",
+    "confidence": "medium",
+    "caveats": "Original figure is from 2016 (2025 update gives the range); based on megadeals; advocacy organization critical of subsidies; excludes construction jobs and tax revenue generated.",
+    "concernTags": [
+      "taxes",
+      "jobs"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "gjf-disclosure-2025",
+    "claim": "Only 11 states disclose data center subsidy recipients; 24+ including Virginia, Georgia, and North Carolina do not. Annual exemption costs run ~$1B in Texas and Virginia; states that analyzed ROI found losses of 52-70 cents per subsidy dollar.",
+    "value": "11 disclosing states; ~$1B/yr TX and VA",
+    "sourceOrg": "Good Jobs First",
+    "sourceTitle": "Cloudy Data, Costly Deals: How Poorly States Disclose Data Center Subsidies",
+    "pubDate": "2025-11-01",
+    "tier": "independent",
+    "url": "https://goodjobsfirst.org/cloudy-data-costly-deals-how-poorly-states-disclose-data-center-subsidies/",
+    "geography": "United States (state-level)",
+    "methodologyNote": "Review of state disclosure programs and tax expenditure reports.",
+    "confidence": "high",
+    "caveats": "Advocacy organization with a stated position favoring subsidy elimination; state cost estimates vary in methodology.",
+    "concernTags": [
+      "taxes",
+      "trust"
+    ]
+  },
+  {
+    "id": "capex-per-mw",
+    "claim": "Greenfield data center construction costs roughly $7M-$12M per MW of IT load (US average ~$9.5M/MW); wholesale operators report $11.5M-$12M/MW and retail colocation up to $16.3M/MW.",
+    "value": "$7M-$12M per MW (US avg ~$9.5M)",
+    "sourceOrg": "Dgtl Infra",
+    "sourceTitle": "How Much Does it Cost to Build a Data Center?",
+    "pubDate": "2023-01-01",
+    "tier": "industry",
+    "url": "https://dgtlinfra.com/how-much-does-it-cost-to-build-a-data-center/",
+    "geography": "United States / global",
+    "methodologyNote": "Compiled from operator investor disclosures.",
+    "confidence": "medium",
+    "caveats": "Circa 2022-2023 and excludes most IT equipment; AI-era costs trending higher.",
+    "concernTags": [
+      "taxes"
+    ],
+    "modeled": true,
+    "companyReported": true
+  },
+  {
+    "id": "epoch-server-share",
+    "claim": "For a modeled 1 GW AI data center, servers/IT hardware dominate at ~60% of annualized total cost, with assumed lifespans of 5 years for IT equipment vs 14 years for the facility; this is the refresh cycle that local equipment-tax revenue depends on.",
+    "value": "Servers ~60% of annualized cost; 5-yr refresh vs 14-yr facility",
+    "sourceOrg": "Epoch AI",
+    "sourceTitle": "Total cost of ownership of a one-gigawatt AI data center",
+    "pubDate": "2026-05-14",
+    "tier": "independent",
+    "url": "https://epoch.ai/data-insights/ai-datacenter-cost-breakdown",
+    "geography": "United States (modeled)",
+    "methodologyNote": "Bottom-up cost model based on current AI server systems.",
+    "confidence": "medium",
+    "caveats": "Fully modeled, not measured; AI-specific; highly sensitive to the IT lifespan assumption.",
+    "concernTags": [
+      "taxes"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "loudoun-depreciation-volatility",
+    "claim": "Loudoun assesses data center computer equipment at 50% of purchase price in year one with sharp depreciation thereafter; in 2021 slower server deployment produced a $60M revenue shortfall versus forecast.",
+    "value": "50% year-1 assessment; $60M forecast miss (2021)",
+    "sourceOrg": "Data Center Dynamics",
+    "sourceTitle": "Loudoun county budget hit by $60m data center tax revenue shortfall",
+    "pubDate": "2021-08-01",
+    "tier": "independent",
+    "url": "https://www.datacenterdynamics.com/en/news/loudoun-county-budget-hit-by-data-center-60m-tax-revenue-shortfall/",
+    "geography": "Loudoun County, Virginia",
+    "methodologyNote": "Trade press reporting on county budget documents and officials' statements.",
+    "confidence": "medium",
+    "caveats": "2021 event; revenue subsequently resumed growth; this illustrates volatility of equipment-based revenue, not decline.",
+    "concernTags": [
+      "taxes"
+    ]
+  },
+  {
+    "id": "lancaster-cba",
+    "claim": "Lancaster, PA executed a 20-year community benefits agreement (2025) with data center developers: $20.25M in community payments, water capped at 20,000 gal/day per campus, closed-loop cooling required, certified noise plans, 100-ft buffers, but local hiring uses non-binding 'good faith' language.",
+    "value": "$20.25M over 20 years; enforceable caps + weak hiring language",
+    "sourceOrg": "Columbia Law School Sabin Center",
+    "sourceTitle": "Community Benefits Agreements and Data Center Development",
+    "pubDate": "2026-05-28",
+    "tier": "academic",
+    "url": "https://blogs.law.columbia.edu/climatechange/2026/05/28/community-benefits-agreements-and-data-center-development/",
+    "geography": "Lancaster, Pennsylvania",
+    "methodologyNote": "Legal analysis of the executed agreement text.",
+    "confidence": "high",
+    "caveats": "One of very few data-center-specific CBAs; the community group reportedly received the agreement only two days before council approval.",
+    "concernTags": [
+      "taxes",
+      "jobs",
+      "trust"
+    ]
+  },
+  {
+    "id": "gjf-schools",
+    "claim": "Tax abatements cost 24 St. Louis-area school districts $381M in revenue over 2017-2024, and Good Jobs First identifies long-abated data centers as an emerging threat to school funding, concentrated in Black and low-income communities.",
+    "value": "$381M district losses 2017-2024 (all abatements)",
+    "sourceOrg": "Good Jobs First",
+    "sourceTitle": "Increasing Student Losses: Cloudy Horizons as Data Centers and Developers Gain at Schools' Expense",
+    "pubDate": "2025-12-01",
+    "tier": "independent",
+    "url": "https://goodjobsfirst.org/increasing-student-losses-cloudy-horizons-as-data-centers-and-developers-gain-at-schools-expense/",
+    "geography": "St. Louis area, Missouri",
+    "methodologyNote": "Analysis of GASB 77 tax-abatement disclosures in district financial reports.",
+    "confidence": "medium",
+    "caveats": "Loss totals cover ALL abatements, not solely data centers; the data center impact is prospective, not yet measured; advocacy organization.",
+    "concernTags": [
+      "taxes"
+    ]
+  },
+  {
+    "id": "chamber-progress-homeowner-offset",
+    "claim": "An industry-aligned analysis estimates Loudoun homeowners would pay ~$5,856/yr more in property tax without data center revenue, a counterfactual model that assumes all data center revenue would otherwise be raised from residential rates.",
+    "value": "~$5,856/yr modeled homeowner savings (upper bound)",
+    "sourceOrg": "Chamber of Progress (based on Mangum Economics study for NVTC)",
+    "sourceTitle": "Data Centers Cut Loudoun Property Taxes",
+    "pubDate": "2026-05-14",
+    "tier": "industry",
+    "url": "https://progresschamber.org/insights/data-centers-cut-property-taxes-virginia-homeowners/",
+    "geography": "Loudoun County, Virginia",
+    "methodologyNote": "Counterfactual revenue-replacement model.",
+    "confidence": "low",
+    "caveats": "Tech-industry coalition citing an industry-commissioned study; assumes no spending adjustments and full replacement via residential rates; Loudoun is a non-representative extreme case.",
+    "concernTags": [
+      "taxes"
+    ],
+    "modeled": true,
+    "companyReported": true
+  },
+  {
+    "id": "datacenter-tech-salary",
+    "claim": "Data center technicians average ~$54,000/yr nationally (25th-75th percentile roughly $42,500-$60,000); facility engineers and IT roles pay more, and Virginia's exemption requires qualifying jobs at 150% of prevailing wage.",
+    "value": "~$54k/yr median technician wage",
+    "sourceOrg": "ZipRecruiter (job-posting aggregator)",
+    "sourceTitle": "Data Center Technician Salary",
+    "pubDate": "2026-08-01",
+    "tier": "industry",
+    "url": "https://www.ziprecruiter.com/Salaries/Data-Center-Technician-Salary",
+    "geography": "United States",
+    "methodologyNote": "Aggregated job-posting and reported-salary data; BLS has no clean occupation code for data center technicians.",
+    "confidence": "medium",
+    "caveats": "Posting-aggregator data, not BLS statistics; varies by region and role.",
+    "concernTags": [
+      "jobs"
+    ],
+    "companyReported": true
+  },
+  {
+    "id": "gmu-nova-home-sales-2023",
+    "claim": "Analysis of 2023 Northern Virginia home sales found no statistical evidence that proximity to a data center negatively impacts housing values; homes closer to data centers sold for more on average",
+    "value": "No negative effect detected; model explained ~87% of price variance",
+    "sourceOrg": "George Mason University Center for Regional Analysis (Terry Clower, Keith Waters)",
+    "sourceTitle": "Data Centers and 2023 Home Sales in Northern Virginia",
+    "pubDate": "2025-11-01",
+    "tier": "academic",
+    "url": "https://content.sitemasonry.gmu.edu/news/2025-11/study-home-prices-are-higher-when-house-near-data-center",
+    "geography": "Loudoun, Fairfax, Prince William counties, Virginia",
+    "methodologyNote": "Mapped data center locations against BrightMLS 2023 sale prices with weighting for confounders (industrial areas, Dulles Airport proximity)",
+    "confidence": "medium",
+    "caveats": "Single year, one uniquely mature market; authors explicitly warn correlation reflects shared infrastructure, not a data center premium ('At no point am I saying that data centers are an add-on'); one press account describes it as developer-commissioned (unverified); pubDate approximated from November 2025 news release",
+    "concernTags": [
+      "property",
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "realtor-matched-zip-2026",
+    "claim": "In 43 ZIP codes that gained large data centers (2019-2025), home values moved in line with matched comparison ZIPs for two years after activation, with no meaningful gains or losses",
+    "value": "~0% differential; sales within 5 mi of 50+MW facilities: 0.67% (2018) to ~1.5% (2026)",
+    "sourceOrg": "Realtor.com",
+    "sourceTitle": "Americans Aren't Moving Toward Data Centers, Data Centers Are Coming to Them",
+    "pubDate": "2026-08-11",
+    "tier": "industry",
+    "url": "https://www.prnewswire.com/news-releases/americans-arent-moving-toward-data-centers-data-centers-are-coming-to-them-realtorcom-report-finds-302847528.html",
+    "geography": "United States, ZIP-code level",
+    "methodologyNote": "Matched-ZIP comparison within metros using Aterio facility database, Realtor.com deed/listing records, tax records, ACS data",
+    "confidence": "medium",
+    "caveats": "ZIP-level matching cannot detect effects on homes immediately abutting a facility; two-year post-activation window is short; new facilities increasingly sited in lower-income ZIPs (2.1% below median income)",
+    "concernTags": [
+      "property",
+      "landuse"
+    ],
+    "modeled": false,
+    "companyReported": true
+  },
+  {
+    "id": "integra-indiana-appraisal-2026",
+    "claim": "Homes within 1.5 miles of large Indiana data centers appreciated 42% vs 41% countywide (2021-2026), but three of four counties studied underperformed county averages by 1-9%",
+    "value": "+42% vs +41% overall; -1% to -9% in 3 of 4 counties",
+    "sourceOrg": "Integra Realty Resources (commissioned appraisal)",
+    "sourceTitle": "Indiana data center property value study (reported by Bisnow/IPM)",
+    "pubDate": "2026-01-01",
+    "tier": "industry",
+    "url": "https://www.bisnow.com/national/news/data-center-community-relations/data-centers-may-not-be-a-drag-on-nearby-home-prices-135084",
+    "geography": "St. Joseph, Allen, LaPorte, Clark counties, Indiana",
+    "methodologyNote": "Appraisal of ~80 homes near facilities vs county appreciation; many facilities still under construction during study window",
+    "confidence": "low",
+    "caveats": "Developer-side appraisal presented in zoning proceedings; small sample; averages mask county-level underperformance; pubDate approximated (January 2026)",
+    "concernTags": [
+      "property",
+      "trust"
+    ],
+    "modeled": false,
+    "companyReported": true
+  },
+  {
+    "id": "granbury-mixed-price-signals",
+    "claim": "Press reporting documents anecdotal negative price signals near data centers (Granbury, TX prices down 8.2% in a year; agents report hard-to-sell homes) alongside large land-sale premiums, with academic studies split",
+    "value": "-8.2% Granbury yr/yr (causality unclear); land at $360,000/acre vs $25,000 typical",
+    "sourceOrg": "HousingWire",
+    "sourceTitle": "Data centers emerge as real estate's newest pricing wildcard",
+    "pubDate": "2026-01-01",
+    "tier": "community",
+    "url": "https://www.housingwire.com/articles/data-centers-emerge-as-real-estates-newest-pricing-wildcard/",
+    "geography": "Texas; national",
+    "methodologyNote": "Journalistic synthesis of agent interviews, listing data, and two academic studies (Univ. of Rochester: little measurable effect; a GMU-led analysis: slowed local price growth)",
+    "confidence": "low",
+    "caveats": "Article itself states Granbury drop may reflect broader market forces, not the data center; exact publication date not captured (2026)",
+    "concernTags": [
+      "property",
+      "trust",
+      "noise"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "usc-construction-workforce-2025",
+    "claim": "Data center construction typically runs 18-36 months with peak staffing of 0.7-2.0 construction workers per MW; permanent operations staffing is only 0.15-0.35 FTE per MW",
+    "value": "18-36 months; 0.7-2.0 workers/MW peak; 0.15-0.35 ops FTE/MW",
+    "sourceOrg": "University of Southern California (Angela Ryu, Shon R. Hiatt), published via Texas A&M Hamm Institute",
+    "sourceTitle": "Data Center Employment Forecast Analysis",
+    "pubDate": "2025-12-03",
+    "tier": "academic",
+    "url": "https://hamminstitute.org/site-files/documents/data_center_workforce.pdf",
+    "geography": "United States",
+    "methodologyNote": "Benchmarks from 3,000+ hyperscale/colocation facilities using 2024-2025 field data from major operators; forecast model uses 2-year representative construction duration",
+    "confidence": "high",
+    "caveats": "Ranges vary by facility size and complexity; forecast components (2025-2030 projections) are modeled",
+    "concernTags": [
+      "construction",
+      "landuse",
+      "power"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "meta-hyperion-construction-strain",
+    "claim": "Meta's Hyperion campus construction (2,250 acres + ~1,400-acre expansion) has ~3,700 workers heading to a projected 5,000 peak, producing RV camps (700+ hookups), pre-dawn truck traffic, rent spikes, vehicle damage from gravel, and light visible for miles",
+    "value": "~3,700 current / 5,000 projected peak workers; 2,250-acre site",
+    "sourceOrg": "Fortune",
+    "sourceTitle": "Meta's $27 billion AI data center is causing chaos in small town Louisiana",
+    "pubDate": "2026-03-26",
+    "tier": "community",
+    "url": "https://fortune.com/2026/03/26/meta-ai-data-center-hyperion-louisiana/",
+    "geography": "Richland Parish, Louisiana",
+    "methodologyNote": "On-the-ground reporting with resident and official interviews",
+    "confidence": "medium",
+    "caveats": "Anecdotal impacts; worker counts include contractor estimates (some locals cite up to 8,000); Meta reports mitigation via local partnerships",
+    "concernTags": [
+      "construction",
+      "landuse",
+      "property",
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "louisa-amazon-nuisance-suit",
+    "claim": "A Louisa County, VA homeowner's private nuisance suit against Amazon documents alleged construction impacts: months of brown tap water, dust clouds, late-night noise, light pollution in bedrooms, and foundation cracking from vibration; the nuisance claim survived dismissal",
+    "value": "Suit filed Aug 2025; nuisance claim proceeding as of Aug 2026",
+    "sourceOrg": "Virginia Mercury",
+    "sourceTitle": "Brown water, dust and loud noises: Louisa homeowner sues Amazon over data center construction",
+    "pubDate": "2026-07-28",
+    "tier": "community",
+    "url": "https://virginiamercury.com/2026/07/28/brown-water-dust-and-loud-noises-louisa-homeowner-sues-amazon-over-data-center-construction/",
+    "geography": "Louisa County, Virginia",
+    "methodologyNote": "Court filings and interviews; allegations not yet adjudicated",
+    "confidence": "medium",
+    "caveats": "Claims are allegations; Amazon disputes materiality and deployed street sweepers/water trucks; outcome pending",
+    "concernTags": [
+      "construction",
+      "water",
+      "noise",
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "lightbox-site-selection",
+    "claim": "Data center site selection is driven by power availability (hyperscale sites now seek 300+ MW capability), fiber connectivity, land availability, and zoning; campuses run from ~10 acres for single buildings to 100-200+ acre assemblies",
+    "value": "300+ MW target for hyperscale sites; e.g., Microsoft's 173-acre Mount Pleasant purchase",
+    "sourceOrg": "LightBox",
+    "sourceTitle": "A Growing Demand for Land: Site Selection for Data Centers",
+    "pubDate": "2024-10-30",
+    "tier": "industry",
+    "url": "https://www.lightboxre.com/insight/a-growing-demand-for-land-site-selection-for-data-centers/",
+    "geography": "United States",
+    "methodologyNote": "Commercial real estate research synthesis of transactions and market data",
+    "confidence": "medium",
+    "caveats": "CRE marketing-adjacent research; acreage per MW varies widely with design and substation needs",
+    "concernTags": [
+      "landuse",
+      "power",
+      "trust"
+    ],
+    "modeled": false,
+    "companyReported": true
+  },
+  {
+    "id": "afbf-farmland-2026",
+    "claim": "~4,925 US data centers are active or under construction (Virginia 706, Texas 546) at $9-15M per MW to build; the Farm Bureau warns farmland conversion is generally permanent and urges brownfield-first siting",
+    "value": "4,925 facilities; $2.3-3.8B for a typical 250 MW campus",
+    "sourceOrg": "American Farm Bureau Federation",
+    "sourceTitle": "Balancing Data Center Growth with American Agriculture",
+    "pubDate": "2026-04-23",
+    "tier": "independent",
+    "url": "https://www.fb.org/market-intel/balancing-data-center-growth-with-american-agriculture",
+    "geography": "United States",
+    "methodologyNote": "Market intelligence synthesis of facility databases, EIA data, USDA expenditure forecasts",
+    "confidence": "medium",
+    "caveats": "AFBF is a farm advocacy organization; no total converted-acreage figure provided; facility counts vary by database definitions",
+    "concernTags": [
+      "landuse",
+      "power",
+      "water",
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "decommissioning-rules-emerging",
+    "claim": "A small number of jurisdictions now impose data center decommissioning rules: Susquehanna County and Smithfield Township, PA require decommissioning within 12 months including removal of hazardous materials and cabling; Ohio's 2025 tariff requires 25+ MW data centers with weak credit to post financial assurances plus 8-year minimum terms and exit fees",
+    "value": "12-month decommissioning mandate (PA townships); 25 MW threshold (Ohio)",
+    "sourceOrg": "Columbia Law School, Sabin Center for Climate Change Law",
+    "sourceTitle": "Decommissioning Data Centers: Avoiding Stranded Assets",
+    "pubDate": "2026-08-06",
+    "tier": "academic",
+    "url": "https://blogs.law.columbia.edu/climatechange/2026/08/06/decommissioning-data-centers-avoiding-stranded-assets/",
+    "geography": "Ohio, Pennsylvania, Wisconsin, New York",
+    "methodologyNote": "Legal/policy review comparing data center rules to oil-and-gas and renewable-energy bonding regimes",
+    "confidence": "high",
+    "caveats": "Most jurisdictions still require no decommissioning bond for data centers, unlike common practice for solar/wind; Ohio assurance protects the utility, not site restoration",
+    "concernTags": [
+      "landuse",
+      "trust",
+      "power"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "epa-emergency-engine-rules",
+    "claim": "EPA rules allow emergency backup engines to run up to 100 hours/year for maintenance, testing, and qualifying demand response (max 50 hours for non-emergency grid support) without meeting standard emission limits; unlimited operation is allowed in true emergencies; engines running 15-100 hours/year must report location, dates, and times",
+    "value": "100 hr/yr maintenance-testing cap; 50 hr non-emergency; ULSD required above 15 hr/yr",
+    "sourceOrg": "U.S. Environmental Protection Agency",
+    "sourceTitle": "Fact Sheet: Specifics About Provisions Related to Emergency Engines (RICE NESHAP/NSPS)",
+    "pubDate": "2013-01-01",
+    "tier": "government",
+    "url": "https://www.epa.gov/stationary-engines/fact-sheet-specifics-about-provisions-related",
+    "geography": "United States (federal floor; states may be stricter)",
+    "methodologyNote": "Federal regulation fact sheet (40 CFR stationary engine rules)",
+    "confidence": "high",
+    "caveats": "pubDate approximate (2013 rule amendments); state permits (e.g., Virginia DEQ) layer additional run-hour and emissions caps on top of federal rules",
+    "concernTags": [
+      "safety",
+      "environment",
+      "power"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "virginia-generator-fleet",
+    "claim": "Northern Virginia data centers host 4,000+ diesel generators exceeding 11 GW combined (~9,000 statewide, ~4,700 in Loudoun); one Amazon permit contemplates up to 10 million gallons of diesel annually across 173 generators; state legislative research warns worst-case operation could emit 9,000 tons of NOx/year, about half of Northern Virginia's typical annual emissions from all sources",
+    "value": "4,000+ generators / 11+ GW NoVA; 10M gal/yr diesel (one permit); 9,000 tons NOx worst case",
+    "sourceOrg": "Virginia Mercury (citing Virginia DEQ, JLARC, VCU research)",
+    "sourceTitle": "As 2026 legislative session starts, data centers' diesel generators are a top concern for Virginians",
+    "pubDate": "2026-01-14",
+    "tier": "community",
+    "url": "https://virginiamercury.com/2026/01/14/as-2026-legislative-session-starts-data-centers-diesel-generators-are-a-top-concern-for-virginians/",
+    "geography": "Virginia (Loudoun, Prince William)",
+    "methodologyNote": "Journalism synthesizing DEQ permit data, JLARC legislative research, and VCU emissions analysis (Dr. Damian Pitt, 2023 data); corroborated by VPM reporting (vpm.org, 2025-12-17)",
+    "confidence": "high",
+    "caveats": "9,000-ton NOx figure is a modeled worst-case scenario, not measured emissions; actual measured generator emissions are currently a small share of regional totals",
+    "concernTags": [
+      "environment",
+      "safety",
+      "power",
+      "trust"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "xai-memphis-turbines",
+    "claim": "NAACP/SELC/Earthjustice allege xAI operates 33 gas turbines without Clean Air Act permits serving its Memphis-area data centers, projected to emit 2,507 tons NOx, 236 tons fine PM, 837 tons CO, and 25 tons formaldehyde annually: the largest industrial NOx source in a metro already failing federal smog standards",
+    "value": "33 turbines; 2,507 tons NOx/yr (plaintiff estimate)",
+    "sourceOrg": "Southern Environmental Law Center / NAACP / Earthjustice",
+    "sourceTitle": "NAACP asks court for emergency action to stop illegal air pollution from xAI's data center power plant",
+    "pubDate": "2026-05-06",
+    "tier": "independent",
+    "url": "https://www.selc.org/press-release/naacp-asks-court-for-emergency-action-to-stop-illegal-air-pollution-from-xais-data-center-power-plant/",
+    "geography": "Southaven, MS / Memphis, TN (Boxtown, South Memphis)",
+    "methodologyNote": "Plaintiff engineering estimates in Clean Air Act enforcement filings; suit filed April 2026, injunction sought May 2026",
+    "confidence": "medium",
+    "caveats": "Advocacy-side litigation figures, not agency-verified measurements; case pending; xAI disputes claims; environmental-justice context: both counties received ALA 'F' ozone grades",
+    "concernTags": [
+      "environment",
+      "safety",
+      "trust"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "hillsboro-battery-fire-2025",
+    "claim": "A battery-room fire at a Digital Realty-linked Hillsboro, Oregon data center (space leased by X) on May 22, 2025 was contained without injuries but triggered a global X outage the next day, a documented example of lithium/UPS battery risk at data centers",
+    "value": "1 battery-room fire; 0 injuries; ~6,000 outage reports",
+    "sourceOrg": "Data Center Dynamics",
+    "sourceTitle": "Fire breaks out at Oregon data center leased by Elon Musk's X",
+    "pubDate": "2025-05-23",
+    "tier": "community",
+    "url": "https://www.datacenterdynamics.com/en/news/fire-breaks-out-at-oregon-data-center-leased-by-elon-musks-x/",
+    "geography": "Hillsboro, Oregon",
+    "methodologyNote": "Trade-press reporting from fire department and company statements; IAFF (iaff.org, 2025-03-13) separately documents lithium-ion training needs for responders",
+    "confidence": "high",
+    "caveats": "Cause details limited to fire department statement ('related to a room of batteries'); such incidents are rare relative to facility count; pubDate approximate",
+    "concernTags": [
+      "safety",
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "aws-hamlet-fire-funding",
+    "claim": "Amazon's $1.5M partnership with the Hamlet, NC fire department (near its Richmond County data center) funded a new fire substation, two fire trucks, equipment, uniforms, and two years of staffing, cutting response times 6-7 minutes and improving the ISO insurance rating from 10 to 4, saving homeowners $300-500/year",
+    "value": "$1.5M; response time -6 to -7 min; ISO class 10 to 4",
+    "sourceOrg": "Amazon (AWS)",
+    "sourceTitle": "Here's what's happening near data centers across the US",
+    "pubDate": "2026-01-01",
+    "tier": "industry",
+    "url": "https://www.aboutamazon.com/news/aws/amazon-data-centers-locations-news",
+    "geography": "Richmond County, North Carolina",
+    "methodologyNote": "Company-reported community investment page; outcomes stated by company",
+    "confidence": "medium",
+    "caveats": "Company-reported and promotional; undated evergreen page (pubDate approximate); independent verification of insurance-rating change not located",
+    "concernTags": [
+      "safety",
+      "trust",
+      "construction"
+    ],
+    "modeled": false,
+    "companyReported": true
+  },
+  {
+    "id": "wv-stormwater-habitat",
+    "claim": "West Virginia DEP issued repeated erosion/sediment violation notices at the Monarch data center site (sediment discharged to an Ohio River tributary; silt-fence failure flooded neighbors' garages), and Google's proposed Project Avalon would eliminate 34+ acres of wetlands and impact 45,000+ feet of 34 streams on a 1,699-acre parcel, with nine federally protected species at risk",
+    "value": "4 violation notices May-June; 34+ wetland acres; 45,000+ stream-feet",
+    "sourceOrg": "Charleston Gazette-Mail (citing WVDEP notices and Army Corps permit filings)",
+    "sourceTitle": "Vast environmental harm inflicted, projected for Monarch, Google data center sites",
+    "pubDate": "2026-06-01",
+    "tier": "community",
+    "url": "https://www.wvgazettemail.com/news/energy_and_environment/vast-environmental-harm-inflicted-projected-for-monarch-google-data-center-sites/article_b8ea3197-4e23-4b9b-97a9-4d7dfa39afc6.html",
+    "geography": "Mason and Putnam counties, West Virginia",
+    "methodologyNote": "Monarch violations are agency-documented (measured); Avalon impacts are from permit applications (projected/modeled)",
+    "confidence": "medium",
+    "caveats": "Avalon figures are proposed-project projections subject to permit revision and mitigation requirements; pubDate approximated from cited violation dates",
+    "concernTags": [
+      "environment",
+      "water",
+      "landuse",
+      "construction"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "recs-renewable-claims",
+    "claim": "'100% renewable' data center claims typically rest on market-based accounting (RECs and annual matching) that does not reflect the actual grid mix powering the facility hour by hour; location-based accounting and 24/7 hourly matching with PPAs and storage are the more credible standards",
+    "value": "Annual REC matching vs hourly grid reality",
+    "sourceOrg": "David Mytton (Uptime Institute research affiliate)",
+    "sourceTitle": "RECs cannot be used to back claims of 100% renewable energy",
+    "pubDate": "2021-03-01",
+    "tier": "independent",
+    "url": "https://davidmytton.blog/recs-cannot-be-used-to-back-claims-of-100-renewable-energy/",
+    "geography": "Global / United States",
+    "methodologyNote": "Analytical essay grounded in GHG Protocol scope 2 accounting; updated 2022; consistent with 2026 GHG Protocol proposals to tighten '100% renewable' reporting (datacenterdynamics.com)",
+    "confidence": "high",
+    "caveats": "Personal-blog format, but author is an established cloud-sustainability researcher; some operators (notably Google, Microsoft) are moving toward 24/7 CFE targets",
+    "concernTags": [
+      "environment",
+      "power",
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "acres-per-mw-apa",
+    "claim": "Recent US data center projects average 0.5 to 1.5 acres per MW of IT load, with 5,000 to 12,000 sq ft of total building area per MW.",
+    "value": "0.5-1.5 acres/MW",
+    "sourceOrg": "American Planning Association",
+    "sourceTitle": "Zoning Practice: The Physical Footprint of Artificial Intelligence",
+    "pubDate": "2025-10-01",
+    "tier": "independent",
+    "url": "https://planning-org-uploaded-media.s3.amazonaws.com/publication/online/Zoning-Practice-2025-10.pdf",
+    "geography": "United States",
+    "methodologyNote": "Planner-authored synthesis of recent project data.",
+    "confidence": "medium",
+    "caveats": "Campus totals (buffers, substations, stormwater) can push effective acreage above building-only ratios; ratios shift as rack density rises.",
+    "concernTags": [
+      "landuse",
+      "construction"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "single-building-construction-months",
+    "claim": "A single data center building takes about 12 to 24 months of physical construction (hyperscale 24-36); the full lifecycle from site selection to commissioning runs 3 to 6 years.",
+    "value": "12-36 months construction; 3-6 years total",
+    "sourceOrg": "Broadstaff (industry staffing firm)",
+    "sourceTitle": "Data Center Construction Timeline",
+    "pubDate": "2026-03-26",
+    "tier": "industry",
+    "url": "https://broadstaffglobal.com/data-center-construction-timeline",
+    "geography": "United States",
+    "methodologyNote": "Industry synthesis, not a measured dataset.",
+    "confidence": "medium",
+    "caveats": "Ranges vary with permitting and utility interconnection queues, which often dominate the schedule.",
+    "concernTags": [
+      "construction"
+    ],
+    "modeled": true,
+    "companyReported": true
+  },
+  {
+    "id": "air-cooling-energy-penalty",
+    "claim": "Replacing evaporative (water-cooled) chiller plants with air-cooled plants raises total facility energy use roughly 10 to 15 percent in Uptime's modeled example (PUE 1.8 vs 1.6).",
+    "value": "~12.5% more energy (modeled example)",
+    "sourceOrg": "Uptime Institute",
+    "sourceTitle": "Ignore Data Center Water Consumption at Your Own Peril",
+    "pubDate": "2016-06-17",
+    "tier": "independent",
+    "url": "https://journal.uptimeinstitute.com/dont-ignore-water-consumption/",
+    "geography": "United States",
+    "methodologyNote": "Modeled PUE comparison of representative chiller architectures.",
+    "confidence": "medium",
+    "caveats": "2016 vintage; modern economized dry systems narrow the gap in cool climates; penalty is climate-dependent.",
+    "concernTags": [
+      "water",
+      "power",
+      "environment"
+    ],
+    "modeled": true
+  },
+  {
+    "id": "fairfax-setbacks-2024",
+    "claim": "Fairfax County requires data center buildings at least 200 feet from adjacent residential district lot lines and backup generators 300 feet from residential property, plus pre- and post-construction noise studies.",
+    "value": "200 ft buildings; 300 ft generators",
+    "sourceOrg": "Fairfax County, Virginia",
+    "sourceTitle": "Board of Supervisors Approves New Data Center Zoning Ordinance Amendment",
+    "pubDate": "2024-09-10",
+    "tier": "government",
+    "url": "https://www.fairfaxcounty.gov/news/board-supervisors-approve-new-data-center-zoning-ordinance-amendment",
+    "geography": "Fairfax County, Virginia",
+    "methodologyNote": "Adopted zoning ordinance text.",
+    "confidence": "high",
+    "caveats": "Applies to new approvals; by-right thresholds and special exception paths vary by district.",
+    "concernTags": [
+      "noise",
+      "landuse",
+      "property"
+    ]
+  },
+  {
+    "id": "henrico-500ft-setback",
+    "claim": "Henrico County, Virginia adopted a 500 foot data center setback from residential areas with substation screening and vegetative buffers.",
+    "value": "500 ft from residential",
+    "sourceOrg": "Virginia Mercury",
+    "sourceTitle": "Virginia doesn't have statewide data center regulations. Localities are making their own rules.",
+    "pubDate": "2025-06-20",
+    "tier": "community",
+    "url": "https://virginiamercury.com/2025/06/20/virginia-doesnt-have-statewide-data-center-regulations-localities-are-making-their-own-rules-instead/",
+    "geography": "Henrico County, Virginia",
+    "methodologyNote": "News reporting on adopted local ordinances.",
+    "confidence": "medium",
+    "caveats": "Secondary source; confirm exact ordinance text before publishing as a legal standard.",
+    "concernTags": [
+      "noise",
+      "landuse",
+      "property"
+    ]
+  },
+  {
+    "id": "chandler-performance-ordinance",
+    "claim": "Chandler, Arizona's data center ordinance (effective January 2023) requires a pre-construction sound baseline study shared with residents, sound mitigation to keep noise at or below baseline, annual noise studies for five years, generator testing time limits, and an on-site resident liaison.",
+    "value": "5 years of annual noise studies; baseline standard",
+    "sourceOrg": "City of Chandler, Arizona",
+    "sourceTitle": "Chandler's data center ordinance now in effect",
+    "pubDate": "2023-01-05",
+    "tier": "government",
+    "url": "https://www.chandleraz.gov/news-center/chandlers-data-center-ordinance-now-effect",
+    "geography": "Chandler, Arizona",
+    "methodologyNote": "Adopted ordinance (No. 5033) summarized by the city.",
+    "confidence": "high",
+    "caveats": "Numeric setback distances are in the full ordinance text, not the city summary.",
+    "concernTags": [
+      "noise",
+      "trust",
+      "construction"
+    ]
+  },
+  {
+    "id": "tmi-crane-restart",
+    "claim": "Constellation's $1.6 billion Three Mile Island Unit 1 restart (Crane Clean Energy Center), backed by a 20-year 835 MW Microsoft power purchase agreement, is on track to produce power by mid-2027 with about 600 permanent workers.",
+    "value": "835 MW PPA; mid-2027 target; ~600 jobs",
+    "sourceOrg": "Pennsylvania Capital-Star",
+    "sourceTitle": "Concern persists as former Three Mile Island nuclear plant progresses toward restart",
+    "pubDate": "2026-07-29",
+    "tier": "community",
+    "url": "https://penncapital-star.com/energy-environment/concern-persists-as-crane-nuclear-plant-progresses-toward-2027-restart/",
+    "geography": "Londonderry Township, Pennsylvania (PJM)",
+    "methodologyNote": "News reporting on NRC relicensing milestones and company statements.",
+    "confidence": "high",
+    "caveats": "Restart date is a company target pending NRC steps; power flows to the grid, offsetting Microsoft purchases, not through a direct wire to a data center.",
+    "concernTags": [
+      "power",
+      "environment",
+      "jobs"
+    ]
+  },
+  {
+    "id": "aws-talen-restructure",
+    "claim": "After FERC rejected the expanded behind-the-meter interconnection in November 2024, Talen and Amazon restructured to a 1,920 MW front-of-the-meter supply deal from the Susquehanna nuclear plant through 2042, transitioning in spring 2026.",
+    "value": "1,920 MW through 2042",
+    "sourceOrg": "Utility Dive",
+    "sourceTitle": "Talen to sell Amazon 1.9 GW from Susquehanna nuclear plant",
+    "pubDate": "2025-06-11",
+    "tier": "independent",
+    "url": "https://www.utilitydive.com/news/talen-amazon-aws-susquehanna-nuclear-data-centert/750440/",
+    "geography": "Pennsylvania (PJM)",
+    "methodologyNote": "Trade press reporting on company disclosures and FERC dockets.",
+    "confidence": "high",
+    "caveats": "Phased delivery depends on transmission upgrades; regulators forced the grid-connected structure, a precedent for cost-allocation oversight.",
+    "concernTags": [
+      "power",
+      "trust"
+    ]
+  },
+  {
+    "id": "google-demand-response-1gw",
+    "claim": "Google has signed 1 GW of data center demand-response capacity with five US utilities, curtailing or shifting machine learning workloads during grid peaks.",
+    "value": "1 GW contracted demand response",
+    "sourceOrg": "Google",
+    "sourceTitle": "Google signed 1 GW of data center demand response",
+    "pubDate": "2026-03-19",
+    "tier": "industry",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/demand-response-data-center-milestone/",
+    "geography": "United States",
+    "methodologyNote": "Company announcement of contracted capacity in long-term utility agreements.",
+    "confidence": "medium",
+    "caveats": "Company-reported; contracted capacity is not the same as demonstrated curtailment during actual grid emergencies.",
+    "concernTags": [
+      "power",
+      "trust"
+    ],
+    "companyReported": true
+  },
+  {
+    "id": "jlarc-water-office-comparison",
+    "claim": "Virginia's legislative audit found most data centers in the state use about the same amount of water or less than a large office building, because most Virginia facilities use closed-loop or air cooling.",
+    "value": "Most VA facilities: office-building-scale water use",
+    "sourceOrg": "Virginia Joint Legislative Audit & Review Commission",
+    "sourceTitle": "Data Centers in Virginia (2024)",
+    "pubDate": "2024-12-09",
+    "tier": "government",
+    "url": "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp",
+    "geography": "Virginia",
+    "methodologyNote": "Legislative audit using utility data and facility surveys.",
+    "confidence": "high",
+    "caveats": "Virginia-specific and excludes indirect water used in power generation; evaporative facilities elsewhere use far more.",
+    "concernTags": [
+      "water"
+    ]
+  },
+  {
+    "id": "uptime-dlc-adoption-2025",
+    "claim": "22 percent of surveyed operators use direct liquid cooling while 75 percent still use perimeter air cooling, showing liquid cooling is real but not yet dominant in the installed base.",
+    "value": "22% DLC; 75% air (2025 survey)",
+    "sourceOrg": "Uptime Institute",
+    "sourceTitle": "Cooling Systems Survey 2025",
+    "pubDate": "2025-07-01",
+    "tier": "independent",
+    "url": "https://intelligence.uptimeinstitute.com/sites/default/files/2025-07/UI%20Field%20181_Data%20center%20cooling.pdf",
+    "geography": "Global (operator survey)",
+    "methodologyNote": "Online survey April-June 2025, 1,033 respondents.",
+    "confidence": "high",
+    "caveats": "Survey skews to existing facilities; new AI builds adopt liquid cooling at much higher rates than the installed base.",
+    "concernTags": [
+      "water",
+      "power",
+      "noise"
+    ]
+  },
+  {
+    "id": "trust-determinants-peters-1997",
+    "claim": "Perceived trust and credibility of risk communicators depend on three factors: knowledge and expertise, openness and honesty, and concern and care; for industry the strongest trust predictor is demonstrated concern and care (defying the profit-only stereotype).",
+    "value": "Regression models explained 30% of trust variation for industry, 40% for government, 43% for citizen groups (n=404/384/393)",
+    "sourceOrg": "Risk Analysis (Peters, Covello, McCallum)",
+    "sourceTitle": "The Determinants of Trust and Credibility in Environmental Risk Communication: An Empirical Study",
+    "pubDate": "1997-02-01",
+    "tier": "academic",
+    "url": "https://centerforriskcommunication.org/wp-content/uploads/2021/05/Environmental_Risk_Trust_Credibility_Factors_Study.pdf",
+    "geography": "Six US communities",
+    "methodologyNote": "Measured survey of residents near environmental risk sites; regression on trust ratings of industry, government, citizen groups",
+    "confidence": "high",
+    "caveats": "1990s data; hazardous-waste context, not data centers; PDF hosted by Covello's Center for Risk Communication (author-affiliated)",
+    "concernTags": [
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "nasem-deficit-model-2017",
+    "claim": "Providing facts alone (the deficit model) is insufficient to change attitudes on contested science-related issues; effective communication requires engaging values, worldviews, and trusted relationships.",
+    "value": "Consensus report of an expert committee",
+    "sourceOrg": "National Academies of Sciences, Engineering, and Medicine",
+    "sourceTitle": "Communicating Science Effectively: A Research Agenda",
+    "pubDate": "2017-01-01",
+    "tier": "academic",
+    "url": "https://www.nationalacademies.org/read/23674/chapter/2",
+    "geography": "US",
+    "methodologyNote": "Consensus synthesis of the science communication literature by a National Academies committee",
+    "confidence": "high",
+    "caveats": "General science communication, applied by analogy to siting disputes",
+    "concernTags": [
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "kahan-polarization-2012",
+    "claim": "Higher science literacy and numeracy did not reduce disagreement about contested risks; it increased polarization along cultural lines, consistent with identity-protective motivated reasoning.",
+    "value": "US general population survey, n=1,540",
+    "sourceOrg": "Nature Climate Change (Kahan et al.)",
+    "sourceTitle": "The polarizing impact of science literacy and numeracy on perceived climate change risks",
+    "pubDate": "2012-05-27",
+    "tier": "academic",
+    "url": "https://www.nature.com/articles/nclimate1547",
+    "geography": "US",
+    "methodologyNote": "Measured cross-sectional survey with validated literacy/numeracy scales",
+    "confidence": "high",
+    "caveats": "Climate risk context; a 23-country replication found cultural cognition effects weaker outside the US (see ScienceDirect 2022)",
+    "concernTags": [
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "slovic-trust-asymmetry-1993",
+    "claim": "Trust is asymmetric: it is created slowly and destroyed quickly; trust-destroying events are more visible and carry more psychological weight than trust-building events.",
+    "value": "Asymmetry principle",
+    "sourceOrg": "Risk Analysis (Slovic)",
+    "sourceTitle": "Perceived Risk, Trust, and Democracy",
+    "pubDate": "1993-12-01",
+    "tier": "academic",
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1539-6924.1993.tb01329.x",
+    "geography": "US",
+    "methodologyNote": "Experimental ratings of trust-increasing vs trust-decreasing events plus theoretical synthesis",
+    "confidence": "high",
+    "caveats": "Lab-based ratings; direction robust in later replications (Cvetkovich et al. 2004 note prior beliefs moderate it)",
+    "concernTags": [
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "lbnl-wind-neighbor-fairness-2019",
+    "claim": "Among US residents near wind projects, positive attitudes outnumber negative 57% to 8%, but 29% of those aware of the planning process rated it not at all or only slightly fair; developer transparency and openness was the most important component of perceived process fairness.",
+    "value": "n=1,674 attitudes; n=787 fairness ratings (15% not at all fair, 14% slightly fair)",
+    "sourceOrg": "Lawrence Berkeley National Laboratory",
+    "sourceTitle": "National Survey of Attitudes of Wind Power Project Neighbors: Summary of Results",
+    "pubDate": "2019-11-01",
+    "tier": "government",
+    "url": "https://emp.lbl.gov/sites/default/files/emp-files/wind_neighbors_survey_summary_nov2019v5_final.pdf",
+    "geography": "US, residents within ~8 km of large wind projects",
+    "methodologyNote": "Measured nationally representative survey of wind project neighbors",
+    "confidence": "high",
+    "caveats": "Wind, not data centers; analogy for large industrial energy infrastructure siting; compensated respondents were more positive but compensation did not predict perceived fairness",
+    "concernTags": [
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "firestone-transparency-2018",
+    "claim": "Developer openness and transparency had the largest effect on perceived fairness of the siting process, and transparency remained associated with more positive project attitudes even after controlling for noise, aesthetics, and landscape effects.",
+    "value": "n=1,705 respondents near 600+ US wind projects (2016 survey)",
+    "sourceOrg": "Journal of Environmental Policy & Planning (Firestone, Hoen, Rand, Elliott, Hubner, Pohl)",
+    "sourceTitle": "Reconsidering barriers to wind power projects: community engagement, developer transparency and place",
+    "pubDate": "2018-01-01",
+    "tier": "academic",
+    "url": "https://pdxscholar.library.pdx.edu/rri_facpubs/60/",
+    "geography": "US",
+    "methodologyNote": "Measured survey, multivariate regression on fairness and attitude outcomes",
+    "confidence": "high",
+    "caveats": "Wind context; correlational, not experimental",
+    "concernTags": [
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "frey-compensation-crowding-1997",
+    "claim": "Offering monetary compensation to host a nuclear waste repository cut stated acceptance roughly in half, from 50.8% to 24.6%, because payment was perceived as a bribe and crowded out civic duty.",
+    "value": "50.8% acceptance without compensation vs 24.6% with compensation",
+    "sourceOrg": "American Economic Review / Journal of Political Economy (Frey, Oberholzer-Gee)",
+    "sourceTitle": "The Cost of Price Incentives: An Empirical Analysis of Motivation Crowding-Out (AER 1997); The Old Lady Visits Your Backyard (JPE 1996)",
+    "pubDate": "1997-09-01",
+    "tier": "academic",
+    "url": "https://ideas.repec.org/a/ucp/jpolec/v104y1996i6p1297-1313.html",
+    "geography": "Switzerland (candidate repository communities)",
+    "methodologyNote": "Measured face-to-face survey experiment; percentages verified in Frey's crowding-out review at bsfrey.ch",
+    "confidence": "high",
+    "caveats": "1990s Swiss civic context with strong national-duty framing; US evidence on compensation is mixed (LBNL found compensated neighbors more positive); the lesson is framing and fairness, not that benefits never work",
+    "concernTags": [
+      "trust"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "fas-cba-census-2026",
+    "claim": "Only 8 executed community benefit agreements related to data centers were identified nationwide as of summer 2026, and only one (Lancaster, PA, November 2025) was fully public; most deal terms sit behind NDAs or require records requests.",
+    "value": "8 executed CBAs; 1 fully public",
+    "sourceOrg": "Federation of American Scientists",
+    "sourceTitle": "What's with all the secret data center agreements?",
+    "pubDate": "2026-08-11",
+    "tier": "independent",
+    "url": "https://fas.org/publication/data-center-community-benefit-agreements/",
+    "geography": "US",
+    "methodologyNote": "Document census via public sources and records requests; FAS solicits additional agreements, so count is a floor",
+    "confidence": "medium",
+    "caveats": "Likely undercount; FAS has a pro-transparency policy stance",
+    "concernTags": [
+      "trust",
+      "taxes"
+    ],
+    "modeled": false
+  },
+  {
+    "id": "microsoft-nda-pledge-2026",
+    "claim": "Microsoft pledged to stop using non-disclosure agreements with local governments worldwide for data center development, the first hyperscaler to do so; local critics welcomed it but remain skeptical pending implementation.",
+    "value": "Company-wide policy announced March 2026",
+    "sourceOrg": "Microsoft (company announcement); Wisconsin Watch (independent coverage)",
+    "sourceTitle": "Putting communities first: Our decision to end NDAs with local governments",
+    "pubDate": "2026-03-26",
+    "tier": "industry",
+    "url": "https://local.microsoft.com/blog/putting-communities-first-our-decision-to-end-ndas-with-local-governments/",
+    "geography": "Global / US",
+    "methodologyNote": "Company-reported policy; skeptical local reaction documented at wisconsinwatch.org",
+    "confidence": "high",
+    "caveats": "Company-reported; does not bind other developers; does not retroactively open past agreements",
+    "concernTags": [
+      "trust"
+    ],
+    "modeled": false,
+    "companyReported": true
+  },
+  {
+    "id": "stillwater-gna-verification-2024",
+    "claim": "The Stillwater Good Neighbor Agreement (2000) funds independent environmental audits and citizen-hired technical consultants (about $523,000 approved in 2024), uses standards stricter than state/federal minimums, binds successor owners, and has run 24 years with no arbitration or environmental litigation.",
+    "value": "24 years, zero arbitration/litigation; ~$523,000/yr community technical funding (2024)",
+    "sourceOrg": "World Resources Institute",
+    "sourceTitle": "Community Benefits Snapshot: Stillwater Good Neighbor Agreement",
+    "pubDate": "2024-01-01",
+    "tier": "independent",
+    "url": "https://www.wri.org/snapshots/community-benefits-snapshot-stillwater-good-neighbor-agreement",
+    "geography": "Stillwater County, Montana",
+    "methodologyNote": "Case documentation by WRI; agreement text available via Columbia Sabin Center",
+    "confidence": "high",
+    "caveats": "Mining context, not data centers; the strongest available template for third-party verification, not yet replicated at a US data center",
+    "concernTags": [
+      "trust",
+      "environment"
+    ],
+    "modeled": false
+  }
+]

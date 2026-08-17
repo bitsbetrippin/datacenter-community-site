@@ -1,0 +1,143 @@
+[
+  {
+    "id": "prince-william-digital-gateway",
+    "location": "Prince William County (Gainesville/Haymarket)",
+    "state": "VA",
+    "outcome": "rejected",
+    "summary": "The Digital Gateway (up to ~$24.7B of development on 2,100 acres beside Manassas National Battlefield) was approved by a lame-duck board in Dec 2023 after a 27-hour hearing, overturned by a judge on procedural grounds in 2025, and officially died in 2026. The largest community-opposition defeat in the U.S. to date.",
+    "whyCommunityReacted": "Land use and place character (industrializing a rural/historic corridor), transmission-line and property-value fears, and the rushed lame-duck approval process itself became a rallying issue.",
+    "factIds": [],
+    "sources": [
+      {"title": "Prince William Digital Gateway data center project officially dies (Virginia Business)", "url": "https://virginiabusiness.com/prince-william-digital-gateway-data-center-project-officially-dies/"},
+      {"title": "Fight ends as leaders vote not to appeal (WUSA9)", "url": "https://www.wusa9.com/article/tech/fight-over-massive-data-center-project-prince-william-county-ends-as-leaders-vote-no-to-bring-appeal-to-virginia-supreme-court/65-7d94e76f-6201-4ae9-96c0-f049463c0769"}
+    ]
+  },
+  {
+    "id": "warrenton-amazon",
+    "location": "Warrenton, Fauquier County",
+    "state": "VA",
+    "outcome": "approved-after-opposition",
+    "summary": "The town council approved an Amazon data center permit in early 2023 despite overwhelming public testimony against it. In the November 2024 election, voters replaced the pro-data-center council members in what local press called 'a referendum on Amazon.'",
+    "whyCommunityReacted": "Small-town character and distrust of a process seen as pre-decided; the political consequence (a council turned over) made it a national cautionary tale.",
+    "factIds": [],
+    "sources": [
+      {"title": "Election results a 'referendum on Amazon' data center (Fauquier.com)", "url": "https://www.fauquier.com/news/town-council-election-results-a-referendum-on-amazon/article_73557f0e-a17b-11ef-8ec0-7f97f90650fe.html"},
+      {"title": "'Cost Me the Election': Data Centers Trigger Voter Backlash (Newsweek)", "url": "https://www.newsweek.com/cost-me-the-election-data-centers-trigger-voter-backlash-12118327"}
+    ]
+  },
+  {
+    "id": "loudoun-noise",
+    "location": "Loudoun County (Sterling area)",
+    "state": "VA",
+    "outcome": "modified",
+    "summary": "In the densest data center market on earth, operating facilities generated a flood of resident complaints about 24/7 cooling hum and generator fumes, prompting noise-ordinance study and, in March 2025, elimination of by-right data center development. The canonical post-construction dispute.",
+    "whyCommunityReacted": "Continuous low-frequency tonal hum at homes and generator emissions; residents felt facilities were approved near homes without enforceable acoustic standards.",
+    "factIds": [],
+    "sources": [
+      {"title": "Data center noise, fumes create flood of complaints (WJLA)", "url": "https://wjla.com/news/local/data-center-noise-fumes-create-flood-of-complaints-in-loudoun-county-virginia-board-of-supervisors-sterling"},
+      {"title": "Loudoun County eliminates by-right data center development (Holland & Knight)", "url": "https://www.hklaw.com/en/insights/publications/2025/04/loudoun-county-virginia-eliminates-by-right-data-center-development"}
+    ]
+  },
+  {
+    "id": "chandler-noise-ordinance",
+    "location": "Chandler",
+    "state": "AZ",
+    "outcome": "modified",
+    "summary": "After years of resident complaints about a constant hum from an existing data center, Chandler adopted one of the first U.S. zoning ordinances specifically regulating data center siting and noise (effective early 2023), requiring acoustic studies and containment of equipment noise.",
+    "whyCommunityReacted": "An audible, continuous mechanical hum in adjacent neighborhoods that pre-existing general noise codes could not address. Chandler became the template cited by other jurisdictions.",
+    "factIds": ["chandler-retrofit-partial-fix", "chandler-ordinance-2023"],
+    "sources": [
+      {"title": "Chandler's data center ordinance now in effect (City of Chandler)", "url": "https://www.chandleraz.gov/news-center/chandlers-data-center-ordinance-now-effect"},
+      {"title": "Arizona city adopts data center zoning ordinance (DCD)", "url": "https://www.datacenterdynamics.com/en/news/arizona-city-adopts-data-center-zoning-ordinance/"}
+    ]
+  },
+  {
+    "id": "tucson-project-blue",
+    "location": "Tucson / Pima County",
+    "state": "AZ",
+    "outcome": "rejected",
+    "summary": "'Project Blue,' a ~$3.6B, 290-acre campus, was negotiated for ~2 years under NDAs. After the identity and water demands became public, the Tucson City Council rejected the annexation and water deal unanimously in August 2025.",
+    "whyCommunityReacted": "Water scarcity in a desert city, compounded by outrage at the secrecy; the NDA-shrouded process arguably did more damage than the water numbers themselves.",
+    "factIds": [],
+    "sources": [
+      {"title": "Tucson City Council rejects Project Blue amid intense community pressure (AZ Luminaria)", "url": "https://azluminaria.org/2025/08/06/tucson-city-council-rejects-project-blue-amid-intense-community-pressure/"},
+      {"title": "Tucson rejects Amazon-linked data center amid water, energy concerns (AZFamily)", "url": "https://www.azfamily.com/2025/08/09/tucson-rejects-amazon-linked-data-center-amid-water-energy-concerns/"}
+    ]
+  },
+  {
+    "id": "memphis-xai",
+    "location": "Memphis (Boxtown) / Southaven, MS",
+    "state": "TN",
+    "outcome": "approved-after-opposition",
+    "summary": "xAI's Colossus supercomputer was announced with residents learning details only weeks before startup; the company then operated dozens of unpermitted gas turbines. Civil-rights and environmental groups sued and appealed permits under the Clean Air Act.",
+    "whyCommunityReacted": "Environmental justice and air pollution: turbines emitting NOx sit next to a historically Black neighborhood already burdened by industrial pollution, plus the near-total absence of advance community process.",
+    "factIds": [],
+    "sources": [
+      {"title": "xAI built an illegal power plant (SELC, an advocacy litigant)", "url": "https://www.selc.org/news/xai-built-an-illegal-power-plant-to-power-its-data-center/"},
+      {"title": "NAACP, others appeal xAI turbine permits (Tennessee Lookout)", "url": "https://tennesseelookout.com/briefs/naacp-others-appeal-xai-turbine-permits-for-memphis-data-center/"}
+    ]
+  },
+  {
+    "id": "fayetteville-ga-crow",
+    "location": "Fayetteville",
+    "state": "GA",
+    "outcome": "rejected",
+    "summary": "A proposed 300,000 sq ft data center near the Fayette Pavilion was rejected by the Planning and Zoning Commission in January 2026 even though the land was already zoned to allow it; the developer withdrew its appeal in March 2026.",
+    "whyCommunityReacted": "Residential proximity and cumulative-impact fatigue in a county already tense over an existing multi-billion-dollar campus, sharpened by regional reporting on ~29-30M gallons of unreported data center water withdrawals.",
+    "factIds": [],
+    "sources": [
+      {"title": "Developer effectively withdraws application (DCD)", "url": "https://www.datacenterdynamics.com/en/news/developer-effectively-withdraws-application-for-data-center-in-fayetteville-georgia/"},
+      {"title": "Records raise questions about Georgia's largest data center and its water use (Atlanta News First)", "url": "https://www.atlantanewsfirst.com/2026/07/13/records-raise-questions-about-georgias-largest-data-center-its-water-use/"}
+    ]
+  },
+  {
+    "id": "peculiar-mo",
+    "location": "Peculiar (Cass County)",
+    "state": "MO",
+    "outcome": "moratorium",
+    "summary": "After neighbor outcry over a planned ~$1.5B data center campus, the Board of Aldermen reversed course and amended zoning to remove data centers as a permitted use entirely, blocking the project and effectively banning the use citywide.",
+    "whyCommunityReacted": "Proximity to homes and rural land-use character, plus anger that zoning had been changed to accommodate the project before residents understood what was coming.",
+    "factIds": [],
+    "sources": [
+      {"title": "Peculiar reverses zoning after cries from neighbors (KSHB)", "url": "https://www.kshb.com/news/local-news/peculiar-reverses-zoning-for-data-center-after-cries-from-neighbors"},
+      {"title": "Peculiar officials remove data centers from ordinance (DCD)", "url": "https://www.datacenterdynamics.com/en/news/peculiar-officials-in-missouri-remove-data-centers-from-ordinance-blocking-15bn-diode-project/"}
+    ]
+  },
+  {
+    "id": "valparaiso-in",
+    "location": "Valparaiso (Porter County)",
+    "state": "IN",
+    "outcome": "rejected",
+    "summary": "Valparaiso's mayor declared the proposed Agincourt data center dead after sustained public outcry, and the city advanced a moratorium while writing regulations, part of a statewide wave in which nearly a third of Indiana counties have moved to restrict data centers.",
+    "whyCommunityReacted": "Land use, water, and grid concerns amplified by regional skepticism of Indiana's rapid hyperscale build-out and its ratepayer implications.",
+    "factIds": [],
+    "sources": [
+      {"title": "Valparaiso mayor says data center dead after outcry (GovTech)", "url": "https://www.govtech.com/products/valparaiso-ind-mayor-says-data-center-dead-after-outcry"},
+      {"title": "Nearly a third of Indiana counties have moved to restrict data centers (WFYI)", "url": "https://www.wfyi.org/statewide/2026-07-06/indiana-counties-data-center-moratoriums-bans-2026"}
+    ]
+  },
+  {
+    "id": "abilene-stargate",
+    "location": "Abilene (Taylor County)",
+    "state": "TX",
+    "outcome": "approved",
+    "summary": "The OpenAI/Oracle 'Stargate' campus was approved smoothly with strong local-official support and tax incentives in a jobs-hungry West Texas city. By mid-2026, reporting documented second-order strains: a housing crunch from the construction workforce and complaints about on-site gas generation.",
+    "whyCommunityReacted": "Initial acceptance was driven by jobs and economic development in a region with industrial land and pro-growth politics; later friction came from housing costs and air quality, not the data center use itself.",
+    "factIds": [],
+    "sources": [
+      {"title": "How the Stargate data center project has impacted Abilene (KUT)", "url": "https://www.kut.org/energy-environment/2026-08-12/abilene-tx-stargate-ai-data-center-economy-housing-crisis"}
+    ]
+  },
+  {
+    "id": "new-albany-oh",
+    "location": "New Albany (Licking/Franklin County)",
+    "state": "OH",
+    "outcome": "approved",
+    "summary": "New Albany deliberately built a master-planned business park with pre-zoned industrial land, buffering, and design standards, and has hosted major data centers for over a decade with minimal organized opposition; it is the standard example of frictionless siting through planning.",
+    "whyCommunityReacted": "Acceptance flowed from pre-designated industrial zoning away from homes, visible design standards, and school-district tax revenue; conflict migrated upward to statewide utility-rate proceedings rather than local hearings.",
+    "factIds": ["aep-ohio-tariff"],
+    "sources": [
+      {"title": "Ohio's data center boom really started in New Albany (News 5 Cleveland)", "url": "https://www.news5cleveland.com/news/local-news/ohios-data-center-boom-really-started-in-new-albany-we-went-there-to-see-what-it-looks-like"}
+    ]
+  }
+]

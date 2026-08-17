@@ -1,0 +1,457 @@
+[
+  {
+    "id": "rfp-bill-increase",
+    "concernId": "power",
+    "question": "Will my electric bill go up because of this data center?",
+    "shortAnswer": "It depends on how your state bills large customers, and honest answers admit both outcomes have happened. Through 2024, national evidence suggests data center growth slightly lowered average residential rates by spreading grid fixed costs. But in the PJM region, capacity costs attributed to data centers are now showing up on bills, and forward-looking models project increases of 6-29% by 2030 if supply can't keep up.",
+    "whyConcerned": "Residential rates rose sharply in several data-center-heavy regions in 2024-2026, and PJM's own market monitor attributed tens of billions in capacity costs to data center demand; this concern is grounded in real market outcomes, not rumor.",
+    "whatDetermines": "Whether your state has a data-center rate class with minimum-take contracts (Ohio, Virginia, and Georgia now do); whether the facility contracts to cover its share of new infrastructure; whether new generation can be built fast enough; and whether special contracts are transparent or confidential.",
+    "verify": "Read your utility's large-load tariff filing at your state Public Utility Commission (searchable online); check whether the data center's service agreement includes minimum demand charges; in PJM states, read Monitoring Analytics' State of the Market reports.",
+    "factIds": [
+      "arxiv-rates-fell-2019-2024",
+      "ncsu-2030-price-projection",
+      "pjm-imm-capacity-attribution",
+      "jlarc-virginia-2024"
+    ]
+  },
+  {
+    "id": "rfp-grid-capacity",
+    "concernId": "power",
+    "question": "Can the grid even handle this?",
+    "shortAnswer": "The physics usually can; the schedule often can't. A data center goes up in 18-24 months, but the transmission lines and substations to serve it take 7-10 years. Utilities manage the gap by phasing the facility's ramp-up, requiring the developer to fund upgrades, and increasingly by requiring big loads to curtail during grid emergencies.",
+    "whyConcerned": "Regional grid operators have publicly warned about shrinking reserve margins, and residents reasonably fear blackouts or being outbid for power.",
+    "whatDetermines": "How many announced projects are real (utilities see 5-10x more requests than get built); whether the utility requires financial commitments before building; whether the facility agrees to demand flexibility during peaks; and local transmission headroom at the site.",
+    "verify": "Read the utility's Integrated Resource Plan (filed publicly with the PUC); check your regional grid operator's load forecast and reserve-margin reports; ask whether the project has a signed service agreement or is still just a queue request.",
+    "factIds": [
+      "timeline-mismatch",
+      "phantom-load-ratio",
+      "lbnl-2025-update-2030",
+      "epri-2030-range"
+    ]
+  },
+  {
+    "id": "rfp-who-pays-substation",
+    "concernId": "power",
+    "question": "Who pays for the new substation and power lines?",
+    "shortAnswer": "The dedicated equipment connecting the facility (its substation bays, transformers, and tap lines) is paid by the data center under standard interconnection rules. Wider 'network upgrades' that strengthen the shared grid are typically spread across all customers, which is exactly where states are now intervening with new rules.",
+    "whyConcerned": "One analysis found over $4.3 billion in 2024 transmission costs in seven PJM states that were not collected from the data centers driving them; cost-shifting to households has actually happened where rules lagged.",
+    "whatDetermines": "Whether the state has adopted a large-load tariff (Ohio requires 85% minimum billing; Virginia's GS-5 class requires 85% of wires costs and 60% of generation costs over 14-year contracts); and how regional formulas classify each upgrade.",
+    "verify": "Request the interconnection agreement and System Impact Study from the PUC docket; read the large-load tariff itself (a public document); ask the county or utility which costs are developer-funded, in writing.",
+    "factIds": [
+      "aep-ohio-tariff",
+      "dominion-gs5-rate-class",
+      "harvard-cost-shift-mechanisms"
+    ]
+  },
+  {
+    "id": "rfp-stranded-assets",
+    "concernId": "power",
+    "question": "What happens if the data center never gets built, or leaves after the utility builds all that infrastructure?",
+    "shortAnswer": "This is a real risk called stranded assets: utilities see far more project announcements than completions, and if they overbuild, the fixed costs land on everyone else's bills. The emerging protection is contractual: minimum-take payments, upfront collateral, and multi-year exit fees that make the developer pay whether or not the load shows up.",
+    "whyConcerned": "An estimated 5-10x more interconnection requests are filed than facilities built, and major companies have walked away from gigawatts of capacity reservations.",
+    "whatDetermines": "Whether the state requires minimum billing obligations and exit fees (Ohio: 85% of contracted capacity plus a 3-year exit fee; Virginia: 14-year contracts with collateral); how much speculative load the utility screens out before building; and contract length versus infrastructure payback period.",
+    "verify": "Ask the PUC whether the facility signed a minimum-take contract and for how many years; check the tariff's exit-fee provisions; watch whether the utility's rate cases include recovery for canceled projects.",
+    "factIds": [
+      "phantom-load-ratio",
+      "aep-ohio-tariff",
+      "dominion-gs5-rate-class"
+    ]
+  },
+  {
+    "id": "rfp-where-power-from",
+    "concernId": "power",
+    "question": "Where does the electricity for a data center actually come from?",
+    "shortAnswer": "From the same regional grid you use: power plants feed high-voltage transmission lines, which step down at substations; large data centers usually connect directly at transmission voltage through a dedicated substation. Even when a company buys renewable energy contracts, the electrons physically come from whatever mix is on your regional grid at that hour.",
+    "whyConcerned": "Residents hear '100% renewable' claims from operators while watching gas plants get built nearby, and want to know whether the facility competes with their homes for the same supply. That is a fair question, since it shares the regional pool.",
+    "whatDetermines": "Your regional grid operator's generation mix; whether the facility funds new generation through power purchase agreements or connects to a dedicated plant; and whether it participates in demand-response programs that reduce peak strain.",
+    "verify": "Look up your grid operator's real-time fuel-mix dashboard (public for PJM, ERCOT, MISO, CAISO); read the facility's interconnection request; distinguish company renewable claims (contractual, annualized, company-reported) from the grid's measured hourly mix.",
+    "factIds": [
+      "timeline-mismatch",
+      "lbnl-2023-share",
+      "eia-household-kwh"
+    ]
+  },
+  {
+    "id": "rfp-water-how-much",
+    "concernId": "water",
+    "question": "How much water will this data center use?",
+    "shortAnswer": "It depends almost entirely on the cooling design. An air-cooled or closed-loop facility uses roughly what a large office building uses; a big evaporatively cooled campus can use hundreds of thousands to millions of gallons per day, as much as a small town.",
+    "whyConcerned": "Real, documented cases exist at the high end: Google's campuses in The Dalles, Oregon used 29% of that city's water in 2021, and Meta's Newton County, Georgia facility uses about 10% of that county's daily consumption. Residents have also seen operators refuse to disclose usage.",
+    "whatDetermines": "Cooling architecture (evaporative towers use ~1-9 liters per kWh onsite versus near-zero for closed-loop and dry cooling), local climate (hot-dry summers evaporate far more), facility size, and operating load.",
+    "verify": "Ask for the facility's projected gallons/day and WUE in the zoning application and utility will-serve letter; request municipal meter records (public records in most states, exactly what journalists obtained in The Dalles); check whether the operator publishes site-level water data.",
+    "factIds": [
+      "cooling-tower-wue-range",
+      "facility-size-ladder",
+      "the-dalles-google",
+      "newton-county-meta-wells",
+      "microsoft-zero-water-design"
+    ]
+  },
+  {
+    "id": "rfp-wells",
+    "concernId": "water",
+    "question": "Will it dry up our wells?",
+    "shortAnswer": "Only if it pumps groundwater from the same aquifer your well taps; most large data centers buy municipal water instead. But construction and municipal-system strain have coincided with real well problems in at least one documented case, and causation there is contested.",
+    "whyConcerned": "In Newton County, Georgia, homeowners near Meta's site reported sediment-clogged and dry wells starting during construction. In Indiana and Missouri, proposed data center wells tap the same regional aquifers residents rely on.",
+    "whatDetermines": "Water source (municipal versus onsite wells), which aquifer is tapped (a 1,500-foot confined aquifer interacts far less with shallow domestic wells than a surface aquifer), pumping volume relative to the aquifer's safe yield, and construction earthmoving near shallow wells.",
+    "verify": "Ask whether the facility will use municipal water or its own wells; request the well-permit application and any aquifer study (St. Joseph County, Indiana published a safe-yield figure and capped industrial use at about half of it); ask the county to require baseline testing of neighboring wells before construction.",
+    "factIds": [
+      "newton-county-meta-wells",
+      "st-joseph-aquifer-cap",
+      "new-florence-aws-wells"
+    ]
+  },
+  {
+    "id": "rfp-water-destroyed",
+    "concernId": "water",
+    "question": "Is the water destroyed, or does it come back?",
+    "shortAnswer": "In evaporative systems, roughly 80% of the water evaporates into the atmosphere and leaves the local watershed; about 20% returns as 'blowdown' discharge to the sewer. Closed-loop systems are filled once and recirculate, like a car radiator.",
+    "whyConcerned": "Evaporated water leaves the local system permanently, unlike most home use, which largely returns via sewers. That is why utilities count it as 'consumptive' use.",
+    "whatDetermines": "Cooling type, the cooling towers' cycles of concentration, and whether reclaimed (non-potable) water is used instead of drinking water.",
+    "verify": "Ask for the water-balance diagram in the site plan (evaporation vs. blowdown vs. discharge), the industrial discharge permit, and whether reclaimed water is contractually required.",
+    "factIds": [
+      "us-direct-water-2023",
+      "cooling-tower-wue-range",
+      "microsoft-zero-water-design"
+    ]
+  },
+  {
+    "id": "rfp-waterless",
+    "concernId": "water",
+    "question": "If it's air-cooled, does it really use no water?",
+    "shortAnswer": "Onsite, close to none. But every data center uses water indirectly through electricity: U.S. power generation consumes about 3.1 liters of water per kWh on average, and nationally that indirect water is roughly 12 times data centers' onsite use.",
+    "whyConcerned": "'Waterless' marketing can obscure the total footprint, and air cooling raises electricity use (roughly +10%, per company reporting), shifting the water burden to whatever watershed the power plants sit in.",
+    "whatDetermines": "The regional grid mix: thermoelectric plants (coal, gas, nuclear) consume cooling water; wind and solar consume almost none.",
+    "verify": "Check the utility's fuel-mix disclosure and the facility's power purchase agreements; the LBNL report and ELI fact sheet document the direct-versus-indirect accounting.",
+    "factIds": [
+      "us-indirect-water-2023",
+      "grid-water-intensity",
+      "google-2024-water"
+    ]
+  },
+  {
+    "id": "rfp-water-disclosure",
+    "concernId": "water",
+    "question": "Why won't they just tell us how much water they'll use?",
+    "shortAnswer": "Historically, many haven't: fewer than a third of operators even tracked water use in industry surveys, and in The Dalles the city, with Google funding, sued a newspaper to keep usage secret before releasing it in 2022. Disclosure is improving but is still voluntary in most places.",
+    "whyConcerned": "NDAs during site selection, competitive secrecy, and the absence of mandatory reporting mean communities often learn actual usage only after operation begins, or via litigation.",
+    "whatDetermines": "State public-records law (municipal meter data is usually public), whether the community negotiates disclosure into the development agreement, and company policy.",
+    "verify": "File a public-records request for municipal water deliveries; ask the county to make gallons/day caps and annual public reporting a condition of approval, as St. Joseph County, Indiana did.",
+    "factIds": [
+      "uptime-disclosure-gap",
+      "the-dalles-google",
+      "st-joseph-aquifer-cap",
+      "microsoft-wue",
+      "google-2024-water"
+    ]
+  },
+  {
+    "id": "rfp-hear-from-house",
+    "concernId": "noise",
+    "question": "Will I hear the data center from my house?",
+    "shortAnswer": "It depends on distance, equipment choices, and design. Unmitigated cooling and generator noise has been clearly audible at homes in documented cases; a well-designed facility with enclosed cooling, low-noise fans, and real setbacks can be inaudible over normal background sound.",
+    "whyConcerned": "Real failures exist: Chandler, Arizona residents endured a chiller hum for years; Prince William County residents measured 60+ dB at homes; 2026 lawsuits in Michigan and Wisconsin allege continuous hum far from the fence line.",
+    "whatDetermines": "Distance (sound falls ~6 dB per doubling from a point source), cooling technology (evaporative towers and air-cooled chiller farms are loudest; enclosed systems quieter), equipment orientation and screening, whether limits are set at the property line, and low-frequency content that carries farther at night.",
+    "verify": "Ask for the third-party acoustic study filed with the zoning application (predicted dBA and dBC at the nearest homes), the enforceable property-line limit written into the permit, and post-construction compliance test results; Spotsylvania County, Virginia requires exactly this before occupancy.",
+    "factIds": [
+      "cooling-tower-70dba-400ft",
+      "pwc-resident-measurements-60db",
+      "fhwa-distance-attenuation",
+      "spotsylvania-permit-conditions",
+      "dowagiac-mi-lawsuit-2026"
+    ]
+  },
+  {
+    "id": "rfp-compliant-still-annoying",
+    "concernId": "noise",
+    "question": "If it meets the noise code, can it still bother me?",
+    "shortAnswer": "Possibly. Most ordinances measure dBA, which under-counts the low-frequency hum and tonal whine people find most annoying: a facility can pass a dBA test and still produce a hum you notice indoors at night.",
+    "whyConcerned": "In Sterling, Virginia, a turbine-powered facility passes third-party sound studies while residents describe a rumble they can feel. Consultants for Prince William County explicitly recommended adding dBC limits because dBA misses low-frequency energy.",
+    "whatDetermines": "The frequency content of the equipment (transformer 60 Hz hum, large fan tones), whether the ordinance includes dBC or octave-band limits and tonal penalties, and nighttime atmospheric conditions that carry low-frequency sound farther.",
+    "verify": "Check whether the ordinance or permit includes dBC or octave-band limits and a tonal-noise penalty, not just a single dBA number. Ask whether the acoustic study modeled low-frequency spectra.",
+    "factIds": [
+      "pwc-ordinance-2025",
+      "chandler-ordinance-2023",
+      "fhwa-perception-3db-10db"
+    ]
+  },
+  {
+    "id": "rfp-generators",
+    "concernId": "noise",
+    "question": "What about the backup generators? Won't those be deafening?",
+    "shortAnswer": "Generators are the loudest thing on site (roughly 90-105 dBA at 25 feet) but run only during testing (typically 30-60 minutes per unit, monthly, in daytime) and during outages. Silencers and enclosures can cut 10-20 dB, and test schedules can be restricted by permit.",
+    "whyConcerned": "A campus can have dozens of generators, and unrestricted testing has been audible far away on quiet days. Residents rarely know when tests will happen, so the sudden roar feels alarming.",
+    "whatDetermines": "Number of units, the attenuation package (hospital-grade silencers vs. factory exhaust), enclosure design, test scheduling (daytime-only, staggered units), and distance to homes.",
+    "verify": "Ask for the permit conditions on generator testing hours and frequency, the sound-attenuation specification, and the air permit (which lists every generator). Request published test schedules.",
+    "factIds": [
+      "generator-test-90-105dba-25ft",
+      "barrier-insertion-loss-5-10",
+      "fhwa-distance-attenuation"
+    ]
+  },
+  {
+    "id": "rfp-noise-enforceable",
+    "concernId": "noise",
+    "question": "Can noise promises actually be enforced, or are they just PR?",
+    "shortAnswer": "They are enforceable only if written into the permit as measurable property-line limits with required testing. Spotsylvania County, Virginia conditions every data center approval on 55-65 dBA maximums, compliance testing before occupancy, and permit revocation for repeat violations.",
+    "whyConcerned": "Chandler's experience shows why: with no data-center-specific standard, residents endured years of hum, and retrofits only partially fixed it. Prince William County's old ordinance literally exempted cooling equipment, the main noise source.",
+    "whatDetermines": "Whether limits are numeric and measured at the property line, whether cooling equipment is exempt, who pays for testing, whether there is a complaint escalation path with penalties, and whether pre-construction ambient levels were documented.",
+    "verify": "Read the special use permit or proffer conditions yourself; they are public documents. Look for a dBA/dBC number, a measurement location, a testing trigger, and consequences. No number means no enforceable promise.",
+    "factIds": [
+      "spotsylvania-permit-conditions",
+      "chandler-retrofit-partial-fix",
+      "pwc-ordinance-2025"
+    ]
+  },
+  {
+    "id": "rfp-noise-health",
+    "concernId": "noise",
+    "question": "Is the noise loud enough to damage my hearing or health?",
+    "shortAnswer": "At neighboring homes, data center noise is far below hearing-damage levels. The real, documented harms are sleep disruption, stress, and chronic annoyance from a constant hum: quality-of-life impacts, not deafness.",
+    "whyConcerned": "Constant 24/7 noise at 50-65 dBA (a refrigerator-to-conversation-level hum that never stops) is linked in public-health literature to sleep disturbance and elevated stress; residents in Arizona, Virginia, Michigan, and Wisconsin describe exactly this experience.",
+    "whatDetermines": "Nighttime levels at your bedroom window (not daytime averages), low-frequency content that penetrates walls, and duration; continuous operation is what distinguishes this from traffic or lawn equipment.",
+    "verify": "Compare the facility's predicted nighttime level at your property against CDC everyday-sound benchmarks (refrigerator 40 dB, conversation 60 dB) and your jurisdiction's nighttime limit (commonly 45-55 dBA).",
+    "factIds": [
+      "cdc-everyday-reference-levels",
+      "pwc-resident-measurements-60db",
+      "cooling-tower-70dba-400ft"
+    ]
+  },
+  {
+    "id": "rfp-taxes-why-tax-break",
+    "concernId": "taxes",
+    "question": "Why should a trillion-dollar company get a tax break?",
+    "shortAnswer": "Most data center 'tax breaks' are state sales-tax exemptions on server purchases, offered because states compete for these projects. They are real money: Virginia's exemption alone was worth $929M in FY23, and watchdogs calculate some deals cost $1-2 million per permanent job. Local property taxes, by contrast, are usually still paid and can be very large.",
+    "whyConcerned": "Subsidy values are enormous relative to the small permanent headcount, most states don't disclose who gets what, and independent state analyses have found losses of 52-70 cents per subsidy dollar.",
+    "whatDetermines": "Whether the incentive is a state sales-tax exemption (most common) or a local property tax abatement/PILOT (less common but more locally costly), the deal's job and wage requirements, clawback provisions, and whether the project would have come anyway.",
+    "verify": "Look up your state's tax expenditure report and data center exemption statute; check Good Jobs First's Subsidy Tracker; in Virginia read the JLARC 2024 study; ask your county whether any local abatement or PILOT was granted and request the agreement text.",
+    "factIds": [
+      "va-sales-tax-exemption",
+      "gjf-2m-per-job",
+      "gjf-disclosure-2025"
+    ]
+  },
+  {
+    "id": "rfp-taxes-what-community-receives",
+    "concernId": "taxes",
+    "question": "What does the community actually receive?",
+    "shortAnswer": "Mostly local taxes on the building and, in states that tax it, the computer equipment inside, which is the far bigger number. In Loudoun County, VA, data centers fund roughly 38-42% of the local budget (about $800M/yr in equipment tax alone). Outside such taxing structures, or under heavy abatement, the local take can be far smaller.",
+    "whyConcerned": "Big investment announcements don't say how much actually lands in local budgets, and abatements or the absence of an equipment tax can shrink the local share dramatically.",
+    "whatDetermines": "Whether your state/county taxes business tangible personal property (servers), the local tax rates, any abatement/PILOT terms, how fast equipment depreciates on the books, and negotiated extras like fire equipment, roads, or community funds.",
+    "verify": "Read your county's adopted budget (search for 'computer equipment' or 'business personal property'); JLARC's 2024 report shows locality-by-locality revenue; request any CBA or proffer documents from the planning department.",
+    "factIds": [
+      "loudoun-share-and-rates",
+      "loudoun-dc-ppt-fy26",
+      "jlarc-local-revenue",
+      "lancaster-cba"
+    ]
+  },
+  {
+    "id": "rfp-taxes-lower-my-taxes",
+    "concernId": "taxes",
+    "question": "Will this lower my property taxes?",
+    "shortAnswer": "It can, but it's not automatic. Loudoun County cut its residential rate every year for a decade while data center revenue grew; an industry-commissioned model puts the benefit near $5,800/yr per homeowner there. But Loudoun hosts hundreds of facilities with no abatements on equipment; one abated facility in your county is a very different situation.",
+    "whyConcerned": "Residents hear big revenue promises but see abatements, and worry they'll bear infrastructure and utility costs while the benefit is overstated.",
+    "whatDetermines": "Scale of local taxable investment, whether equipment is taxed locally, abatement percentage and duration, whether your board actually uses new revenue to cut rates versus increase spending, and long-run revenue durability.",
+    "verify": "Compare your county's adopted real property tax rate year over year in budget documents; ask the county administrator how projected data center revenue will be allocated; treat single-number 'homeowner savings' claims as models and check who funded the study.",
+    "factIds": [
+      "loudoun-share-and-rates",
+      "chamber-progress-homeowner-offset",
+      "gjf-schools"
+    ]
+  },
+  {
+    "id": "rfp-taxes-old-equipment",
+    "concernId": "taxes",
+    "question": "What happens to revenue when the equipment gets old?",
+    "shortAnswer": "Equipment-based revenue depends on servers being replaced. Loudoun assesses servers at 50% of purchase price in year one, falling quickly after, so revenue stays high only if operators keep refreshing (typically every 3-7 years). When refreshes slowed in 2021, Loudoun missed its forecast by $60M. Counties should budget for volatility, not a flat annuity.",
+    "whyConcerned": "Residents worry a county could become dependent on revenue that drops if the operator stops investing, technology changes, or the facility goes dark.",
+    "whatDetermines": "Local depreciation schedules, server refresh cycles (AI hardware is currently modeled at ~5 years), whether the operator keeps filling buildings, and how much of the budget depends on this one revenue stream.",
+    "verify": "Ask your commissioner of revenue for the business personal property depreciation schedule; check whether the county budget shows data center revenue as a separate line with multi-year forecasts.",
+    "factIds": [
+      "loudoun-depreciation-volatility",
+      "epoch-server-share",
+      "loudoun-dc-ppt-fy26"
+    ]
+  },
+  {
+    "id": "rfp-jobs-how-many",
+    "concernId": "jobs",
+    "question": "How many people will actually work there?",
+    "shortAnswer": "A typical single data center building employs roughly 50 permanent workers; independent research finds a county's first large data center adds about 100-200 net jobs over a decade. Very large multi-building campuses can employ hundreds to 1,000+ (per company claims). That is far fewer per dollar invested than a factory; the value proposition is mainly tax revenue, not headcount.",
+    "whyConcerned": "Project announcements pair billion-dollar investments with vague or inflated job numbers, and residents have seen 'thousands of jobs' claims that count temporary construction or modeled ripple effects.",
+    "whatDetermines": "Facility type (hyperscale campuses support more jobs than colocation), campus size and building count, whether operations are contracted out, and whether quoted numbers are direct headcount or modeled 'supported jobs.'",
+    "verify": "Ask the developer for direct, on-site permanent FTE commitments in writing (and whether contractors are included); compare against JLARC's ~50 per facility benchmark and the Brookings county-level study; check state incentive filings, which state minimum job requirements.",
+    "factIds": [
+      "jlarc-jobs",
+      "brookings-jobs",
+      "gjf-2m-per-job"
+    ]
+  },
+  {
+    "id": "rfp-jobs-construction",
+    "concernId": "jobs",
+    "question": "What about construction jobs?",
+    "shortAnswer": "Construction is the real jobs event: up to ~1,500 workers at peak on a single building for 12-18 months, and Virginia's audit found construction accounts for about 59,000 of the industry's 74,000 supported jobs. Multi-building campuses can sustain construction employment for many years, but it ends, and many workers travel with the trade.",
+    "whyConcerned": "Residents suspect job claims blend temporary construction with permanent operations, and worry the boom brings traffic and housing pressure then disappears.",
+    "whatDetermines": "Campus phasing (multi-year build-outs extend the boom), local trades capacity (determines how many workers are local vs traveling), and whether electricians and pipefitters are available regionally.",
+    "verify": "Ask for the construction schedule and peak workforce estimates in the site plan or rezoning application; ask local trade unions whether they have agreements for the project.",
+    "factIds": [
+      "jlarc-jobs",
+      "brookings-jobs"
+    ]
+  },
+  {
+    "id": "rfp-jobs-locals-hired",
+    "concernId": "jobs",
+    "question": "Will locals get hired?",
+    "shortAnswer": "Only if it's negotiated and the training pipeline exists. Operations jobs (technicians ~$54K median, engineers more) require certifications locals may not yet have. Some deals fund training (Meta gave $5M to a Louisiana community college with local scholarships), but most 'local hiring' commitments, like Lancaster PA's CBA, are 'good faith' goals, not binding quotas.",
+    "whyConcerned": "Communities have seen facilities import specialized workers while locals get only security and janitorial roles, and hiring promises are rarely enforceable or audited.",
+    "whatDetermines": "Whether the CBA contains binding local-hire percentages with reporting, whether workforce training is funded before operations begin, community college partnerships, and regional labor market depth.",
+    "verify": "Read the actual CBA or proffer language: look for enforceable percentages vs 'good faith efforts'; ask for annual public reporting of local-hire rates; check whether a funded community college partnership exists before approval.",
+    "factIds": [
+      "lancaster-cba",
+      "jlarc-jobs",
+      "datacenter-tech-salary"
+    ]
+  },
+  {
+    "id": "rfp-property-value",
+    "concernId": "property",
+    "question": "Will this hurt my home's value?",
+    "shortAnswer": "Large studies find no consistent drop in nearby home values (Brookings even found modest county-level gains of 2-5%), but the evidence is mixed at the street level: some counties and individual homes next to facilities have underperformed, and homes with direct views or noise exposure face real risk.",
+    "whyConcerned": "An industrial building replacing fields next door feels like it must lower values; agents report hard-to-sell listings near proposed sites, and a widely shared Granbury, TX example showed prices falling 8.2% (causality unproven).",
+    "whatDetermines": "Distance and visibility from the facility, noise and light at the property line, whether the area already had industrial infrastructure, local housing supply, and whether the market is hot or cooling.",
+    "verify": "Read the Brookings analysis, the GMU Northern Virginia study, and Realtor.com's matched-ZIP report yourself; pull your county assessor's sale records for streets adjacent to existing data centers in comparable markets.",
+    "factIds": [
+      "brookings-jobs",
+      "gmu-nova-home-sales-2023",
+      "realtor-matched-zip-2026",
+      "granbury-mixed-price-signals"
+    ]
+  },
+  {
+    "id": "rfp-property-sell",
+    "concernId": "property",
+    "question": "Will anyone want to buy a house near a data center?",
+    "shortAnswer": "Homes near data centers keep selling (Realtor.com found values in 43 ZIP codes that gained facilities tracked matched neighborhoods with no meaningful difference), but industry-funded studies claiming 'no impact' often average away losses in specific counties.",
+    "whyConcerned": "Residents hear developer-commissioned appraisals say 'no adverse effect' while three of four Indiana counties in the same study actually appreciated 1-9% less than county averages.",
+    "whatDetermines": "Who funded the study you're reading, the time window measured, whether construction was still underway, and hyper-local factors like truck routes and generator testing schedules.",
+    "verify": "Ask for the full appraisal (not the summary) in any zoning filing, check who commissioned it, and compare county-level breakdowns rather than blended averages.",
+    "factIds": [
+      "integra-indiana-appraisal-2026",
+      "realtor-matched-zip-2026",
+      "granbury-mixed-price-signals"
+    ]
+  },
+  {
+    "id": "rfp-construction-duration",
+    "concernId": "construction",
+    "question": "How long will construction disruption last?",
+    "shortAnswer": "Typically 18-36 months per building, but multi-building campuses are built in phases, so a large campus can mean 5-10 years of rolling construction; the heaviest truck traffic and dust come during the first 6-12 months of grading and concrete.",
+    "whyConcerned": "At Meta's Louisiana campus, residents faced pre-dawn truck convoys, gravel-damaged windshields, RV camps, and rent spikes; a Virginia homeowner sued Amazon over months of dust, brown tap water, and late-night noise.",
+    "whatDetermines": "Campus size and phasing, whether a construction management plan sets hauling hours and routes, county enforcement, and how many buildings the developer entitles up front.",
+    "verify": "Ask the county for the construction management plan, permitted work hours, haul-route map, and complaint-line number as written conditions of approval, and whether violations carry penalties.",
+    "factIds": [
+      "usc-construction-workforce-2025",
+      "meta-hyperion-construction-strain",
+      "louisa-amazon-nuisance-suit"
+    ]
+  },
+  {
+    "id": "rfp-construction-workers",
+    "concernId": "construction",
+    "question": "How many workers and trucks will show up in our town?",
+    "shortAnswer": "Peak construction brings roughly 0.7-2 workers per megawatt (about 1,000-1,500 for a large hyperscale building and up to 5,000 on giant campuses), which means real traffic, housing, and road-wear pressure while it lasts; permanent staff afterward is far smaller.",
+    "whyConcerned": "Small towns like Richland Parish, LA (pop. ~20,000) absorbed thousands of workers, and Saline, MI residents documented speeding gravel trucks and dust on newly paved streets.",
+    "whatDetermines": "Facility megawatts, phasing, local labor availability (out-of-area workers need housing), and whether the county requires a traffic impact study; Loudoun County, VA requires one for data centers of any size.",
+    "verify": "Request the traffic impact study and workforce housing plan from the planning file; compare peak worker estimates to the USC/Hamm Institute per-MW benchmarks.",
+    "factIds": [
+      "usc-construction-workforce-2025",
+      "meta-hyperion-construction-strain"
+    ]
+  },
+  {
+    "id": "rfp-landuse-siting",
+    "concernId": "landuse",
+    "question": "Why did they pick this site?",
+    "shortAnswer": "Almost always the same four things: available electric capacity (hyperscalers now look for 300+ MW), fiber routes, large affordable parcels, and zoning that allows it. That is why farmland near substations and transmission lines is targeted, and why facilities are moving to cheaper, lower-income areas farther from cities.",
+    "whyConcerned": "Farm groups warn conversion is effectively permanent, roughly 4,925 facilities are built or underway nationally, and communities often learn of projects only after land is optioned under NDAs.",
+    "whatDetermines": "Substation and transmission proximity, utility capacity timelines, land price, water availability for the chosen cooling design, tax incentives, and whether local zoning requires special-use review.",
+    "verify": "Ask the developer to state, on the record, the site-selection criteria; check the utility's interconnection queue and the parcel's zoning history; ask whether brownfield alternatives were evaluated.",
+    "factIds": [
+      "lightbox-site-selection",
+      "afbf-farmland-2026",
+      "realtor-matched-zip-2026"
+    ]
+  },
+  {
+    "id": "rfp-landuse-leaves",
+    "concernId": "landuse",
+    "question": "What happens if the company leaves?",
+    "shortAnswer": "There is no general guarantee: most jurisdictions do not require decommissioning bonds for data centers the way they do for solar farms, though a few (two Pennsylvania townships; Ohio's utility tariff) have started imposing decommissioning mandates and financial assurances, and communities can negotiate them.",
+    "whyConcerned": "Purpose-built server halls are hard to reuse, technology turns over in 5-10 years, and a former AOL campus that once held 5,300 jobs was replaced by data centers employing about 100-150 people; stranded buildings and unpaid grid upgrades are real risks.",
+    "whatDetermines": "Whether the zoning approval or a development agreement includes a decommissioning plan, a bond or letter of credit sized to demolition cost, and utility contract terms that shield ratepayers from stranded infrastructure.",
+    "verify": "Ask your county whether the approval includes a decommissioning plan and financial assurance; read Ohio's 2025 data center tariff and the Sabin Center analysis for models your board can copy.",
+    "factIds": [
+      "decommissioning-rules-emerging",
+      "afbf-farmland-2026",
+      "lightbox-site-selection"
+    ]
+  },
+  {
+    "id": "rfp-safety-stored",
+    "concernId": "safety",
+    "question": "What's stored on site, and is it dangerous?",
+    "shortAnswer": "Two main hazards: large diesel stocks for backup generators (one Virginia permit contemplates up to 10 million gallons used annually across 173 generators) and rooms of lithium-ion UPS batteries, which have caused real but rare fires; both are regulated under fire and environmental codes, and no injuries occurred in the best-documented US incident.",
+    "whyConcerned": "A May 2025 battery-room fire at a Hillsboro, Oregon data center burned for hours and knocked X offline worldwide; firefighters' unions warn lithium fires behave differently and facilities are hard to navigate.",
+    "whatDetermines": "Battery chemistry and compliance with fire codes (NFPA 855-style separation and suppression), diesel tank secondary containment and spill plans, and whether the fire marshal pre-plans the site with the operator.",
+    "verify": "Ask the fire marshal for the facility's hazardous-materials inventory and pre-incident plan; diesel storage volumes appear in state air and tank permits, which are public records.",
+    "factIds": [
+      "virginia-generator-fleet",
+      "hillsboro-battery-fire-2025",
+      "epa-emergency-engine-rules"
+    ]
+  },
+  {
+    "id": "rfp-safety-firedept",
+    "concernId": "safety",
+    "question": "Will my fire department be ready?",
+    "shortAnswer": "Data centers generate few emergency calls, but they demand specialized preparation: lithium-battery response training, pre-incident planning, and sometimes new equipment; some developers fund this directly, like Amazon's $1.5M for a Hamlet, NC substation, two trucks, and staffing.",
+    "whyConcerned": "Volunteer and small-town departments were built for house fires, not 100,000-square-foot battery-and-diesel campuses behind security fencing; the IAFF says battery incidents will grow with the industry.",
+    "whatDetermines": "Whether the developer funds training, apparatus, and staffing before opening; whether the fire marshal reviews suppression and battery systems at permitting; and mutual-aid arrangements for rural sites.",
+    "verify": "Ask your fire chief what the developer has committed in writing; check whether a first-responder funding agreement is a condition of approval rather than a voluntary promise.",
+    "factIds": [
+      "aws-hamlet-fire-funding",
+      "hillsboro-battery-fire-2025",
+      "virginia-generator-fleet"
+    ]
+  },
+  {
+    "id": "rfp-env-generators",
+    "concernId": "environment",
+    "question": "What comes out of those generators?",
+    "shortAnswer": "Diesel generators emit NOx, fine particulates, CO, and air toxics; under EPA rules they may run up to 100 hours a year for testing and maintenance (unlimited in true emergencies), so normal-year emissions are modest, but the fleet is huge (4,000+ generators in Northern Virginia alone), and worst-case scenarios or unpermitted operation (xAI Memphis's 33 turbines) can rival major industrial polluters.",
+    "whyConcerned": "Virginia's legislative research put worst-case generator emissions at 9,000 tons of NOx a year (about half of Northern Virginia's typical total from all sources), and regulators have proposed loosening when dirtier Tier II units can run.",
+    "whatDetermines": "Generator tier (Tier II vs Tier IV pollution controls), permitted run-hour and emissions caps, testing schedules, fuel type, and whether the state lets generators run for grid support beyond real emergencies.",
+    "verify": "Every generator needs a state air permit with public emissions limits and annual run-hour reports. Request them from your state DEQ; compare permitted versus actual reported hours.",
+    "factIds": [
+      "epa-emergency-engine-rules",
+      "virginia-generator-fleet",
+      "xai-memphis-turbines"
+    ]
+  },
+  {
+    "id": "rfp-env-renewable",
+    "concernId": "environment",
+    "question": "Is '100% renewable' real?",
+    "shortAnswer": "Usually not in the way it sounds: most claims mean the company bought renewable certificates or contracts equal to its annual usage somewhere on the grid (market-based accounting); the electrons actually powering the building at night still come from the local mix, which is why hourly '24/7 carbon-free' matching is the honest gold standard.",
+    "whyConcerned": "Communities are told a facility is 'green' while their local grid adds gas generation to serve it; independent researchers and the GHG Protocol itself are tightening rules because annual REC matching can dramatically understate real emissions.",
+    "whatDetermines": "Whether claims are location-based or market-based, whether renewable purchases are new-build PPAs on your grid or unbundled RECs from elsewhere, and whether matching is annual or hourly.",
+    "verify": "Ask the operator to disclose both location-based and market-based emissions for the specific facility, and whether renewable supply is hourly-matched on your regional grid, and refuse single-number '100%' answers.",
+    "factIds": [
+      "recs-renewable-claims",
+      "virginia-generator-fleet"
+    ]
+  }
+]

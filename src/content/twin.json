@@ -1,0 +1,101 @@
+[
+  {
+    "id": "substation",
+    "name": "Substation",
+    "icon": "⚡",
+    "x": 8, "y": 18, "w": 18, "h": 22,
+    "whatItIs": "A fenced electrical yard where high-voltage transmission power is stepped down to voltages the data center can use. Large campuses often have a dedicated substation built by the utility on or next to the site.",
+    "whyItExists": "Data centers draw far more power than a normal commercial building, so they connect closer to the transmission system instead of the neighborhood distribution lines that serve homes.",
+    "communityImpact": "Visual presence of steel structures and lines, a low steady transformer hum, and construction traffic while it is built. Who pays for it matters: costs can be assigned to the data center or spread across utility customers depending on the tariff.",
+    "mitigation": "Setbacks and screening walls or vegetation (several Virginia counties now require substation screening), low-noise transformer specifications, and utility agreements that assign interconnection costs to the data center customer.",
+    "monitoring": "Interconnection agreements and cost allocations are filed with state utility commissions and are public records. Residents can also ask for the sound study covering the substation at the property line."
+  },
+  {
+    "id": "transformers",
+    "name": "Transformers",
+    "icon": "🔌",
+    "x": 28, "y": 22, "w": 10, "h": 14,
+    "whatItIs": "Devices that change electricity from one voltage to another. A campus has large transformers at the substation and many smaller ones next to each building.",
+    "whyItExists": "Servers run on low-voltage power, but power arrives at high voltage. Each step-down requires a transformer, and redundancy requires spares.",
+    "communityImpact": "Transformers produce a continuous low-frequency hum that can carry farther than higher-pitched sounds, which is a common source of noise complaints near property lines. They also contain cooling oil that must be managed to protect soil and water.",
+    "mitigation": "Distance is the main tool (Fairfax County requires major equipment setbacks from homes), plus sound walls, low-noise transformer designs, and oil containment basins required by environmental rules.",
+    "monitoring": "Property-line acoustic measurements before and after construction, spill prevention plans (SPCC) filed under federal rules, and county noise ordinance enforcement."
+  },
+  {
+    "id": "serverhall",
+    "name": "Server Hall",
+    "icon": "🖥️",
+    "x": 40, "y": 12, "w": 34, "h": 30,
+    "whatItIs": "The large windowless rooms holding rows of computer racks. This is the actual product of the facility: computing, storage, and networking equipment.",
+    "whyItExists": "Everything else on the campus (power, cooling, security) exists to keep these machines running without interruption.",
+    "communityImpact": "The building itself is the biggest visual change: warehouse-scale structures that can exceed a million square feet on large campuses. Inside equipment is not audible outside; the community-facing impacts come from the building's size, lighting, and the mechanical systems serving it.",
+    "mitigation": "Architectural facade standards, height limits, and screening now appear in ordinances in Virginia, Arizona, and Illinois. Landscaped buffers and dark-sky compliant lighting reduce visual impact.",
+    "monitoring": "Site plans and elevation drawings are public during zoning review, and visual simulations from specific viewpoints can be required before approval."
+  },
+  {
+    "id": "cooling",
+    "name": "Cooling Plant",
+    "icon": "❄️",
+    "x": 40, "y": 46, "w": 20, "h": 18,
+    "whatItIs": "The equipment that removes heat from the servers: chillers, cooling towers or dry coolers, pumps, and increasingly liquid loops that carry heat straight off the chips.",
+    "whyItExists": "Every watt of electricity used by servers becomes heat that must leave the building, or the equipment fails within minutes.",
+    "communityImpact": "This is where the water and noise questions live. Evaporative designs use large volumes of water but less electricity; dry and closed-loop designs use little or no water but roughly 5 to 15 percent more energy. Fans on rooftop units and cooling towers are a leading noise source.",
+    "mitigation": "Closed-loop and zero-water-evaporation designs (now standard for some hyperscalers' new builds), reclaimed water where evaporative cooling is used, low-speed fan arrays, and acoustic screening around mechanical yards.",
+    "monitoring": "Water meters and utility billing records, water use permits, and annual noise studies of the kind Chandler, Arizona requires for five years after construction."
+  },
+  {
+    "id": "generators",
+    "name": "Backup Generators",
+    "icon": "⛽",
+    "x": 62, "y": 46, "w": 20, "h": 18,
+    "whatItIs": "Rows of engine-driven generators, usually diesel, sized to run the entire facility if the grid fails. Each has a fuel tank and an exhaust stack.",
+    "whyItExists": "Data centers promise near-continuous uptime, and batteries alone cannot carry a full campus through a multi-hour outage.",
+    "communityImpact": "Generators are mostly idle but must be test-run periodically, producing engine noise and diesel exhaust. Their air permits are often the single largest permitting item, and unpermitted generation (as happened with turbines in Memphis) can become a major community trust issue.",
+    "mitigation": "Air permits limiting run hours and emissions, scheduled daytime-only testing with resident notification (a Chandler ordinance requirement), Tier 4 emission controls, generator setbacks (300 feet from homes in Fairfax County), and alternatives like fuel cells or batteries for part of the fleet.",
+    "monitoring": "Air permits and emissions reports are public through the state or county air agency, and test schedules can be published on a community dashboard."
+  },
+  {
+    "id": "batteries",
+    "name": "Battery Systems (UPS)",
+    "icon": "🔋",
+    "x": 76, "y": 12, "w": 12, "h": 14,
+    "whatItIs": "Large battery installations that carry the facility for the seconds to minutes between a grid outage and generator start. Some new campuses add much larger grid-scale batteries on site.",
+    "whyItExists": "Servers cannot tolerate even a momentary power gap, so batteries bridge the transition instantly.",
+    "communityImpact": "Batteries are quiet and emission-free in operation. The main community question is fire safety: lithium-ion systems require specific firefighting approaches, and fire departments need training and pre-plans before the facility opens.",
+    "mitigation": "Fire codes (NFPA 855) governing spacing and suppression, thermal runaway detection, coordination and funded training with the local fire department, and safer chemistries (including multi-day iron-air batteries now planned at some campuses).",
+    "monitoring": "Fire marshal plan review and inspection records, and hazardous materials disclosures filed with local emergency planning committees."
+  },
+  {
+    "id": "watersystem",
+    "name": "Water System",
+    "icon": "💧",
+    "x": 8, "y": 46, "w": 16, "h": 18,
+    "whatItIs": "The pipes, tanks, and treatment equipment that supply the cooling plant and manage what leaves the site, including blowdown discharge and stormwater from roofs and pavement.",
+    "whyItExists": "Facilities using evaporative cooling need reliable water supply, and every facility needs to manage stormwater and any discharge legally.",
+    "communityImpact": "Depending on design, water use ranges from about what a large office building uses (per Virginia's legislative audit) to hundreds of millions of gallons a year for large evaporative campuses in hot climates. Discharge quality and stormwater runoff affect local streams.",
+    "mitigation": "Closed-loop or waterless cooling designs, reclaimed or non-potable supply lines, discharge permits with tested limits, and on-site stormwater detention required by modern site plans.",
+    "monitoring": "Utility water billing, withdrawal and discharge permits, and public reporting: some jurisdictions now require water use estimates during rezoning so commitments are on the record."
+  },
+  {
+    "id": "security",
+    "name": "Security & Lighting",
+    "icon": "🔒",
+    "x": 8, "y": 70, "w": 80, "h": 10,
+    "whatItIs": "Perimeter fencing, gates, cameras, lighting, and staffed checkpoints controlling who enters the campus.",
+    "whyItExists": "The facility holds valuable equipment and sensitive data, and uptime contracts require strict physical access control.",
+    "communityImpact": "Fencing and lighting change the look and feel of the site edge, and poorly aimed lighting causes glare and night-sky impacts for neighbors. Security requirements are also why the public cannot freely tour operating facilities, which can feed distrust.",
+    "mitigation": "Dark-sky compliant, downward-shielded fixtures (lighting standards now appear in Loudoun County requirements), decorative fencing and berms instead of bare chain link, and scheduled community tours or digital tours as a transparency substitute.",
+    "monitoring": "Photometric lighting plans submitted during site plan review, and complaint response commitments through a named community liaison."
+  },
+  {
+    "id": "network",
+    "name": "Network / Fiber",
+    "icon": "🌐",
+    "x": 90, "y": 30, "w": 6, "h": 34,
+    "whatItIs": "The fiber optic lines connecting the campus to the internet, usually buried in conduit along road rights-of-way, plus the meet-me rooms where carriers interconnect.",
+    "whyItExists": "A data center is only useful if data can flow in and out at enormous volume, so multiple redundant fiber routes are essential.",
+    "communityImpact": "Short-term street and shoulder disruption while fiber is trenched, and then almost nothing visible in operation. The positive side: fiber routes built for a data center can improve regional broadband options, and hyperscale sites measurably grow local telecom employment.",
+    "mitigation": "Boring instead of open trenching in sensitive areas, coordinated joint-trench construction to avoid repeat digs, and agreements to extend broadband access to underserved areas as a community benefit.",
+    "monitoring": "Right-of-way permits from the county or city, construction schedules published in advance, and any broadband commitments written into development agreements."
+  }
+]

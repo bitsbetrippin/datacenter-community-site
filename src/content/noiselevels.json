@@ -1,0 +1,11 @@
+[
+  {"label": "Quiet rural night", "dBA": 30, "category": "everyday", "sourceUrl": "https://www.mvcommission.org/sites/default/files/docs/CDC%20guidance%20on%20loud%20noises%202022.pdf"},
+  {"label": "Refrigerator hum", "dBA": 40, "category": "everyday", "sourceUrl": "https://www.mvcommission.org/sites/default/files/docs/CDC%20guidance%20on%20loud%20noises%202022.pdf"},
+  {"label": "Typical nighttime residential noise limit", "dBA": 50, "category": "limit", "sourceUrl": "https://www.princewilliamtimes.com/news/some-cities-suffering-from-data-center-noise-turn-to-tough-limits/article_2aa7fb8c-b6aa-11ed-8626-5738aae2f76c.html"},
+  {"label": "Normal conversation / home AC", "dBA": 60, "category": "everyday", "sourceUrl": "https://www.mvcommission.org/sites/default/files/docs/CDC%20guidance%20on%20loud%20noises%202022.pdf"},
+  {"label": "Unmitigated cooling at property line (documented cases)", "dBA": 62, "category": "datacenter", "sourceUrl": "https://stopohiodatacenters.org/data-center-noise-ohio"},
+  {"label": "Washing machine", "dBA": 70, "category": "everyday", "sourceUrl": "https://www.mvcommission.org/sites/default/files/docs/CDC%20guidance%20on%20loud%20noises%202022.pdf"},
+  {"label": "Cooling tower near equipment (up to)", "dBA": 70, "category": "datacenter", "sourceUrl": "https://www.eesi.org/articles/view/communities-are-raising-noise-pollution-concernsabout-data-centers"},
+  {"label": "Gas lawn mower", "dBA": 85, "category": "everyday", "sourceUrl": "https://www.mvcommission.org/sites/default/files/docs/CDC%20guidance%20on%20loud%20noises%202022.pdf"},
+  {"label": "Diesel generator test at 25 ft", "dBA": 98, "category": "datacenter", "sourceUrl": "https://stopohiodatacenters.org/data-center-noise-ohio"}
+]

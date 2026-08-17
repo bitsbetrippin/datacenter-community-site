@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+/*
+ * Data Centers, Answered With Data (v1.0)
+ * Original design: BitsBeTrippin (bitsbetrippin.io)
+ * Development and site construction support: Claude (Anthropic)
+ * Requirements independently validated against the original project brief;
+ * see docs/REQUIREMENTS.md for the ask-to-implementation mapping.
+ */
+
+/* ============================================================
+   Design tokens: Datacenter Community Info Site
+   Palette follows the validated dataviz reference palette:
+   categorical slot 1 (blue) is the brand primary; ink/surface
+   roles come from the chart chrome table. Dark mode is a
+   selected palette, not an automatic flip.
+   ============================================================ */
+
+@theme {
+  /* Brand + series (light-mode steps) */
+  --color-brand: #2a78d6;
+  --color-brand-deep: #1c5cab;
+  --color-brand-wash: #cde2fb;
+
+  --color-series-1: #2a78d6; /* blue    */
+  --color-series-2: #eb6834; /* orange  */
+  --color-series-3: #1baf7a; /* aqua    */
+  --color-series-4: #eda100; /* yellow  */
+  --color-series-5: #e87ba4; /* magenta */
+  --color-series-6: #008300; /* green   */
+  --color-series-7: #4a3aa7; /* violet  */
+  --color-series-8: #e34948; /* red     */
+
+  /* Status (fixed, never themed) */
+  --color-status-good: #0ca30c;
+  --color-status-warning: #fab219;
+  --color-status-serious: #ec835a;
+  --color-status-critical: #d03b3b;
+
+  /* Surfaces & ink (light) */
+  --color-page: #f9f9f7;
+  --color-surface: #fcfcfb;
+  --color-ink: #0b0b0b;
+  --color-ink-secondary: #52514e;
+  --color-ink-muted: #898781;
+  --color-hairline: #e1e0d9;
+  --color-baseline: #c3c2b7;
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+:root {
+  color-scheme: light;
+  /* Dark-mode role values (applied via [data-theme="dark"] below) */
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* Dark-mode selected steps (Tailwind v4 theme vars can be overridden per scope) */
+[data-theme="dark"] {
+  --color-brand: #3987e5;
+  --color-brand-deep: #86b6ef;
+  --color-brand-wash: #10314f;
+  --color-page: #0d0d0d;
+  --color-surface: #1a1a19;
+  --color-ink: #ffffff;
+  --color-ink-secondary: #c3c2b7;
+  --color-ink-muted: #898781;
+  --color-hairline: #2c2c2a;
+  --color-baseline: #383835;
+  --color-series-1: #3987e5;
+  --color-series-2: #d95926;
+  --color-series-3: #199e70;
+  --color-series-4: #c98500;
+  --color-series-5: #d55181;
+  --color-series-7: #9085e9;
+  --color-series-8: #e66767;
+}
+
+body {
+  @apply bg-page text-ink font-sans antialiased;
+}
+
+/* Focus visibility for a civic/public audience */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   v1.0 accessibility & affordance layer
+   ============================================================ */
+
+/* Reader font-size levels: 0 (default) through 3, +2pt (~2.67px) per level.
+   Everything is sized in rem, so scaling the root scales the whole site. */
+:root[data-fontscale="0"] { font-size: 16px; }
+:root[data-fontscale="1"] { font-size: 18.67px; }
+:root[data-fontscale="2"] { font-size: 21.33px; }
+:root[data-fontscale="3"] { font-size: 24px; }
+
+/* Section headers: larger, with a soft edge shadow so sections read at a glance.
+   Shadow color adapts per mode. */
+:root {
+  --heading-shadow: 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 6px rgba(11, 11, 11, 0.22);
+}
+[data-theme="dark"] {
+  --heading-shadow: 0 1px 0 rgba(0, 0, 0, 0.7), 0 2px 8px rgba(57, 135, 229, 0.35);
+}
+main h1 {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  text-shadow: var(--heading-shadow);
+}
+main h2 {
+  font-size: 1.65rem;
+  line-height: 1.25;
+  text-shadow: var(--heading-shadow);
+}
+main h3 {
+  text-shadow: var(--heading-shadow);
+}
+@media (max-width: 640px) {
+  main h1 { font-size: 2rem; }
+  main h2 { font-size: 1.45rem; }
+}
+
+/* Interactive affordance: anything clickable gets a visible brand ring on hover,
+   so visitors can tell what responds to them. */
+main a:hover,
+main button:hover,
+main summary:hover,
+main select:hover,
+main input:hover,
+main [role="button"]:hover,
+header nav a:hover,
+header button:hover {
+  outline: 2px solid color-mix(in srgb, var(--color-brand) 65%, transparent);
+  outline-offset: 2px;
+  border-radius: 6px;
+  transition: outline-color 120ms ease;
+}
+/* Range sliders: ring the whole control, not just the thumb */
+main input[type="range"]:hover {
+  outline-offset: 4px;
+}

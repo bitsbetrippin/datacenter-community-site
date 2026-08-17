@@ -1,0 +1,21 @@
+{
+  "title": "What drives opposition to data centers?",
+  "methodology": "Percentages are from Gallup's March 2026 national poll (n=1,000): the share of data-center OPPONENTS citing each reason. Categories are not mutually exclusive, so they do not sum to 100%. Entries without a percentage are ranked qualitatively from the Data Center Watch opposition tracker (an industry-adjacent source) and documented case evidence; no public dataset categorizes actual hearing testimony by concern, so we do not invent numbers.",
+  "phaseNote": "Timing matters: before approval, opposition is driven by power, rates, water, and land use. After construction, disputes are dominated by noise and generator emissions. A single chart conflates two different populations.",
+  "quantified": [
+    {"concern": "Resource overuse (water & energy)", "sharePct": 50, "factId": "gallup-2026-oppose-71"},
+    {"concern": "Quality of life (noise, traffic, character)", "sharePct": 22, "factId": "gallup-2026-oppose-71"},
+    {"concern": "Utility bill / electricity costs", "sharePct": 20, "factId": "gallup-2026-oppose-71"},
+    {"concern": "Pollution / environment", "sharePct": 16, "factId": "gallup-2026-oppose-71"},
+    {"concern": "Negative views of AI itself", "sharePct": 14, "factId": "gallup-2026-oppose-71"}
+  ],
+  "qualitative": [
+    {"rank": 1, "concern": "Grid strain & energy consumption", "evidence": "Ranked #1 by the Data Center Watch tracker; the rates message tests as the single most persuasive opposition argument.", "factId": "dcw-64b"},
+    {"rank": 2, "concern": "Water consumption", "evidence": "Ranked #2 by the tracker; 'water' was the most common word among opponents in UVA's open-text analysis; decisive in Tucson's rejection.", "factId": "uva-opinion-project"},
+    {"rank": 3, "concern": "Noise", "evidence": "Ranked #3 by the tracker; the dominant concern in post-construction disputes (Chandler AZ, Loudoun VA, active lawsuits).", "factId": "dowagiac-mi-lawsuit-2026"},
+    {"rank": 4, "concern": "Property values & proximity", "evidence": "Ranked #4 by the tracker; central to Prince William and Fayetteville fights, though Brookings found prices near facilities rose 2-5%.", "factId": "brookings-jobs"},
+    {"rank": 5, "concern": "Taxes, incentives & subsidies", "evidence": "A distinct driver in the tracker, concentrated among fiscally conservative officials; most states don't disclose incentive costs.", "factId": "gjf-subsidy-disclosure"},
+    {"rank": 6, "concern": "Jobs skepticism", "evidence": "Recurring in testimony; Brookings' finding of ~100-200 county jobs gives skeptics empirical footing.", "factId": "brookings-jobs"},
+    {"rank": 7, "concern": "Secrecy & process distrust", "evidence": "The cross-cutting amplifier: NDAs in ~80% of Virginia data center localities; secrecy converted neutral residents to opponents in Tucson and Memphis.", "factId": "public-citizen-ndas"}
+  ]
+}

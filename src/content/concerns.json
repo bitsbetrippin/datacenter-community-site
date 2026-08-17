@@ -1,0 +1,92 @@
+[
+  {
+    "id": "power",
+    "icon": "⚡",
+    "title": "Power & the Grid",
+    "residentQuestion": "Will my electric bill go up? Can the grid handle this?",
+    "shortAnswer": "Data centers are large electricity users; a big one can use as much power as a small city. Whether your bill changes depends on how your state assigns grid-upgrade costs and how the utility structures the data center's rate. Both good and bad outcomes are documented.",
+    "status": "available",
+    "researchWave": 1
+  },
+  {
+    "id": "water",
+    "icon": "💧",
+    "title": "Water",
+    "residentQuestion": "How much water will it use? Will it affect our wells?",
+    "shortAnswer": "It depends almost entirely on the cooling design. Evaporative cooling can use hundreds of thousands of gallons a day; closed-loop and air-cooled designs use very little onsite. The cooling choice is knowable before approval, so ask for it.",
+    "status": "available",
+    "researchWave": 2
+  },
+  {
+    "id": "noise",
+    "icon": "🔊",
+    "title": "Noise",
+    "residentQuestion": "Will I hear it from my house?",
+    "shortAnswer": "Cooling fans and generator tests are real, measurable noise sources, and some communities have had genuine problems. Distance, equipment choice, and barriers determine what you'd hear, and noise limits can be written into approvals and verified with meters.",
+    "status": "available",
+    "researchWave": 3
+  },
+  {
+    "id": "environment",
+    "icon": "🌎",
+    "title": "Environment & Emissions",
+    "residentQuestion": "What about air quality, carbon, and wildlife?",
+    "shortAnswer": "Onsite emissions come mainly from backup generators, which run rarely but must be permitted. The bigger environmental question is where the electricity comes from; that's determined by the grid and the developer's energy contracts, and it can be verified.",
+    "status": "available",
+    "researchWave": 3
+  },
+  {
+    "id": "property",
+    "icon": "🏠",
+    "title": "Property & Neighborhoods",
+    "residentQuestion": "Will this hurt my home's value?",
+    "shortAnswer": "The evidence is mixed and depends heavily on distance, visibility, and what the land would otherwise become. Honest answer: studies disagree, and we show you all of them.",
+    "status": "available",
+    "researchWave": 5
+  },
+  {
+    "id": "taxes",
+    "icon": "💰",
+    "title": "Taxes & Incentives",
+    "residentQuestion": "Why do they get tax breaks? What does the community actually receive?",
+    "shortAnswer": "Data centers usually generate significant local property tax revenue even after incentives, but incentive costs are often poorly disclosed, and the details of the deal matter more than the headline investment number.",
+    "status": "available",
+    "researchWave": 4
+  },
+  {
+    "id": "jobs",
+    "icon": "👷",
+    "title": "Jobs",
+    "residentQuestion": "How many people will actually work there?",
+    "shortAnswer": "Construction employs hundreds to thousands for a few years; permanent operations typically employ dozens to a few hundred per campus, far fewer than a factory of similar size. Anyone promising thousands of permanent jobs should show their math.",
+    "status": "available",
+    "researchWave": 4
+  },
+  {
+    "id": "construction",
+    "icon": "🚧",
+    "title": "Construction",
+    "residentQuestion": "How long will construction disruption last?",
+    "shortAnswer": "Typically 18-36 months per building phase, with real truck traffic, dust, and noise. This is the most disruptive period of the project's life, and it's also the most controllable through enforceable construction management plans.",
+    "status": "available",
+    "researchWave": 5
+  },
+  {
+    "id": "safety",
+    "icon": "🔥",
+    "title": "Safety & Emergency Services",
+    "residentQuestion": "What about fires, fuel storage, and emergency response?",
+    "shortAnswer": "The main hazards are diesel fuel storage and batteries, both governed by fire codes your local fire marshal reviews. Facilities are low-occupancy and typically generate few emergency calls, but fire departments do need training and sometimes funding for battery hazards.",
+    "status": "available",
+    "researchWave": 5
+  },
+  {
+    "id": "landuse",
+    "icon": "🏗",
+    "title": "Land Use & Siting",
+    "residentQuestion": "Why here? What happens if the company leaves?",
+    "shortAnswer": "Sites are chosen mostly for power and fiber availability, and that logic can be explained openly. What happens at end-of-life is a fair question; decommissioning obligations can and should be written into approvals.",
+    "status": "available",
+    "researchWave": 5
+  }
+]
