@@ -79,6 +79,17 @@ labeling, neutrality, style) and the architecture summary. The content layer
 is data: everything the site says lives in `src/content/*.json`; pages are
 thin renderers. The PR template enforces the integrity checklist.
 
+## License
+
+- **Code** (components, tools, scripts, configuration): [MIT License](LICENSE).
+  Use it, fork it, build your own community explainer with it.
+- **Site content** (the writing, fact records, and research compilation in
+  `src/content/` and `docs/`): Copyright 2026 BitsBeTrippin, licensed under
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); reuse with
+  attribution to BitsBeTrippin (bitsbetrippin.io). The underlying facts cite
+  their original sources, which retain their own rights; verify figures
+  against those sources before republishing, since this field moves fast.
+
 ## Content rules (non-negotiable)
 
 1. No unattributed statistics; every number renders with a citation to a live URL.
