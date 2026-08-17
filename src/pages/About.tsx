@@ -18,6 +18,26 @@ export function About() {
       </p>
 
       <section className="rounded-xl border border-[color:var(--color-hairline)] bg-surface p-5">
+        <h2 className="font-semibold text-ink">Audit the site itself</h2>
+        <p className="mt-2 text-sm leading-relaxed text-ink-secondary">
+          The full source code of this site, including every fact record, calculation
+          constant, and content file it renders, is publicly available for independent
+          audit. The same standard we apply to data center claims applies to us: do not
+          take our word for it, check the source.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed">
+          <a
+            className="font-semibold text-brand underline underline-offset-2 hover:opacity-80"
+            href="https://github.com/bitsbetrippin/datacenter-community-site"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/bitsbetrippin/datacenter-community-site
+          </a>
+        </p>
+      </section>
+
+      <section className="rounded-xl border border-[color:var(--color-hairline)] bg-surface p-5">
         <h2 className="font-semibold text-ink">The integrity rules every page follows</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink-secondary">
           <li>No unattributed statistics: every number links to its original source.</li>

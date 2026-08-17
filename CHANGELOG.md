@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.2.4 (2026-08-17)
+
+- About: new "Audit the site itself" section at the top linking to the
+  public GitHub repository, explaining that the full source code, fact
+  records, and calculation constants are available for independent audit
+
 ## v1.2.3 (2026-08-17)
 
 Alignment release with the bitsbetrippin.io proxy architecture.
