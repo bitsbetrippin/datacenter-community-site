@@ -1,0 +1,32 @@
+name: Supabase migrations
+
+# Applies versioned SQL migrations to the hosted Supabase project whenever
+# a new migration lands on main. Requires these GitHub Actions secrets:
+#   SUPABASE_ACCESS_TOKEN  — supabase.com > Account > Access Tokens
+#   SUPABASE_PROJECT_REF   — the project ref (the xxxx in https://xxxx.supabase.co)
+#   SUPABASE_DB_PASSWORD   — the database password you set at project creation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "supabase/migrations/**"
+  workflow_dispatch: {}
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - run: supabase link --project-ref "$SUPABASE_PROJECT_REF"
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+      - run: supabase db push
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}

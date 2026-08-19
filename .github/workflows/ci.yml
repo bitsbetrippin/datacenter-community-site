@@ -1,0 +1,27 @@
+name: CI
+
+# Type-check and build on every push and pull request.
+# Deployment itself is handled by Cloudflare Workers Builds (Git integration),
+# which builds and deploys when main changes — this workflow is the quality gate.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          # Dummy values so the client bundle can build in CI.
+          # Real values are configured in Cloudflare Workers Builds.
+          VITE_SUPABASE_URL: https://ci-placeholder.supabase.co
+          VITE_SUPABASE_ANON_KEY: ci-placeholder
