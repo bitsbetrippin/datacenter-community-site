@@ -1,10 +1,11 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import { cloudflare } from "@cloudflare/vite-plugin";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-// React SPA + Cloudflare Worker built together.
-// `vite dev` runs the Worker locally alongside the client with HMR.
-// `vite build` emits the client assets and the Worker bundle for `wrangler deploy`.
+// https://vite.dev/config/
+// base '/datacenters/' serves the app as a subsite at bitsbetrippin.io/datacenters
+// (Cloudflare Pages + Worker route; see docs/INTEGRATION.md).
 export default defineConfig({
-  plugins: [react(), cloudflare()],
-});
+  base: '/datacenters/',
+  plugins: [react(), tailwindcss()],
+})

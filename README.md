@@ -1,135 +1,99 @@
-# Family Calendar — v1.1
+# Data Centers, Answered With Data
 
-A private household calendar: sign in, see the big family calendar, create and
-manage events with color-coded categories, and control who in the family can
-do what. Release 1 is intentionally **local-only** — external calendar sync
-(Google, Microsoft, CalDAV, ICS) arrives in Releases 2–4 per the project's
-Release Overview.
+**Current version: v1.2.2** · [Changelog](CHANGELOG.md) ·
+**Live:** [bitsbetrippin.io/datacenters](https://www.bitsbetrippin.io/datacenters/) ·
+[Preview (workers.dev)](https://datacenter-community-site.bitsbetrippin.workers.dev/datacenters/)
 
-## Stack
+An evidence-based public education website about how data centers affect the
+communities around them: power, water, noise, taxes, jobs, property, land use,
+construction, safety, and the environment. The site is built on one rule:
+**no unattributed statistics.** Every number links to its original source,
+labels whether it is measured or modeled, and says whether it comes from
+independent research or the industry itself. Where credible studies disagree,
+the site shows the disagreement. The honest answer to many questions is "it
+depends on how the facility is designed," so the site makes that explorable
+instead of just saying it.
 
-| Layer | Technology |
-| --- | --- |
-| Client | React 18 + Vite + TypeScript, FullCalendar for the calendar views |
-| Edge | Cloudflare Worker (serves the SPA + `/api/*` endpoints), deployed to the built-in `workers.dev` subdomain |
-| Data | Supabase Postgres with Row Level Security, Supabase Auth |
-| CI/CD | GitHub Actions (build check + Supabase migrations), Cloudflare Workers Builds (deploy on push to `main`) |
+**Original design: BitsBeTrippin ([bitsbetrippin.io](https://www.bitsbetrippin.io)).
+Development and site construction support: Claude (Anthropic).** Requirements
+were independently validated against the original project brief; see
+`docs/REQUIREMENTS.md` for the full mapping and `CREDITS.md` for attribution.
 
-## What's in Release 4
+## What's on the site
 
-The plan's final release — standards adapters, hardening, and household polish:
+- **10 concern explainers**, each with a 30-second answer, a deeper dive, and
+  the raw sources (three-level information model)
+- **32 Rumor / Fact / Proof blocks**: the question as residents ask it, the
+  honest answer, why people are concerned, what determines the outcome, and
+  how to verify it yourself
+- **116 sourced fact records** from 7 research waves, browsable in the Source
+  Library with tier labels (government, academic, independent, industry,
+  community)
+- **4 interactive tools**: What-If facility designer, water simulator, noise
+  distance calculator, economic impact calculator, each with visible
+  methodology and honest caveats
+- **Facility tour**: a clickable campus map explaining what each component
+  is, its community impact, mitigation, and how to monitor it
+- **11 case studies** of real communities (approved, fought, rejected,
+  banned) with why each community reacted the way it did
+- **Trade-offs page**: two-sided receives/accepts ledger, a user-weighted
+  priorities scorecard, industrial-use comparison, and future-tech status
+- **Community playbook**: a commitment-dashboard model, 20 acceptance
+  strategies with evidence and KPIs, and a 10-stage engagement timeline
+- **109-question FAQ**, searchable, every answer cited
+- **Reality Check**: popular claims from both directions tested against the
+  evidence base
+- Accessibility: 4-level text-size control, dark mode, keyboard support,
+  reduced-motion handling
 
-- **ICS subscription feeds**: read-only auto-refreshing subscriptions to any
-  published .ics URL, with ETag/Last-Modified friendly fetching
-- **CalDAV foundation**: discovery, calendar selection, ctag/etag
-  incremental sync, and two-way pushes (iCloud app passwords, Fastmail,
-  Nextcloud, Synology, …)
-- **Wall display mode** (`/wall`): big type, clock, weather slot,
-  auto-refresh — built for a mounted tablet with a Viewer account
-- **High-fidelity export**: print-optimized vector month view for PDF, and
-  real .pptx generation (editable text, category colors)
-- **Backup & export**: one-click household JSON archive + BACKUP.md restore
-  playbook
-- **Themes**: Classic / Forest / Ocean / Sunset per-user palettes — the
-  seasonal-pack foundation
-- **Hardening**: API rate limiting, hourly retention purge (30-day
-  soft-delete horizon), default event category (CAT-003), accessibility
-  touches (skip link, Escape handling), installable PWA manifest
+## Versioning
 
-Upgrading from R3? See **[UPGRADE_R4.md](./UPGRADE_R4.md)** — two steps,
-with a SQL-editor fallback included.
+Semantic-style tags: the middle digit increments for feature releases, the
+last digit for deployment and bug fixes. Full history in
+[CHANGELOG.md](CHANGELOG.md); tags v1.0.0 through v1.2.2 are in the repo, and
+GitHub Releases mirror the tags.
 
-## What's in Release 3
+## Run it locally
 
-The integration hub (§13–§14 of the requirements):
+1. Install [Node.js LTS](https://nodejs.org).
+2. In this folder: `npm install` then `npm run dev`
+3. Open `http://localhost:5173/datacenters/`
 
-- Admin-managed **service registry** seeded with Google, Microsoft, CalDAV,
-  ICS, jCal/xCal and generic REST profiles (capabilities, endpoints, field
-  mappings, sync behavior all registry-visible)
-- **Google Calendar**: OAuth2 + PKCE, incremental sync via sync tokens,
-  two-way pushes with If-Match etags, recurring series + exceptions
-- **Microsoft 365 / Outlook**: OAuth2 + PKCE, delta sync, change
-  notifications with automatic subscription renewal
-- **Sync engine**: idempotent job queue with backoff, per-calendar cursors,
-  snapshot-hash echo prevention, tombstones, and a conflict system that never
-  silently discards either side — conflicts are resolved by a human on the
-  Integrations page
-- **Token security**: provider tokens AES-GCM-encrypted in a table no client
-  role can read; OAuth code exchange happens only in the Worker
-- Integrations UI: connect/reconnect, per-calendar sync direction, health
-  states, Test connection, manual Sync now, disconnect-with-retention
-- Setup is self-guiding: the app detects missing provider secrets and shows
-  copy-paste console instructions with this deployment's exact redirect URIs
+Other commands: `npm run build` (production build), `npm run build:cf`
+(Cloudflare packaging into `dist-cf/`), `node scripts/validate-content.mjs`
+(content integrity gate: fails if any statistic lacks a sourced fact record).
 
-Upgrading from R2? See **[UPGRADE_R3.md](./UPGRADE_R3.md)** — two steps.
+## Deployment
 
-## What was in Release 2
+The site deploys automatically: every push to `main` triggers a Cloudflare
+Workers build (`npm run build:cf`, then `npx wrangler deploy` driven by
+`wrangler.jsonc`). Static assets serve directly; `cloudflare/worker.js`
+handles the root redirect and SPA deep-link fallback. A route on
+`bitsbetrippin.io/datacenters*` puts it on the main domain. Full architecture
+and integration notes: `docs/INTEGRATION.md`.
 
-Everything the household does *inside* the app (external provider sync is R3):
+## For contributors and agents
 
-- People: shared contacts, attendees with roles (driver, child, observer…), RSVP
-- Repeating events (daily/weekdays/weekly/monthly/yearly) with per-occurrence,
-  whole-series, and this-and-future edits — RRULE-compatible storage
-- Reminders (multiple per event, "just me" or "whole household") delivered as
-  in-app notifications by a Worker cron every 5 minutes, idempotently
-- Attachments in a private Supabase Storage bucket (25 MB, safe types only)
-- Admin console: category editor (rename/recolor/reorder/merge/archive),
-  append-only audit log, appearance settings, optional two-factor auth
-- Global search (title, description, location, people, categories, filenames)
-- Drag-and-drop rescheduling, undo for deletions, keyboard shortcuts
-  (n, t, 1–5, /), saved filters, upcoming panel with quick add
-- ICS import (preview + duplicate detection) and export, printable views
-- Live refresh across devices via Supabase Realtime
-- Birthdays & anniversaries from contacts shown automatically
+Read `CLAUDE.md` first: it carries the non-negotiable content rules (sourcing,
+labeling, neutrality, style) and the architecture summary. The content layer
+is data: everything the site says lives in `src/content/*.json`; pages are
+thin renderers. The PR template enforces the integrity checklist.
 
-Upgrading from R1? See **[UPGRADE_R2.md](./UPGRADE_R2.md)**.
+## License
 
-## What was in Release 1
+- **Code** (components, tools, scripts, configuration): [MIT License](LICENSE).
+  Use it, fork it, build your own community explainer with it.
+- **Site content** (the writing, fact records, and research compilation in
+  `src/content/` and `docs/`): Copyright 2026 BitsBeTrippin, licensed under
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); reuse with
+  attribution to BitsBeTrippin (bitsbetrippin.io). The underlying facts cite
+  their original sources, which retain their own rights; verify figures
+  against those sources before republishing, since this field moves fast.
 
-- Email/password sign in, sign up, password reset (Supabase Auth)
-- Household with Owner / Admin / User / Viewer roles, enforced by Postgres RLS
-  (not just hidden buttons — a Viewer cannot mutate data even with direct API calls)
-- Month, Week, Day, Agenda, and Year calendar views; Today/prev/next/date navigation
-- Event create / edit / duplicate / soft-delete with validation (end must follow start)
-- 100 seeded household categories (Appendix A) with color bubbles on the calendar
-- Filters by category and calendar, kept in the URL so views are bookmarkable
-- Distinct visual states for canceled / tentative / private / all-day events
-- Settings: profile, household defaults, members & roles, local calendars
-- Worker API shell (`/api/health`, `/api/me`) establishing the server-side
-  JWT + membership validation pattern later releases build on
+## Content rules (non-negotiable)
 
-## Getting started
-
-Follow **[SETUP.md](./SETUP.md)** — it walks through Supabase, Cloudflare,
-GitHub, and first sign-in step by step.
-
-Local development quick reference:
-
-```bash
-cp .env.example .env      # fill in your Supabase URL + anon key
-npm install
-npm run dev               # client + Worker locally with hot reload
-npm run build             # type-check + production build (what CI runs)
-```
-
-## Repository layout
-
-```
-src/                  React client
-  components/         Shell, EventModal, EventDetail, FilterBar
-  context/            Auth + Household state
-  pages/              SignIn/SignUp/Reset, Onboarding, Calendar, Settings
-  lib/                Supabase client, types, event utilities
-worker/               Cloudflare Worker (API + SPA serving)
-supabase/migrations/  Versioned SQL — schema, RLS, RPCs, category seeds
-.github/workflows/    CI build check + Supabase migration deploy
-```
-
-## Rules of the road
-
-- **Never** edit the database schema in the Supabase dashboard. Every schema
-  change is a SQL file in `supabase/migrations/` so Git stays the source of truth.
-- **Never** put the Supabase `service_role` key (or any secret) in client code
-  or `VITE_*` variables. The anon key is public by design; RLS does the protecting.
-- Deploys happen by merging to `main` (push with GitHub Desktop). Tag releases
-  (`v1.0.0`, …) at the commit that completes a release's exit criteria.
+1. No unattributed statistics; every number renders with a citation to a live URL.
+2. Industry figures are labeled company-reported; projections are labeled modeled.
+3. Contested topics (rates, property values) present the disagreement, not one side.
+4. Opposition claims and industry claims receive identical scrutiny.
+5. Negative findings stay in. Credibility over advocacy.
